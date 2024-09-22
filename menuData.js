@@ -3,7 +3,7 @@ const menuData = {
         categories: {
             "Salads": [
                 { name: "Crunchy Salad (Goat Cheese)", price: "€14", description: "Crispy salad with goat cheese", image: "Salads-goat-cheese.jpeg" },
-                { name: "Caesar Salad (Chicken)", price: "€14", description: "Classic Caesar salad with chicken", image: "salad2.jpg" },
+                { name: "Caesar Salad (Chicken)", price: "€14", description: "Classic Caesar salad with chicken", image: "Salads-Caesar-salad.jpeg" },
                 { name: "Valencian Salad (Tuna)", price: "€12", description: "Traditional Valencian salad with tuna", image: "Salads-valenciana.jpeg" },
                 { name: "Vegetarian Salad", price: "€12", description: "Fresh mixed salad with vegetables", image: "salad4.jpg" },
                 { name: "Zucchini Carpaccio", price: "€12", description: "Zucchini slices with olive oil and seasoning", image: "Salads-zucchini-carpaccio.jpeg" }
@@ -11,7 +11,7 @@ const menuData = {
             "Starters": [
                 { name: "Tomato & Garlic Bread", price: "€4.80", description: "Toasted bread with tomato and garlic butter", image: "Starters-bread-tomato-aioli.jpeg" },
                 { name: "Fried Eggplant with Honey", price: "€9.80", description: "Eggplant fries drizzled with honey", image: "Starters-fried-eggplant-with-honey.jpeg" },
-                { name: "Fried Calamari", price: "€9.90", description: "Crispy calamari with a side of lemon", image: "starter3.jpg" },
+                { name: "Fried Calamari", price: "€9.90", description: "Crispy calamari with a side of lemon", image: "Starters-calamari.jpeg" },
                 { name: "Iberian Ham Croquettes", price: "€9.60", description: "Iberian ham croquettes, crispy and delicious", image: "Starters-ham-croquettes.jpeg" },
                 { name: "Cheese and Bacon Fries", price: "€9.90", description: "Fries topped with gouda cheese and bacon", image: "Starters-fries-gouda-cheese.jpeg" },
                 { name: "Cuttlefish", price: "€9.90", description: "Cuttlefish", image: "Starters-cuttlefish.jpeg" },
@@ -67,7 +67,7 @@ const menuData = {
             "Salades": [
                 { name: "Salade Croquante (Fromage de chèvre)", price: "€14", description: "Salade croquante avec du fromage de chèvre", image: "Salads-goat-cheese.jpeg" },
                 { name: "Aubergines au miel", price: "€9.80", description: "Aubergine frites au miel", image: "Starters-fried-eggplant-with-honey.jpeg" },
-                { name: "Salade César (Poulet)", price: "€14", description: "Salade César classique avec poulet", image: "salad2.jpg" },
+                { name: "Salade César (Poulet)", price: "€14", description: "Salade César classique avec poulet", image: "Salads-Caesar-salad.jpeg" },
                 { name: "Salade Valencienne (Thon)", price: "€12", description: "Salade valencienne traditionnelle avec du thon", image: "Salads-valenciana.jpeg" },
                 { name: "Salade Végétarienne", price: "€12", description: "Salade mixte avec des légumes", image: "salad4.jpg" },
                 { name: "Carpaccio de Courgette", price: "€12", description: "Tranches de courgette avec de l'huile d'olive", image: "salad5.Salads-zucchini-carpaccio.jpeg" }
@@ -75,7 +75,7 @@ const menuData = {
             "Entrées": [
                 { name: "Pain Tomate et Ajoaceite", price: "€4.80", description: "Pain grillé avec tomate et ajoaceite", image: "Starters-bread-tomato-aioli.jpeg" },
                 { name: "Aubergines Frites au Miel", price: "€9.80", description: "Aubergines frites avec du miel", image: "starter2.jpg" },
-                { name: "Calamars Frits", price: "€9.90", description: "Calamars frits croustillants", image: "starter3.jpg" },
+                { name: "Calamars Frits", price: "€9.90", description: "Calamars frits croustillants", image: "Starters-calamari.jpeg" },
                 { name: "Croquettes de Jambon Ibérique", price: "€9.60", description: "Croquettes de jambon ibérique", image: "Starters-ham-croquettes.jpeg" },
                 { name: "Frites au Fromage et Bacon", price: "€9.90", description: "Frites garnies de fromage gouda et de bacon", image: "Starters-fries-gouda-cheese.jpeg" }
             ],
@@ -102,7 +102,7 @@ const menuData = {
                     categories: {
                         "Ensaladas": [
                             { name: "Ensalada Crujiente (Queso de cabra)", price: "€14", description: "Ensalada crujiente con queso de cabra", image: "Salads-goat-cheese.jpeg" },
-                            { name: "Ensalada César (Pollo)", price: "€14", description: "Ensalada César clásica con pollo", image: "image.jpeg" },
+                            { name: "Ensalada César (Pollo)", price: "€14", description: "Ensalada César clásica con pollo", image: "Salads-Caesar-salad.jpeg" },
                             { name: "Ensalada Valenciana (Atún)", price: "€14", description: "Ensalada valenciana con atún", image: "Salads-valenciana.jpeg" },
                             { name: "Ensalada Vegetariana", price: "€12", description: "Ensalada mixta con verduras frescas", image: "salad4.jpg" },
                             { name: "Carpaccio de Calabacín", price: "€12", description: "Rodajas de calabacín con aceite de oliva", image: "Salads-zucchini-carpaccio.jpeg" }
@@ -110,7 +110,7 @@ const menuData = {
                         "Entrantes": [
                             { name: "Pan con Tomate y Ajoaceite", price: "€4.80", description: "Pan tostado con tomate y ajoaceite", image: "Starters-bread-tomato-aioli.jpeg" },
                             { name: "Berenjenas Fritas con Miel", price: "€9.80", description: "Berenjenas fritas con miel", image: "Starters-fried-eggplant-with-honey.jpeg" },
-                            { name: "Calamares a la andaluza", price: "€9.90", description: "Calamares fritos al estilo andaluz", image: "starter3.jpg" },
+                            { name: "Calamares a la andaluza", price: "€9.90", description: "Calamares fritos al estilo andaluz", image: "Starters-calamari.jpeg" },
                             { name: "Huevos Rotos con Jamón", price: "€9.60", description: "Huevos fritos con jamón sobre patatas fritas", image: "starter4.jpg" },
                             { name: "Croquetas de Bacalao", price: "€9.00", description: "Croquetas de bacalao crujientes", image: "starter5.jpg" },
                             { name: "Croquetas de Jamón Ibérico", price: "€9.00", description: "Croquetas de jamón ibérico crujientes", image: "Starters-ham-croquettes.jpeg" },
