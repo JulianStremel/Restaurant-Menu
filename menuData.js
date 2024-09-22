@@ -147,7 +147,25 @@ const menuData = {
                             { name: "Sepia Plancha", price: "€16.00", description: "Sepia a la plancha con ajo y perejil", image: "Starters-cuttlefish.jpeg" },
                             { name: "Calamares Rebozados", price: "€13.00", description: "Calamares rebozados con patatas fritas y ensalada", image: "Combination-calamary.jpeg" },
                             { name: "Emperador Salsa Verde", price: "€15.00", description: "Filete de emperador acompañado con salsa verde", image: "Combination-swordfish.jpeg" }
-                        ]
+                        ],
+                            "Bebidas": [
+                                { name: "Tinto de Verano", price: "€3.50", description: "Refrescante bebida a base de vino tinto y gaseosa", image: "Bebidas-tinto-de-verano.jpeg" },
+                                { name: "Cerveza de Tirador (Caña)", price: "€2.00", description: "Cerveza de tirador - caña (tostada, lager, o radler)", image: "Bebidas-cerveza-cana.jpeg" },
+                                { name: "Cerveza de Tirador (Doble)", price: "€3.00", description: "Cerveza de tirador - doble (tostada, lager, o radler)", image: "Bebidas-cerveza-doble.jpeg" },
+                                { name: "Cerveza de Tirador (Pinta)", price: "€4.50", description: "Cerveza de tirador - pinta (tostada, lager, o radler)", image: "Bebidas-cerveza-pinta.jpeg" },
+                                { name: "Coca Cola", price: "€2.50", description: "Coca Cola clásica", image: "Bebidas-coca-cola.jpeg" },
+                                { name: "Coca Cola Zero", price: "€2.50", description: "Coca Cola sin azúcar", image: "Bebidas-coca-cola-zero.jpeg" },
+                                { name: "Fanta Limón", price: "€2.50", description: "Refresco de limón", image: "Bebidas-fanta-limon.jpeg" },
+                                { name: "Fanta Naranja", price: "€2.50", description: "Refresco de naranja", image: "Bebidas-fanta-naranja.jpeg" },
+                                { name: "Nestea", price: "€2.50", description: "Té frío con limón", image: "Bebidas-nestea.jpeg" },
+                                { name: "Agua (50 cl)", price: "€1.50", description: "Agua embotellada 50 cl", image: "Bebidas-agua-50cl.jpeg" },
+                                { name: "Agua (1,5 L)", price: "€2.50", description: "Agua embotellada 1,5 L", image: "Bebidas-agua-1-5l.jpeg" },
+                                { name: "Agua con Gas", price: "€2.50", description: "Agua con gas", image: "Bebidas-agua-con-gas.jpeg" },
+                                { name: "Tónica", price: "€2.50", description: "Refresco de tónica", image: "Bebidas-tonica.jpeg" },
+                                { name: "Copa de Tinto", price: "€3.50", description: "Copa de vino tinto", image: "Bebidas-copa-tinto.jpeg" },
+                                { name: "Copa de Blanco", price: "€3.50", description: "Copa de vino blanco", image: "Bebidas-copa-blanco.jpeg" }
+                            ]
+                        
                     }
                 }
             };
