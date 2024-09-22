@@ -70,7 +70,7 @@ const menuData = {
                 { name: "Carpaccio de Courgette", price: "€12", description: "Tranches de courgette avec de l'huile d'olive", image: "salad5.Salads-zucchini-carpaccio.jpeg" }
             ],
             "Entrées": [
-                { name: "Pain Tomate et Ajoaceite", price: "€4.80", description: "Pain grillé avec tomate et ajoaceite", image: "starters-bread-tomato-aioli.jpeg" },
+                { name: "Pain Tomate et Ajoaceite", price: "€4.80", description: "Pain grillé avec tomate et ajoaceite", image: "Starters-bread-tomato-aioli.jpeg" },
                 { name: "Aubergines Frites au Miel", price: "€9.80", description: "Aubergines frites avec du miel", image: "starter2.jpg" },
                 { name: "Calamars Frits", price: "€9.90", description: "Calamars frits croustillants", image: "starter3.jpg" },
                 { name: "Croquettes de Jambon Ibérique", price: "€9.60", description: "Croquettes de jambon ibérique", image: "starter4.jpg" },
@@ -105,7 +105,7 @@ const menuData = {
                             { name: "Carpaccio de Calabacín", price: "€12", description: "Rodajas de calabacín con aceite de oliva", image: "Salads-zucchini-carpaccio.jpeg" }
                         ],
                         "Entrantes": [
-                            { name: "Pan con Tomate y Ajoaceite", price: "€4.80", description: "Pan tostado con tomate y ajoaceite", image: "starters-bread-tomato-aioli.jpeg" },
+                            { name: "Pan con Tomate y Ajoaceite", price: "€4.80", description: "Pan tostado con tomate y ajoaceite", image: "Starters-bread-tomato-aioli.jpeg" },
                             { name: "Berenjenas Fritas con Miel", price: "€9.80", description: "Berenjenas fritas con miel", image: "Starters-fried-eggplant-with-honey.jpeg" },
                             { name: "Calamares a la andaluza", price: "€9.90", description: "Calamares fritos al estilo andaluz", image: "starter3.jpg" },
                             { name: "Huevos Rotos con Jamón", price: "€9.60", description: "Huevos fritos con jamón sobre patatas fritas", image: "starter4.jpg" },
