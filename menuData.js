@@ -13,7 +13,7 @@ const menuData = {
                 { name: "Fried Eggplant with Honey", price: "€9.80", description: "Eggplant fries drizzled with honey", image: "Starters-fried-eggplant-with-honey.jpeg" },
                 { name: "Fried Calamari", price: "€9.90", description: "Crispy calamari with a side of lemon", image: "starter3.jpg" },
                 { name: "Iberian Ham Croquettes", price: "€9.60", description: "Iberian ham croquettes, crispy and delicious", image: "starter4.jpg" },
-                { name: "Cheese and Bacon Fries", price: "€9.90", description: "Fries topped with gouda cheese and bacon", image: "Starters-fries-gouda-cheese.jpeg" }
+                { name: "Cheese and Bacon Fries", price: "€9.90", description: "Fries topped with gouda cheese and bacon", image: "Starters-fries-gouda-cheese.jpeg" },
                 { name: "Sweet fried Potatos with Roquefort", price: "€9.90", description: "A nice portion of sweet fried potatos with melted Roquefort cheese", image: "Starters-sweet-fries-roquefort.jpeg" }
             ],
             "Combinations": [
