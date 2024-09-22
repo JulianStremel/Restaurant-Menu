@@ -1,0 +1,73 @@
+// Get the language selector dropdown and container for menu content
+const languageSelect = document.getElementById('languageSelect');
+const menuContent = document.getElementById('menuContent');
+
+// Elements for detailed view
+const mealDetail = document.getElementById('mealDetail');
+const mealImage = document.getElementById('mealImage');
+const mealName = document.getElementById('mealName');
+const mealDescription = document.getElementById('mealDescription');
+const mealPrice = document.getElementById('mealPrice');
+const backToMenu = document.getElementById('backToMenu');
+
+// Function to load the menu data based on the selected language
+function loadMenuData(language) {
+    const data = menuData[language].categories;
+    menuContent.innerHTML = ''; // Clear previous content
+
+    // Loop through each category in the menu
+    for (let category in data) {
+        const categoryDiv = document.createElement('div');
+        categoryDiv.classList.add('menu-category');
+        categoryDiv.innerHTML = `<h2>${category}</h2>`;
+
+        // Loop through the items within the category
+        data[category].forEach(item => {
+            const itemDiv = document.createElement('div');
+            itemDiv.classList.add('menu-item', 'd-flex', 'align-items-center');
+
+            // Add click event to the image for detailed view
+            itemDiv.innerHTML = `
+                <img src="${item.image}" alt="${item.name}" class="me-3" style="width: 100px; height: 100px; cursor: pointer;" onclick="showMealDetail('${item.image}', '${item.name}', '${item.description}', '${item.price}')">
+                <div>
+                    <h5>${item.name} - ${item.price}</h5>
+                    <p>${item.description}</p>
+                </div>
+            `;
+
+            categoryDiv.appendChild(itemDiv);
+        });
+
+        // Add the category with its items to the menu content
+        menuContent.appendChild(categoryDiv);
+    }
+}
+
+// Function to show the detailed view of a meal
+function showMealDetail(image, name, description, price) {
+    // Hide the main menu
+    menuContent.classList.add('d-none');
+    // Populate the meal detail section
+    mealImage.src = image;
+    mealName.innerText = name;
+    mealDescription.innerText = description;
+    mealPrice.innerText = price;
+
+    // Show the meal detail section
+    mealDetail.classList.remove('d-none');
+}
+
+// Handle language switch event
+languageSelect.addEventListener('change', (e) => {
+    loadMenuData(e.target.value);
+});
+
+// Event to return back to the menu
+backToMenu.addEventListener('click', () => {
+    // Hide the meal detail and show the menu content
+    mealDetail.classList.add('d-none');
+    menuContent.classList.remove('d-none');
+});
+
+// Load default menu (English)
+loadMenuData('en');
