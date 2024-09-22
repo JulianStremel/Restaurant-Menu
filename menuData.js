@@ -27,7 +27,7 @@ const menuData = {
             ],
             "House Specialties": [
                 { name: "Soria Torrezno", price: "€5.50", description: "Crispy pork belly from Soria", image: "Specialties-Pork-skin.jpeg" },
-                { name: "Pork Cheeks", price: "€15.50", description: "Pork cheeks with fried potatoes", image: "Specialties-pork-cheaks.jpeg" },
+                { name: "Pork Cheeks", price: "€15.50", description: "Pork cheeks with fried potatoes", image: "Specialties-pork-cheeks.jpeg" },
                 { name: "Octopus", price: "€18", description: "Octopus, special recipe of the village", image: "Specialties-octopus.jpeg" },
                 { name: "Galiana Jumbo Prawns", price: "€22", description: "Galiana Jumbo Prawns", image: "Specialties-galiana-jumbo-prawns.jpeg" },
                 { name: "Oxtail Stew", price: "€18", description: "Slow-cooked oxtail in red wine sauce", image: "Specialties-oxtail.jpeg" },
@@ -123,10 +123,9 @@ const menuData = {
                         ],
                         "Especiales Mijares": [
                             { name: "Torrezno Denominación Soria", price: "€5.50", description: "Torreznos crujientes de la región de Soria", image: "Specialties-Pork-skin.jpeg" },
-                            { name: "Trío de Ases (Pan Brioche)", price: "€12.00", description: "Surtido de mini sándwiches en pan brioche", image: "special1.jpg" },
                             { name: "Piruletas de Jamón Serrano", price: "€8.00", description: "Piruletas de jamón serrano acompañadas de salsa", image: "special2.jpg" },
                             { name: "Rabo de Toro al Vino Tinto", price: "€16.90", description: "Rabo de toro guisado al vino tinto", image: "Specialties-rabo-de-toro.jpeg" },
-                            { name: "Carrillada Mijares", price: "€15.50", description: "Carrillada de cerdo guisada con patatas fritas", image: "special3.jpg" },
+                            { name: "Carrillada Mijares", price: "€15.50", description: "Carrillada de cerdo guisada con patatas fritas", image: "Specialties-pork-cheeks.jpeg" },
                             { name: "Chuletón Ternera 600g", price: "€28.00", description: "Chuletón de ternera de 600g, a la parrilla", image: "Specialties-ribeye.jpeg" },
                             { name: "Pulpo Vidigonero", price: "€18.00", description: "Pulpo a la brasa estilo Vidigonero", image: "Specialties-octopus.jpeg" },
                             { name: "Gambón Galiana", price: "€22.00", description: "Gambón de gran tamaño estilo Galiana", image: "Specialties-galiana-jumbo-prawns.jpeg" },
