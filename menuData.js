@@ -76,7 +76,7 @@ const menuData = {
                 { name: "Pain Tomate et Ajoaceite", price: "€4.80", description: "Pain grillé avec tomate et ajoaceite", image: "Starters-bread-tomato-aioli.jpeg" },
                 { name: "Aubergines Frites au Miel", price: "€9.80", description: "Aubergines frites avec du miel", image: "starter2.jpg" },
                 { name: "Calamars Frits", price: "€9.90", description: "Calamars frits croustillants", image: "starter3.jpg" },
-                { name: "Croquettes de Jambon Ibérique", price: "€9.60", description: "Croquettes de jambon ibérique", image: "starter4.jpg" },
+                { name: "Croquettes de Jambon Ibérique", price: "€9.60", description: "Croquettes de jambon ibérique", image: "Starters-ham-croquettes.jpeg" },
                 { name: "Frites au Fromage et Bacon", price: "€9.90", description: "Frites garnies de fromage gouda et de bacon", image: "Starters-fries-gouda-cheese.jpeg" }
             ],
             "Combinaisons": [
