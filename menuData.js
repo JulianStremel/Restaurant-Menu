@@ -19,12 +19,12 @@ const menuData = {
                 { name: "Patatas Bravas (Wedges)", price: "€9.90", description: "Patatas Bravas Wedges", image: "Starters-bravas-wedges.jpeg" },
                 { name: "Sweet fried Potatos with Roquefort", price: "€9.90", description: "A nice portion of sweet fried potatos with melted Roquefort cheese", image: "Starters-sweet-fries-roquefort.jpeg" }
             ],
-            "Combinations": [
+            "Combo meals": [
                 { name: "Montanejos Cold Cuts", price: "€11", description: "Selection of cold cuts from Montanejos", image: "comb1.jpg" },
                 { name: "Grilled Loin", price: "€11", description: "Grilled pork loin served with fries", image: "Combination-pork-loin.jpeg" },
                 { name: "Breaded Chicken", price: "€11", description: "Breaded chicken fillet served with fries and a fried egg", image: "Combination-chicken.jpeg" },
                 { name: "Grilled Cuttlefish", price: "€16", description: "Grilled cuttlefish served with garlic sauce", image: "Starters-cuttlefish.jpeg" },
-                { name: "Fried Calamari", price: "€13", description: "Fried calamari with a fries and salad", image: "Combination-calamary.jpeg" }
+                { name: "Fried Calamari", price: "€13", description: "Fried calamari with fries and salad", image: "Combination-calamary.jpeg" }
             ],
             "House Specialties": [
                 { name: "Soria Torrezno", price: "€5.50", description: "Crispy pork belly from Soria", image: "Specialties-pork-skin.jpeg" },
@@ -41,7 +41,7 @@ const menuData = {
                 { name: "Vegetarian Burger", price: "€12", description: "Falafel burger with caramelized onions and cheese", image: "Burgers-falafel-burger.jpeg" },
                 { name: "Vegan Burger", price: "€12", description: "Quinoa burger with roasted vegetables and tomato", image: "burger5.jpg" }
             ],
-            "Subs": [
+            "Baguette Sandwiches": [
                 { name: "Chivito Especial", price: "€11", description: "Lettuce, tomato, cheese, bacon, fried egg, and ham", image: "sub1.jpg" },
                 { name: "Polvorilla", price: "€11", description: "Tomato, ham, cheese, and bacon on a toasted bun", image: "sub2.jpg" },
                 { name: "Alex Sub", price: "€10", description: "Gouda cheese, bacon, lomo, and fries", image: "sub3.jpg" },
@@ -80,7 +80,7 @@ const menuData = {
                 { name: "Croquettes de Jambon Ibérique", price: "€9.60", description: "Croquettes de jambon ibérique", image: "Starters-ham-croquettes.jpeg" },
                 { name: "Frites au Fromage et Bacon", price: "€9.90", description: "Frites garnies de fromage gouda et de bacon", image: "Starters-fries-gouda-cheese.jpeg" }
             ],
-            "Combinaisons": [
+            "Assièttes Combinées": [
                 { name: "Charcuterie de Montanejos", price: "€11", description: "Sélection de charcuteries de Montanejos", image: "comb1.jpg" },
                 { name: "Longe de Porc Grillée", price: "€11", description: "Longe de porc grillée servie avec des frites", image: "Combination-pork-loin.jpeg" },
                 { name: "Poulet Pané", price: "€11", description: "Escalope de poulet panée avec frites et un oeuf frit", image: "Combination-chicken.jpeg" },
