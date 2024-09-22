@@ -10,6 +10,9 @@ const mealDescription = document.getElementById('mealDescription');
 const mealPrice = document.getElementById('mealPrice');
 const backToMenu = document.getElementById('backToMenu');
 
+// Variable to store the scroll position
+let previousScrollPosition = 0;
+
 // Function to load the menu data based on the selected language
 function loadMenuData(language) {
     const data = menuData[language].categories;
@@ -45,6 +48,9 @@ function loadMenuData(language) {
 
 // Function to show the detailed view of a meal
 function showMealDetail(image, name, description, price) {
+    // Save the current scroll position
+    previousScrollPosition = window.scrollY;
+
     // Hide the main menu
     menuContent.classList.add('d-none');
     // Populate the meal detail section
@@ -67,6 +73,9 @@ backToMenu.addEventListener('click', () => {
     // Hide the meal detail and show the menu content
     mealDetail.classList.add('d-none');
     menuContent.classList.remove('d-none');
+
+    // Restore the previous scroll position
+    window.scrollTo(0, previousScrollPosition);
 });
 
 // Load default menu (English)
