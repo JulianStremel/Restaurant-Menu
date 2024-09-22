@@ -15,6 +15,7 @@ const menuData = {
                 { name: "Iberian Ham Croquettes", price: "€9.60", description: "Iberian ham croquettes, crispy and delicious", image: "Starters-ham-croquettes.jpeg" },
                 { name: "Cheese and Bacon Fries", price: "€9.90", description: "Fries topped with gouda cheese and bacon", image: "Starters-fries-gouda-cheese.jpeg" },
                 { name: "Cuttlefish", price: "€9.90", description: "Cuttlefish", image: "Starters-cuttlefish.jpeg" },
+                { name: "Patatas Bravas (Wedges)", price: "€9.90", description: "Patatas Bravas Wedges", image: "Starters-bravas-wedges.jpeg" },
                 { name: "Sweet fried Potatos with Roquefort", price: "€9.90", description: "A nice portion of sweet fried potatos with melted Roquefort cheese", image: "Starters-sweet-fries-roquefort.jpeg" }
             ],
             "Combinations": [
@@ -118,7 +119,7 @@ const menuData = {
                             { name: "Tirás Boniato con Roquefort", price: "€9.00", description: "Tiras de boniato frito con salsa roquefort", image: "Starters-sweet-fries-roquefort.jpeg" },
                             { name: "Tabla Jamón Serrano Bodega", price: "€13.00", description: "Jamón serrano bodega servido en tabla", image: "starter10.jpg" },
                             { name: "Sepia Enterita a la Plancha", price: "€14.00", description: "Sepia entera a la plancha con ajo y perejil", image: "Starters-cuttlefish.jpeg" },
-                            { name: "Patatas Bravas", price: "€9.50", description: "Patatas fritas con salsa brava", image: "starter12.jpg" }
+                            { name: "Patatas Bravas", price: "€9.50", description: "Patatas fritas con salsa brava", image: "Starters-bravas-wedges.jpeg" }
                         ],
                         "Especiales Mijares": [
                             { name: "Torrezno Denominación Soria", price: "€5.50", description: "Torreznos crujientes de la región de Soria", image: "Specialties-Pork-skin.jpeg" },
