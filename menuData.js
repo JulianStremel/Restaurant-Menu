@@ -8,7 +8,7 @@ const menuData = {
                 { name: "Vegetarian Salad", price: "€12", description: "Fresh mixed salad with vegetables", image: "salad4.jpg" },
                 { name: "Zucchini Carpaccio", price: "€12", description: "Zucchini slices with olive oil and seasoning", image: "Salads-zucchini-carpaccio.jpeg" }
             ],
-            "Starters": [
+            "Starters / Tapas": [
                 { name: "Tomato & Garlic Bread", price: "€4.80", description: "Toasted bread with tomato and garlic butter", image: "Starters-bread-tomato-aioli.jpeg" },
                 { name: "Fried Eggplant with Honey", price: "€9.80", description: "Eggplant fries drizzled with honey", image: "Starters-fried-eggplant-with-honey.jpeg" },
                 { name: "Fried Calamari", price: "€9.90", description: "Crispy calamari with a side of lemon", image: "Starters-calamari.jpeg" },
@@ -73,7 +73,7 @@ const menuData = {
                 { name: "Salade Végétarienne", price: "€12", description: "Salade mixte avec des légumes", image: "salad4.jpg" },
                 { name: "Carpaccio de Courgette", price: "€12", description: "Tranches de courgette avec de l'huile d'olive", image: "Salads-zucchini-carpaccio.jpeg" }
             ],
-            "Entrées": [
+            "Entrées / Tapas": [
                 { name: "Pain Tomate et Ajoaceite", price: "€4.80", description: "Pain grillé avec tomate et ajoaceite", image: "Starters-bread-tomato-aioli.jpeg" },
                 { name: "Aubergines Frites au Miel", price: "€9.80", description: "Aubergines frites avec du miel", image: "Starters-fried-eggplant-with-honey.jpeg" },
                 { name: "Calamars Frits", price: "€9.90", description: "Calamars frits croustillants", image: "Starters-calamari.jpeg" },
@@ -107,7 +107,7 @@ const menuData = {
                             { name: "Ensalada Vegetariana", price: "€12", description: "Ensalada mixta con verduras frescas", image: "salad4.jpg" },
                             { name: "Carpaccio de Calabacín", price: "€12", description: "Rodajas de calabacín con aceite de oliva", image: "Salads-zucchini-carpaccio.jpeg" }
                         ],
-                        "Entrantes": [
+                        "Entrantes / Tapas": [
                             { name: "Pan con Tomate y Ajoaceite", price: "€4.80", description: "Pan tostado con tomate y ajoaceite", image: "Starters-bread-tomato-aioli.jpeg" },
                             { name: "Berenjenas Fritas con Miel", price: "€9.80", description: "Berenjenas fritas con miel", image: "Starters-fried-eggplant-with-honey.jpeg" },
                             { name: "Calamares a la andaluza", price: "€9.90", description: "Calamares fritos al estilo andaluz", image: "Starters-calamari.jpeg" },
