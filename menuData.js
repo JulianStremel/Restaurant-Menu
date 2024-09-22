@@ -20,9 +20,9 @@ const menuData = {
             ],
             "Combinations": [
                 { name: "Montanejos Cold Cuts", price: "€11", description: "Selection of cold cuts from Montanejos", image: "comb1.jpg" },
-                { name: "Grilled Loin", price: "€11", description: "Grilled pork loin served with fries", image: "comb2.jpg" },
+                { name: "Grilled Loin", price: "€11", description: "Grilled pork loin served with fries", image: "Combination-pork-loin.jpeg" },
                 { name: "Breaded Chicken", price: "€11", description: "Breaded chicken fillet served with fries and a fried egg", image: "Combination-chicken.jpeg" },
-                { name: "Grilled Sepia", price: "€16", description: "Grilled sepia served with garlic sauce", image: "comb4.jpg" },
+                { name: "Grilled Cuttlefish", price: "€16", description: "Grilled cuttlefish served with garlic sauce", image: "Starters-cuttlefish.jpeg" },
                 { name: "Fried Calamari", price: "€13", description: "Fried calamari with a fries and salad", image: "Combination-calamary.jpeg" }
             ],
             "House Specialties": [
@@ -81,9 +81,9 @@ const menuData = {
             ],
             "Combinaisons": [
                 { name: "Charcuterie de Montanejos", price: "€11", description: "Sélection de charcuteries de Montanejos", image: "comb1.jpg" },
-                { name: "Longe Grillé", price: "€11", description: "Longe de porc grillée servie avec des frites", image: "comb2.jpg" },
+                { name: "Longe de Porc Grillée", price: "€11", description: "Longe de porc grillée servie avec des frites", image: "Combination-pork-loin.jpeg" },
                 { name: "Poulet Pané", price: "€11", description: "Escalope de poulet panée avec frites et un oeuf frit", image: "Combination-chicken.jpeg" },
-                { name: "Seiche Grillée", price: "€16", description: "Seiche grillée avec sauce à l'ail", image: "comb4.jpg" },
+                { name: "Seiche Grillée", price: "€16", description: "Seiche grillée avec sauce à l'ail", image: "Starters-cuttlefish.jpeg" },
                 { name: "Calamars Frits", price: "€13", description: "Calamars frits avec salade et frites", image: "comb5.jpg" }
             ],
             "Spécialités de la Maison": [
@@ -142,9 +142,9 @@ const menuData = {
                         ],
                         "Combinados": [
                             { name: "Embutidos Montanejos", price: "€11.00", description: "Surtido de embutidos variados de Montanejos", image: "comb1.jpg" },
-                            { name: "Lomo Caña", price: "€11.00", description: "Lomo de cerdo servido con patatas fritas", image: "comb2.jpg" },
+                            { name: "Lomo Caña", price: "€11.00", description: "Lomo de cerdo servido con patatas fritas", image: "Combination-pork-loin.jpeg" },
                             { name: "Pollo Empanado", price: "€11.00", description: "Pollo empanado con patatas fritas y huevo frito", image: "Combination-chicken.jpeg" },
-                            { name: "Sepia Plancha", price: "€16.00", description: "Sepia a la plancha con ajo y perejil", image: "comb4.jpg" },
+                            { name: "Sepia Plancha", price: "€16.00", description: "Sepia a la plancha con ajo y perejil", image: "Starters-cuttlefish.jpeg" },
                             { name: "Calamares Rebozados", price: "€13.00", description: "Calamares rebozados con patatas fritas y ensalada", image: "Combination-calamary.jpeg" },
                             { name: "Emperador Salsa Verde", price: "€15.00", description: "Filete de emperador acompañado con salsa verde", image: "Combination-swordfish.jpeg" }
                         ]
