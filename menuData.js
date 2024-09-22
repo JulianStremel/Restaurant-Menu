@@ -21,7 +21,7 @@ const menuData = {
                 { name: "Grilled Loin", price: "€11", description: "Grilled pork loin served with fries", image: "comb2.jpg" },
                 { name: "Breaded Chicken", price: "€11", description: "Breaded chicken fillet served with fries and a fried egg", image: "Combination-chicken.jpeg" },
                 { name: "Grilled Sepia", price: "€16", description: "Grilled sepia served with garlic sauce", image: "comb4.jpg" },
-                { name: "Rebosa Fried Calamari", price: "€13", description: "Fried calamari with a lemon wedge", image: "Combination-calamary.jpeg" }
+                { name: "Fried Calamari", price: "€13", description: "Fried calamari with a fries and salad", image: "Combination-calamary.jpeg" }
             ],
             "House Specialties": [
                 { name: "Soria Torrezno", price: "€5.50", description: "Crispy pork belly from Soria", image: "Specialties-Pork-skin.jpeg" },
@@ -82,7 +82,7 @@ const menuData = {
                 { name: "Longe Grillé", price: "€11", description: "Longe de porc grillée servie avec des frites", image: "comb2.jpg" },
                 { name: "Poulet Pané", price: "€11", description: "Escalope de poulet panée avec frites et un oeuf frit", image: "Combination-chicken.jpeg" },
                 { name: "Seiche Grillée", price: "€16", description: "Seiche grillée avec sauce à l'ail", image: "comb4.jpg" },
-                { name: "Calamars Frits Rebosa", price: "€13", description: "Calamars frits avec un quartier de citron", image: "comb5.jpg" }
+                { name: "Calamars Frits", price: "€13", description: "Calamars frits avec salade et frites", image: "comb5.jpg" }
             ],
             "Spécialités de la Maison": [
                 { name: "Morceau de Lard de Soria", price: "€5.50", description: "Lard croustillant de Soria", image: "Specialties-Pork-skin.jpeg" },
@@ -144,7 +144,7 @@ const menuData = {
                             { name: "Lomo Caña", price: "€11.00", description: "Lomo de cerdo servido con patatas fritas", image: "comb2.jpg" },
                             { name: "Pollo Empanado", price: "€11.00", description: "Pollo empanado con patatas fritas y huevo frito", image: "Combination-chicken.jpeg" },
                             { name: "Sepia Plancha", price: "€16.00", description: "Sepia a la plancha con ajo y perejil", image: "comb4.jpg" },
-                            { name: "Calamares Rebozados", price: "€13.00", description: "Calamares rebozados con patatas fritas", image: "Combination-calamary.jpeg" },
+                            { name: "Calamares Rebozados", price: "€13.00", description: "Calamares rebozados con patatas fritas y ensalada", image: "Combination-calamary.jpeg" },
                             { name: "Emperador Salsa Verde", price: "€15.00", description: "Filete de emperador acompañado con salsa verde", image: "Combination-swordfish.jpeg" }
                         ]
                     }
