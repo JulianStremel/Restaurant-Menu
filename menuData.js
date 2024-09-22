@@ -13,7 +13,8 @@ const menuData = {
                 { name: "Fried Eggplant with Honey", price: "€9.80", description: "Eggplant fries drizzled with honey", image: "Starters-fried-eggplant-with-honey.jpeg" },
                 { name: "Fried Calamari", price: "€9.90", description: "Crispy calamari with a side of lemon", image: "starter3.jpg" },
                 { name: "Iberian Ham Croquettes", price: "€9.60", description: "Iberian ham croquettes, crispy and delicious", image: "starter4.jpg" },
-                { name: "Cheese and Bacon Fries", price: "€9.90", description: "Fries topped with gouda cheese and bacon", image: "starter5.jpg" }
+                { name: "Cheese and Bacon Fries", price: "€9.90", description: "Fries topped with gouda cheese and bacon", image: "Starters-fries-gouda-cheese.jpeg" }
+                { name: "Sweet fried Potatos with Roquefort", price: "€9.90", description: "A nice portion of sweet fried potatos with melted Roquefort cheese", image: "Starters-sweet-fries-roquefort.jpeg" }
             ],
             "Combinations": [
                 { name: "Montanejos Cold Cuts", price: "€11", description: "Selection of cold cuts from Montanejos", image: "comb1.jpg" },
@@ -32,9 +33,9 @@ const menuData = {
             ],
             "Burgers": [
                 { name: "House Special Burger", price: "€12", description: "Beef burger with fried egg, bacon, and caramelized onions", image: "burger1.jpg" },
-                { name: "Goat Cheese Burger", price: "€12", description: "Beef burger with goat cheese and mustard sauce", image: "burger2.jpg" },
-                { name: "Montanejos Adventure Burger", price: "€12", description: "Beef burger with bacon, egg, and special sauce", image: "burger3.jpg" },
-                { name: "Vegetarian Burger", price: "€12", description: "Falafel burger with caramelized onions and cheese", image: "burger4.jpg" },
+                { name: "Goat Cheese Burger", price: "€12", description: "Beef burger with goat cheese and mustard sauce", image: "Burgers-goat-cheese-burger.jpeg" },
+                { name: "Montanejos Adventure chicken Burger", price: "€12", description: "Chicken burger with bacon, egg, and special sauce", image: "Burgers-chicken-burger.jpeg" },
+                { name: "Vegetarian Burger", price: "€12", description: "Falafel burger with caramelized onions and cheese", image: "Burgers-falafel-burger.jpeg" },
                 { name: "Vegan Burger", price: "€12", description: "Quinoa burger with roasted vegetables and tomato", image: "burger5.jpg" }
             ],
             "Subs": [
@@ -74,7 +75,7 @@ const menuData = {
                 { name: "Aubergines Frites au Miel", price: "€9.80", description: "Aubergines frites avec du miel", image: "starter2.jpg" },
                 { name: "Calamars Frits", price: "€9.90", description: "Calamars frits croustillants", image: "starter3.jpg" },
                 { name: "Croquettes de Jambon Ibérique", price: "€9.60", description: "Croquettes de jambon ibérique", image: "starter4.jpg" },
-                { name: "Frites au Fromage et Bacon", price: "€9.90", description: "Frites garnies de fromage gouda et de bacon", image: "starter5.jpg" }
+                { name: "Frites au Fromage et Bacon", price: "€9.90", description: "Frites garnies de fromage gouda et de bacon", image: "Starters-fries-gouda-cheese.jpeg" }
             ],
             "Combinaisons": [
                 { name: "Charcuterie de Montanejos", price: "€11", description: "Sélection de charcuteries de Montanejos", image: "comb1.jpg" },
@@ -112,8 +113,8 @@ const menuData = {
                             { name: "Croquetas de Bacalao", price: "€9.00", description: "Croquetas de bacalao crujientes", image: "starter5.jpg" },
                             { name: "Croquetas de Jamón Ibérico", price: "€9.00", description: "Croquetas de jamón ibérico crujientes", image: "starter6.jpg" },
                             { name: "Croquetas de Setas", price: "€9.00", description: "Croquetas de setas con un toque de ajo", image: "starter7.jpg" },
-                            { name: "Patatas con Queso Gouda y Bacon", price: "€9.90", description: "Patatas fritas cubiertas con queso gouda y bacon", image: "starter8.jpg" },
-                            { name: "Tirás Boniato con Roquefort", price: "€9.00", description: "Tiras de boniato frito con salsa roquefort", image: "starter9.jpg" },
+                            { name: "Patatas con Queso Gouda y Bacon", price: "€9.90", description: "Patatas fritas cubiertas con queso gouda y bacon", image: "Starters-fries-gouda-cheese.jpeg" },
+                            { name: "Tirás Boniato con Roquefort", price: "€9.00", description: "Tiras de boniato frito con salsa roquefort", image: "Starters-sweet-fries-roquefort.jpeg" },
                             { name: "Tabla Jamón Serrano Bodega", price: "€13.00", description: "Jamón serrano bodega servido en tabla", image: "starter10.jpg" },
                             { name: "Sepia Enterita a la Plancha", price: "€14.00", description: "Sepia entera a la plancha con ajo y perejil", image: "starter11.jpg" },
                             { name: "Patatas Bravas", price: "€9.50", description: "Patatas fritas con salsa brava", image: "starter12.jpg" }
@@ -133,9 +134,9 @@ const menuData = {
                         ],
                         "Hamburguesas": [
                             { name: "Especial de la Casa", price: "€12.00", description: "Hamburguesa de ternera con lechuga, tomate, cebolla caramelizada, queso, bacon y huevo frito", image: "burger1.jpg" },
-                            { name: "Queso de Cabra", price: "€12.00", description: "Hamburguesa de ternera con queso de cabra y salsa de mostaza", image: "burger2.jpg" },
-                            { name: "Montanejos Adventure", price: "€12.00", description: "Hamburguesa con bacon, mayonesa, lechuga, tomate, y queso", image: "burger3.jpg" },
-                            { name: "Vegetariana", price: "€12.00", description: "Hamburguesa de falafel con cebolla caramelizada y queso", image: "burger4.jpg" },
+                            { name: "Queso de Cabra", price: "€12.00", description: "Hamburguesa de ternera con queso de cabra y salsa de mostaza", image: "Burgers-goat-cheese-burger.jpeg" },
+                            { name: "Montanejos Adventure con Pollo", price: "€12.00", description: "Hamburguesa de pollo con bacon, mayonesa, lechuga, tomate, y queso", image: "Burgers-chicken-burger.jpeg" },
+                            { name: "Vegetariana", price: "€12.00", description: "Hamburguesa de falafel con cebolla caramelizada y queso", image: "Burgers-falafel-burger.jpeg" },
                             { name: "Vegana", price: "€12.00", description: "Hamburguesa vegana de quinoa con verduras asadas", image: "burger5.jpg" }
                         ],
                         "Combinados": [
