@@ -15,6 +15,12 @@
     transform: scale(1.1); /* Simple hover effect */
 }
 
+.menu-item img {
+    transform: scale(1.15); /* Scale the image by 15% */
+    transition: transform 0.3s ease; /* Optional smooth transition */
+}
+
+
 /* Meal Detail View */
 #mealDetail img {
     max-width: 100%;
