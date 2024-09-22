@@ -1,28 +1,49 @@
+/* Menu Category Styling */
 .menu-category {
     margin-bottom: 40px;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd; /* Add a subtle bottom border */
+    background-color: #f4f4f9; /* Light background for distinction */
 }
 
+/* Category Heading Styling */
+.menu-category h2 {
+    font-size: 28px; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Darker color for contrast */
+    text-transform: uppercase; /* Make text all caps */
+    letter-spacing: 1px; /* Add letter spacing for more visibility */
+    margin: 0 0 10px 0; /* Space between category and items */
+    padding: 10px 15px; /* Add padding around the text */
+    background-color: #e9ecef; /* Add a light background to the category */
+    border-radius: 8px; /* Round the corners for a modern look */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.menu-category h2:hover {
+    background-color: #ddd; /* Change background color on hover */
+}
+
+/* Menu Item Styling */
 .menu-item {
     margin-bottom: 20px;
 }
 
+/* Image hover effect */
 .menu-item img {
     border-radius: 5px;
-    transition: transform 0.2s;
+    transform: scale(1.15); /* Scale the image by 15% */
+    transition: transform 0.3s ease; /* Optional smooth transition */
 }
 
 .menu-item img:hover {
     transform: scale(1.1); /* Simple hover effect */
 }
 
-.menu-item img {
-    transform: scale(1.15); /* Scale the image by 15% */
-    transition: transform 0.3s ease; /* Optional smooth transition */
-}
-
-
 /* Meal Detail View */
 #mealDetail img {
     max-width: 100%;
     border-radius: 10px;
 }
+
