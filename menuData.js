@@ -177,7 +177,7 @@ const menuData = {
                             { name: "Chuletón Ternera 600g", price: "€28.00", description: "Chuletón de ternera de 600g, a la parrilla", image: "Specialties-ribeye.jpeg" },
                             { name: "Pulpo Vidigonero", price: "€18.00", description: "Pulpo a la brasa estilo Vidigonero", image: "Specialties-octopus.jpeg" },
                             { name: "Gambón Galiana", price: "€22.00", description: "Gambón de gran tamaño estilo Galiana", image: "Specialties-galiana-jumbo-prawns.jpeg" },
-                            { name: "Gulas del Norte con Almejas", price: "€12.00", description: "Gulas del norte acompañadas de almejas frescas", image: "Specialties-gulas.jpg" },
+                            { name: "Gulas del Norte con Almejas", price: "€12.00", description: "Gulas del norte acompañadas de almejas frescas", image: "Specialties-gulas.jpeg" },
                             { name: "Patatas Twister", price: "€9.00", description: "Patatas en espiral con salsas variadas", image: "special5.jpg" },
                             { name: "Hogaza Embutido", price: "€11.00", description: "Hogaza de pan rellena con embutidos variados", image: "special6.jpg" }
                         ],
