@@ -97,23 +97,23 @@
 #mealDetail img {
     max-width: 100%;
     border-radius: 10px;
-    margin-bottom: 20px; /* Add space below the image */
+    margin-bottom: 15px; /* Add space below the image */
 }
 
 #mealDetail h2 {
     font-size: 24px; /* Size of the meal name */
-    margin-top: 20px; /* Add space between the image and the meal name */
+    margin-top: 15px; /* Add space between the image and the meal name */
     margin-bottom: 10px; /* Space between the meal name and the description */
 }
 
 #mealDetail p {
     font-size: 18px; /* Size of the description text */
-    margin-bottom: 20px; /* Space between the description and the price */
+    margin-bottom: 15px; /* Space between the description and the price */
 }
 
 #mealDetail h4 {
     font-size: 20px; /* Size of the price text */
     font-weight: bold;
     color: #2c3e50; /* Darker color for the price */
-    margin-bottom: 30px; /* Add space below the price to separate from the button */
+    margin-bottom: 20px; /* Add space below the price to separate from the button */
 }
