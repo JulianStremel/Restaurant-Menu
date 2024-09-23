@@ -20,18 +20,30 @@ function loadMenuData(language) {
 
     // Loop through each category in the menu
     for (let category in data) {
+        const categoryData = data[category];
+
+        // Create a category div
         const categoryDiv = document.createElement('div');
         categoryDiv.classList.add('menu-category');
-        categoryDiv.innerHTML = `<h2>${category}</h2>`;
+
+        // Add the category title and description
+        const categoryHeader = document.createElement('h2');
+        categoryHeader.innerText = category;
+        const categoryDescription = document.createElement('p');
+        categoryDescription.innerText = categoryData.description; // Insert category description
+
+        // Append the category title and description to the category div
+        categoryDiv.appendChild(categoryHeader);
+        categoryDiv.appendChild(categoryDescription);
 
         // Loop through the items within the category
-        data[category].forEach(item => {
+        categoryData.items.forEach(item => {
             const itemDiv = document.createElement('div');
             itemDiv.classList.add('menu-item', 'd-flex', 'align-items-center');
 
             // Add click event to the image for detailed view
             itemDiv.innerHTML = `
-                <img src="${item.image}" alt="${item.name}" class="me-3" style="width: 100px; height: 100px; cursor: pointer;" onclick="showMealDetail('${item.image}', '${item.name}', '${item.description}', '${item.price}')">
+                <img src="${item.image}" alt="${item.name}" class="me-3" style="width: 100px; height: 100px; cursor: pointer;" onclick="showMealDetail('${item.image}', '${item.name.replace(/'/g, "\\'")}', '${item.description.replace(/'/g, "\\'")}', '${item.price}')">
                 <div>
                     <h5>${item.name} - ${item.price}</h5>
                     <p>${item.description}</p>
@@ -53,6 +65,7 @@ function showMealDetail(image, name, description, price) {
 
     // Hide the main menu
     menuContent.classList.add('d-none');
+
     // Populate the meal detail section
     mealImage.src = image;
     mealName.innerText = name;
