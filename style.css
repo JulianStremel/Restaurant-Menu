@@ -58,7 +58,6 @@
     border-radius: 10px;
 }
 
-
 /* Adjust list for horizontal scrolling */
 .sticky-nav ul {
     list-style-type: none;
@@ -66,6 +65,7 @@
     padding: 0;
     display: inline-flex;
     width: max-content;
+    white-space: nowrap; /* Ensures the items don't wrap to a new line */
 }
 
 .sticky-nav ul li {
@@ -83,17 +83,6 @@
     text-decoration: underline;
 }
 
-
-
-@media (max-width: 768px) {
-    .sticky-nav {
-        padding: 10px;
-    }
-
-    .sticky-nav ul li {
-        margin: 0 10px;
-    }
-}
 /* Sticky Navigation Menu Styling */
 .sticky-nav {
     position: fixed;
@@ -110,5 +99,27 @@
 
 /* Adjust body padding for the sticky navigation */
 body {
-    padding-top: 60px; /* Adjust this value based on the height of your sticky nav */
+    padding-top: 100px; /* Adjust this value based on the height of your sticky nav */
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    .sticky-nav ul {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        padding-left: 0; /* Remove padding on mobile */
+    }
+    
+    .sticky-nav ul li {
+        margin-bottom: 10px; /* Add margin between vertical items */
+    }
+
+    #languageSelect {
+        margin-top: 10px;
+    }
+
+    body {
+        padding-top: 120px; /* Add more space at the top for mobile */
+    }
 }
