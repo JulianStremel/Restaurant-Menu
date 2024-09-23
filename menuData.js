@@ -12,7 +12,7 @@ const menuData = {
                 ]
             },
             "Starters / Tapas": {
-                description: "A variety of small plates to share, perfect to start your meal.",
+                description: "A selection of generous small plates, ideal for sharing or as a starter. Some portions are hearty enough to enjoy as a light meal if you're not too hungry.",
                 items: [
                     { name: "Tomato & Garlic Bread", price: "€4.80", description: "Toasted bread with tomato and garlic butter", image: "Starters-bread-tomato-aioli.jpeg" },
                     { name: "Fried Eggplant with Honey", price: "€9.80", description: "Eggplant fries drizzled with honey", image: "Starters-fried-eggplant-with-honey.jpeg" },
@@ -131,7 +131,7 @@ const menuData = {
                 ]
             },
             "Entrées / Tapas": {
-                description: "Une variété de petits plats à partager, parfaits pour commencer votre repas.",
+                description: "Une sélection de petites assiettes généreuses, idéales à partager ou en entrée. Certaines portions sont suffisamment copieuses pour constituer un repas léger si vous n'avez pas très faim.",
                 items: [
                     { name: "Pain Tomate et Ajoaceite", price: "€4.80", description: "Pain grillé avec tomate et ajoaceite", image: "Starters-bread-tomato-aioli.jpeg" },
                     { name: "Aubergines Frites au Miel", price: "€9.80", description: "Aubergines frites avec miel", image: "Starters-fried-eggplant-with-honey.jpeg" },
@@ -238,7 +238,7 @@ const menuData = {
                 ]
             },
             "Entrantes / Tapas": {
-                description: "Una variedad de pequeños platos para compartir, perfectos para comenzar tu comida.",
+                description: "Una selección de platos pequeños y generosos, ideales para compartir o como entrante. Algunas porciones son lo suficientemente abundantes como para disfrutar como comida ligera si no hay mucha hambre.",
                 items: [
                     { name: "Pan con Tomate y Ajoaceite", price: "€4.80", description: "Pan tostado con tomate y ajoaceite", image: "Starters-bread-tomato-aioli.jpeg" },
                     { name: "Berenjenas Fritas con Miel", price: "€9.80", description: "Berenjenas fritas con miel", image: "Starters-fried-eggplant-with-honey.jpeg" },
