@@ -14,11 +14,11 @@ body, h1, h2, h5, p {
     background-color: #f8f9fa;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Keeps the sticky navigation on top */
+    z-index: 1000;
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
-    justify-content: center; /* Centers the navigation items */
+    justify-content: center;
 }
 
 /* Adjust navigation links */
@@ -47,7 +47,7 @@ body, h1, h2, h5, p {
 /* Mobile-first approach for sticky nav */
 @media (max-width: 768px) {
     .sticky-nav {
-        padding: 10px 0;
+        padding: 5px 0; /* Reduce padding to minimize height */
         overflow-x: auto; /* Allow horizontal scrolling */
         white-space: nowrap;
     }
@@ -57,11 +57,11 @@ body, h1, h2, h5, p {
     }
 
     .sticky-nav ul li {
-        margin: 0 10px;
+        margin: 0 8px; /* Reduce margin between items */
     }
 
     .sticky-nav ul li a {
-        font-size: 16px;
+        font-size: 14px; /* Smaller font size for mobile */
     }
 
     #languageSelect {
@@ -70,28 +70,39 @@ body, h1, h2, h5, p {
         top: 10px;
         z-index: 1100; /* Ensure it stays above sticky nav */
     }
+
+    /* Further reduce sticky nav height and font sizes on very small screens */
+    @media (max-width: 480px) {
+        .sticky-nav ul li a {
+            font-size: 12px; /* Make font even smaller */
+        }
+
+        .sticky-nav {
+            padding: 3px 0; /* Reduce padding even more */
+        }
+    }
 }
 
 /* Category and Description Styling */
 .menu-category {
     margin-bottom: 40px;
     padding: 10px 0;
-    border-bottom: 2px solid #ddd; /* Subtle bottom border */
-    background-color: #f4f4f9; /* Light background for distinction */
+    border-bottom: 2px solid #ddd;
+    background-color: #f4f4f9;
 }
 
 /* Category Heading Styling */
 .menu-category h2 {
-    font-size: 32px; /* Large size for emphasis */
-    font-weight: bold; /* Bold text */
-    color: #2c3e50; /* Darker blue for contrast */
-    text-transform: uppercase; /* All caps */
-    letter-spacing: 1.2px; /* Slight letter spacing */
-    margin: 0 0 15px 0; /* Space below title */
-    padding: 15px 20px; /* Padding around title */
-    background-color: #e9ecef; /* Light background */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Shadow for definition */
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin: 0 0 15px 0;
+    padding: 15px 20px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
@@ -101,29 +112,29 @@ body, h1, h2, h5, p {
 
 /* Category Description */
 .menu-category p {
-    font-size: 18px; /* Larger font size */
-    font-weight: 400; /* Regular weight */
-    color: #7f8c8d; /* Gray color */
-    margin: 0 0 20px 0; /* Space between description and items */
-    padding: 0 20px; /* Padding aligned with title */
-    line-height: 1.6; /* Increase line spacing */
+    font-size: 18px;
+    font-weight: 400;
+    color: #7f8c8d;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+    line-height: 1.6;
 }
 
 /* Menu Item Styling */
 .menu-item {
     margin-bottom: 20px;
-    padding-left: 20px; /* Indent items */
+    padding-left: 20px;
 }
 
 /* Image hover effect */
 .menu-item img {
     border-radius: 5px;
-    transform: scale(1.15); /* Scale image */
+    transform: scale(1.15);
     transition: transform 0.3s ease;
 }
 
 .menu-item img:hover {
-    transform: scale(1.1); /* Hover effect */
+    transform: scale(1.1);
 }
 
 /* Meal Detail View */
@@ -132,7 +143,4 @@ body, h1, h2, h5, p {
     border-radius: 10px;
 }
 
-/* Body padding to ensure sticky navigation does not overlap */
-body {
-    padding-top: 60px; /* Adjust for sticky nav */
-}
+/* Body padding to ensure
