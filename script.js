@@ -30,7 +30,7 @@ function loadMenuData(language) {
         const categoryHeader = document.createElement('h2');
         categoryHeader.innerText = category;
         const categoryDescription = document.createElement('p');
-        categoryDescription.innerText = categoryData.description;
+        categoryDescription.innerText = categoryData.description; // Insert category description
 
         // Append the category title and description to the category div
         categoryDiv.appendChild(categoryHeader);
@@ -41,12 +41,14 @@ function loadMenuData(language) {
             const itemDiv = document.createElement('div');
             itemDiv.classList.add('menu-item', 'd-flex', 'align-items-center');
 
-            // Add click event to the image for detailed view
+            // Wrap image and description inside a clickable div
             itemDiv.innerHTML = `
-                <img src="${item.image}" alt="${item.name}" class="me-3" style="width: 100px; height: 100px; cursor: pointer;" onclick="showMealDetail('${item.image}', '${item.name.replace(/'/g, "\\'")}', '${item.description.replace(/'/g, "\\'")}', '${item.price}')">
-                <div>
-                    <h5>${item.name} - ${item.price}</h5>
-                    <p>${item.description}</p>
+                <div onclick="showMealDetail('${item.image}', '${item.name.replace(/'/g, "\\'")}', '${item.description.replace(/'/g, "\\'")}', '${item.price}')" style="cursor: pointer; display: flex; align-items: center;">
+                    <img src="${item.image}" alt="${item.name}" class="me-3" style="width: 100px; height: 100px; border-radius: 5px;">
+                    <div>
+                        <h5>${item.name} - ${item.price}</h5>
+                        <p>${item.description}</p>
+                    </div>
                 </div>
             `;
 
@@ -76,12 +78,22 @@ function showMealDetail(image, name, description, price) {
     mealDetail.classList.remove('d-none');
 }
 
+// Event listener for clicking on the image in the meal detail view to go back to the menu
+mealImage.addEventListener('click', () => {
+    // Hide the meal detail and show the menu content
+    mealDetail.classList.add('d-none');
+    menuContent.classList.remove('d-none');
+
+    // Restore the previous scroll position
+    window.scrollTo(0, previousScrollPosition);
+});
+
 // Handle language switch event
 languageSelect.addEventListener('change', (e) => {
     loadMenuData(e.target.value);
 });
 
-// Event to return back to the menu
+// Event to return back to the menu using the "Back to Menu" button
 backToMenu.addEventListener('click', () => {
     // Hide the meal detail and show the menu content
     mealDetail.classList.add('d-none');
