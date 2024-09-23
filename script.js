@@ -41,14 +41,12 @@ function loadMenuData(language) {
             const itemDiv = document.createElement('div');
             itemDiv.classList.add('menu-item', 'd-flex', 'align-items-center');
 
-            // Wrap image and description inside a clickable div
+            // Add click event to both the image and the description for detailed view
             itemDiv.innerHTML = `
-                <div onclick="showMealDetail('${item.image}', '${item.name.replace(/'/g, "\\'")}', '${item.description.replace(/'/g, "\\'")}', '${item.price}')" style="cursor: pointer; display: flex; align-items: center;">
-                    <img src="${item.image}" alt="${item.name}" class="me-3" style="width: 100px; height: 100px; border-radius: 5px;">
-                    <div>
-                        <h5>${item.name} - ${item.price}</h5>
-                        <p>${item.description}</p>
-                    </div>
+                <img src="${item.image}" alt="${item.name}" class="me-3" style="width: 100px; height: 100px; cursor: pointer;" onclick="showMealDetail('${item.image}', '${item.name.replace(/'/g, "\\'")}', '${item.description.replace(/'/g, "\\'")}', '${item.price}')">
+                <div style="cursor: pointer;" onclick="showMealDetail('${item.image}', '${item.name.replace(/'/g, "\\'")}', '${item.description.replace(/'/g, "\\'")}', '${item.price}')">
+                    <h5>${item.name} - ${item.price}</h5>
+                    <p>${item.description}</p>
                 </div>
             `;
 
@@ -78,8 +76,13 @@ function showMealDetail(image, name, description, price) {
     mealDetail.classList.remove('d-none');
 }
 
-// Event listener for clicking on the image in the meal detail view to go back to the menu
-mealImage.addEventListener('click', () => {
+// Handle language switch event
+languageSelect.addEventListener('change', (e) => {
+    loadMenuData(e.target.value);
+});
+
+// Event to return back to the menu
+backToMenu.addEventListener('click', () => {
     // Hide the meal detail and show the menu content
     mealDetail.classList.add('d-none');
     menuContent.classList.remove('d-none');
@@ -88,13 +91,8 @@ mealImage.addEventListener('click', () => {
     window.scrollTo(0, previousScrollPosition);
 });
 
-// Handle language switch event
-languageSelect.addEventListener('change', (e) => {
-    loadMenuData(e.target.value);
-});
-
-// Event to return back to the menu using the "Back to Menu" button
-backToMenu.addEventListener('click', () => {
+// Make the entire detail view clickable to go back to the menu
+mealDetail.addEventListener('click', () => {
     // Hide the meal detail and show the menu content
     mealDetail.classList.add('d-none');
     menuContent.classList.remove('d-none');
