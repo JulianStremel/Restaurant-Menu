@@ -1,76 +1,37 @@
-/* Menu Category Styling */
-.menu-category {
-    margin-bottom: 40px;
+/* General Reset for consistent styles */
+body, h1, h2, h5, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sticky Navigation Menu Styling */
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
     padding: 10px 0;
-    border-bottom: 2px solid #ddd; /* Add a subtle bottom border */
-    background-color: #f4f4f9; /* Light background for distinction */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Keeps the sticky navigation on top */
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center; /* Centers the navigation items */
 }
 
-/* Category Heading Styling */
-.menu-category h2 {
-    font-size: 32px; /* Increased font size for more emphasis */
-    font-weight: bold; /* Keep the text bold */
-    color: #2c3e50; /* Darker blue shade for contrast */
-    text-transform: uppercase; /* Make text all caps */
-    letter-spacing: 1.2px; /* Increase letter spacing */
-    margin: 0 0 15px 0; /* Increased space below the title */
-    padding: 15px 20px; /* Increased padding around the text */
-    background-color: #e9ecef; /* Light background to differentiate */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Stronger shadow for more definition */
-    transition: background-color 0.3s ease;
-}
-
-.menu-category h2:hover {
-    background-color: #ddd; /* Change background color on hover */
-}
-
-/* Category Description Styling */
-.menu-category p {
-    font-size: 18px; /* Slightly larger font size */
-    font-weight: 400; /* Regular weight for text */
-    color: #7f8c8d; /* Gray color for description */
-    margin: 0 0 20px 0; /* Add space between description and the first item */
-    padding: 0 20px; /* Padding to align with title */
-    line-height: 1.6; /* Increase line spacing for better readability */
-}
-
-/* Menu Item Styling */
-.menu-item {
-    margin-bottom: 20px;
-    padding-left: 20px; /* Indent items to separate them from the description */
-}
-
-/* Image hover effect */
-.menu-item img {
-    border-radius: 5px;
-    transform: scale(1.15); /* Scale the image by 15% */
-    transition: transform 0.3s ease;
-}
-
-.menu-item img:hover {
-    transform: scale(1.1); /* Simple hover effect */
-}
-
-/* Meal Detail View */
-#mealDetail img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/* Adjust list for horizontal scrolling */
+/* Adjust navigation links */
 .sticky-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: inline-flex;
+    display: flex;
     width: max-content;
-    white-space: nowrap; /* Ensures the items don't wrap to a new line */
 }
 
 .sticky-nav ul li {
     margin: 0 15px;
-    display: inline;
 }
 
 .sticky-nav ul li a {
@@ -83,43 +44,95 @@
     text-decoration: underline;
 }
 
-/* Sticky Navigation Menu Styling */
-.sticky-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f8f9fa;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensures sticky navigation is above other content */
-    overflow-x: auto;
-    white-space: nowrap;
-}
-
-/* Adjust body padding for the sticky navigation */
-body {
-    padding-top: 100px; /* Adjust this value based on the height of your sticky nav */
-}
-
-/* Responsive adjustments for mobile screens */
+/* Mobile-first approach for sticky nav */
 @media (max-width: 768px) {
-    .sticky-nav ul {
-        display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center;
-        padding-left: 0; /* Remove padding on mobile */
+    .sticky-nav {
+        padding: 10px 0;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        white-space: nowrap;
     }
-    
+
+    .sticky-nav ul {
+        display: inline-flex;
+    }
+
     .sticky-nav ul li {
-        margin-bottom: 10px; /* Add margin between vertical items */
+        margin: 0 10px;
+    }
+
+    .sticky-nav ul li a {
+        font-size: 16px;
     }
 
     #languageSelect {
-        margin-top: 10px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 1100; /* Ensure it stays above sticky nav */
     }
+}
 
-    body {
-        padding-top: 120px; /* Add more space at the top for mobile */
-    }
+/* Category and Description Styling */
+.menu-category {
+    margin-bottom: 40px;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd; /* Subtle bottom border */
+    background-color: #f4f4f9; /* Light background for distinction */
+}
+
+/* Category Heading Styling */
+.menu-category h2 {
+    font-size: 32px; /* Large size for emphasis */
+    font-weight: bold; /* Bold text */
+    color: #2c3e50; /* Darker blue for contrast */
+    text-transform: uppercase; /* All caps */
+    letter-spacing: 1.2px; /* Slight letter spacing */
+    margin: 0 0 15px 0; /* Space below title */
+    padding: 15px 20px; /* Padding around title */
+    background-color: #e9ecef; /* Light background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Shadow for definition */
+    transition: background-color 0.3s ease;
+}
+
+.menu-category h2:hover {
+    background-color: #ddd;
+}
+
+/* Category Description */
+.menu-category p {
+    font-size: 18px; /* Larger font size */
+    font-weight: 400; /* Regular weight */
+    color: #7f8c8d; /* Gray color */
+    margin: 0 0 20px 0; /* Space between description and items */
+    padding: 0 20px; /* Padding aligned with title */
+    line-height: 1.6; /* Increase line spacing */
+}
+
+/* Menu Item Styling */
+.menu-item {
+    margin-bottom: 20px;
+    padding-left: 20px; /* Indent items */
+}
+
+/* Image hover effect */
+.menu-item img {
+    border-radius: 5px;
+    transform: scale(1.15); /* Scale image */
+    transition: transform 0.3s ease;
+}
+
+.menu-item img:hover {
+    transform: scale(1.1); /* Hover effect */
+}
+
+/* Meal Detail View */
+#mealDetail img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Body padding to ensure sticky navigation does not overlap */
+body {
+    padding-top: 60px; /* Adjust for sticky nav */
 }
