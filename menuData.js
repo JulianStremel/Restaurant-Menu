@@ -32,8 +32,9 @@ const menuData = {
                 { name: "Octopus", price: "€18", description: "Octopus, special recipe of the village", image: "Specialties-octopus.jpeg" },
                 { name: "Galiana Jumbo Prawns", price: "€22", description: "Galiana Jumbo Prawns", image: "Specialties-galiana-jumbo-prawns.jpeg" },
                 { name: "Slow-Braised Oxtail", price: "€18", description: "Slow-Braised Oxtail in a Rich Red Wine Reduction, Served with Elegant Seasonal Accompaniments", image: "Specialties-oxtail.jpeg" },
-                { name: "600g Ribeye Steak", price: "€28", description: "Grilled ribeye steak, perfectly cooked", image: "Specialties-ribeye.jpeg" }
-            ],
+                { name: "600g Ribeye Steak", price: "€28", description: "Grilled ribeye steak, perfectly cooked", image: "Specialties-ribeye.jpeg" },
+                { name: "Northern Eels with Clams", price: "€12.00", description: "Northern eels served with fresh clams", image: "Specialties-gulas.jpeg" }
+             ],
             "Burgers": [
                 { name: "House Special Burger", price: "€12", description: "Beef burger with fried egg, bacon, and caramelized onions", image: "burger1.jpg" },
                 { name: "Goat Cheese Burger", price: "€12", description: "Beef burger with goat cheese and mustard sauce", image: "Burgers-goat-cheese-burger.jpeg" },
@@ -116,7 +117,9 @@ const menuData = {
                 { name: "Poulpe, recette du village", price: "€18", description: "Poulpe recette du village", image: "Specialties-octopus.jpeg" },
                 { name: "Gambas Galiana", price: "€22", description: "Gambas géantes style Galiana", image: "Specialties-galiana-jumbo-prawns.jpeg" },
                 { name: "Ragoût de Queue de Boeuf", price: "€18", description: "Queue de boeuf mijotée au vin rouge", image: "Specialties-oxtail.jpeg" },
-                { name: "Côte de Boeuf 600g", price: "€28", description: "Côte de boeuf grillée, parfaitement cuite", image: "Specialties-ribeye.jpeg" }
+                { name: "Côte de Boeuf 600g", price: "€28", description: "Côte de boeuf grillée, parfaitement cuite", image: "Specialties-ribeye.jpeg" },
+                { name: "Gulas du Nord avec Palourdes", price: "€12.00", description: "Gulas du nord accompagnées de palourdes fraîches", image: "Specialties-gulas.jpeg" }
+
             ],
             "Boissons": [
                 { name: "Tinto de Verano", price: "€2.50", description: "Vin rouge rafraîchissant avec soda", image: "Bebidas-tinto-de-verano.jpeg" },
