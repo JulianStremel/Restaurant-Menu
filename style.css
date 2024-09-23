@@ -8,33 +8,44 @@
 
 /* Category Heading Styling */
 .menu-category h2 {
-    font-size: 28px; /* Increase font size */
-    font-weight: bold; /* Make the text bold */
-    color: #333; /* Darker color for contrast */
+    font-size: 32px; /* Increased font size for more emphasis */
+    font-weight: bold; /* Keep the text bold */
+    color: #2c3e50; /* Darker blue shade for contrast */
     text-transform: uppercase; /* Make text all caps */
-    letter-spacing: 1px; /* Add letter spacing for more visibility */
-    margin: 0 0 10px 0; /* Space between category and items */
-    padding: 10px 15px; /* Add padding around the text */
-    background-color: #e9ecef; /* Add a light background to the category */
-    border-radius: 8px; /* Round the corners for a modern look */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    letter-spacing: 1.2px; /* Increase letter spacing */
+    margin: 0 0 15px 0; /* Increased space below the title */
+    padding: 15px 20px; /* Increased padding around the text */
+    background-color: #e9ecef; /* Light background to differentiate */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Stronger shadow for more definition */
+    transition: background-color 0.3s ease;
 }
 
 .menu-category h2:hover {
     background-color: #ddd; /* Change background color on hover */
 }
 
+/* Category Description Styling */
+.menu-category p {
+    font-size: 18px; /* Slightly larger font size */
+    font-weight: 400; /* Regular weight for text */
+    color: #7f8c8d; /* Gray color for description */
+    margin: 0 0 20px 0; /* Add space between description and the first item */
+    padding: 0 20px; /* Padding to align with title */
+    line-height: 1.6; /* Increase line spacing for better readability */
+}
+
 /* Menu Item Styling */
 .menu-item {
     margin-bottom: 20px;
+    padding-left: 20px; /* Indent items to separate them from the description */
 }
 
 /* Image hover effect */
 .menu-item img {
     border-radius: 5px;
     transform: scale(1.15); /* Scale the image by 15% */
-    transition: transform 0.3s ease; /* Optional smooth transition */
+    transition: transform 0.3s ease;
 }
 
 .menu-item img:hover {
@@ -46,4 +57,3 @@
     max-width: 100%;
     border-radius: 10px;
 }
-
