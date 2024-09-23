@@ -1,6 +1,7 @@
 // Get the language selector dropdown and container for menu content
 const languageSelect = document.getElementById('languageSelect');
 const menuContent = document.getElementById('menuContent');
+const stickyNav = document.querySelector('.sticky-nav');
 
 // Elements for detailed view
 const mealDetail = document.getElementById('mealDetail');
@@ -13,6 +14,11 @@ const backToMenu = document.getElementById('backToMenu');
 // Variable to store the scroll position
 let previousScrollPosition = 0;
 
+// Helper function to sanitize category names into valid IDs
+function sanitizeId(category) {
+    return category.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase(); // Replace non-alphanumeric characters with a dash
+}
+
 // Function to load the menu data based on the selected language
 function loadMenuData(language) {
     const data = menuData[language].categories;
@@ -22,10 +28,10 @@ function loadMenuData(language) {
     for (let category in data) {
         const categoryData = data[category];
 
-        // Create a category div with a unique ID for shortcut navigation
+        // Create a category div with a sanitized ID for scrolling
         const categoryDiv = document.createElement('div');
         categoryDiv.classList.add('menu-category');
-        categoryDiv.id = category.toLowerCase().replace(/\s+/g, '-'); // Create ID for each category
+        categoryDiv.setAttribute('id', sanitizeId(category)); // Set category ID
 
         // Add the category title and description
         const categoryHeader = document.createElement('h2');
@@ -92,16 +98,21 @@ backToMenu.addEventListener('click', () => {
     window.scrollTo(0, previousScrollPosition);
 });
 
-// Load default menu (English)
-loadMenuData('en');
-
-// Smooth scroll for the shortcut navigation
-document.querySelectorAll('#shortcutMenu a').forEach(anchor => {
+// Sticky navigation scroll functionality
+document.querySelectorAll('.sticky-nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
+        const targetId = sanitizeId(this.getAttribute('href').substring(1)); // Get target ID without "#"
+        const targetElement = document.getElementById(targetId);
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - stickyNav.offsetHeight, // Adjust for sticky nav height
+                behavior: 'smooth'
+            });
+        }
     });
 });
+
+// Load default menu (English)
+loadMenuData('en');
