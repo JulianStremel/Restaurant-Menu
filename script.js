@@ -10,9 +10,6 @@ const mealDescription = document.getElementById('mealDescription');
 const mealPrice = document.getElementById('mealPrice');
 const backToMenu = document.getElementById('backToMenu');
 
-// Sidebar navigation
-const sidebarMenu = document.getElementById('sidebarMenu');
-
 // Variable to store the scroll position
 let previousScrollPosition = 0;
 
@@ -20,7 +17,6 @@ let previousScrollPosition = 0;
 function loadMenuData(language) {
     const data = menuData[language].categories;
     menuContent.innerHTML = ''; // Clear previous content
-    sidebarMenu.innerHTML = ''; // Clear previous sidebar links
 
     // Loop through each category in the menu
     for (let category in data) {
@@ -29,7 +25,6 @@ function loadMenuData(language) {
         // Create a category div
         const categoryDiv = document.createElement('div');
         categoryDiv.classList.add('menu-category');
-        categoryDiv.id = category.replace(/\s+/g, '-'); // Assign unique ID to each category
 
         // Add the category title and description
         const categoryHeader = document.createElement('h2');
@@ -60,12 +55,6 @@ function loadMenuData(language) {
 
         // Add the category with its items to the menu content
         menuContent.appendChild(categoryDiv);
-
-        // Add navigation link to the sidebar
-        const navLink = document.createElement('a');
-        navLink.href = `#${category.replace(/\s+/g, '-')}`; // Use the same ID as the category div
-        navLink.innerText = category;
-        sidebarMenu.appendChild(navLink);
     }
 }
 

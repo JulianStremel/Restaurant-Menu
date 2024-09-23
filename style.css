@@ -1,94 +1,66 @@
-/* Main layout for sidebar and content */
-.d-flex {
-    display: flex;
-    align-items: flex-start;
-}
-
-/* Sidebar Menu Styling */
-#sidebarMenu {
-    width: 250px;
-    padding: 20px;
-    background-color: #f8f9fa;
-    height: 100vh; /* Full height */
-    overflow-y: auto; /* Enable vertical scrolling */
-    position: sticky;
-    top: 0;
-}
-
-#sidebarMenu a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-    padding: 10px 0;
-    display: block;
-    margin-bottom: 10px;
-}
-
-#sidebarMenu a:hover {
-    text-decoration: underline;
+/* Menu Content Container Styling */
+#menuContent {
+    max-height: 80vh; /* Limit height to 80% of the viewport */
+    overflow-y: auto; /* Enable vertical scroll */
+    padding-right: 10px; /* Add padding for scroll bar */
 }
 
 /* Menu Category Styling */
 .menu-category {
     margin-bottom: 40px;
     padding: 10px 0;
-    border-bottom: 2px solid #ddd;
-    background-color: #f4f4f9;
+    border-bottom: 2px solid #ddd; /* Add a subtle bottom border */
+    background-color: #f4f4f9; /* Light background for distinction */
 }
 
 /* Category Heading Styling */
 .menu-category h2 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #2c3e50;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    margin: 0 0 15px 0;
-    padding: 15px 20px;
-    background-color: #e9ecef;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    font-size: 32px; /* Increased font size for more emphasis */
+    font-weight: bold; /* Keep the text bold */
+    color: #2c3e50; /* Darker blue shade for contrast */
+    text-transform: uppercase; /* Make text all caps */
+    letter-spacing: 1.2px; /* Increase letter spacing */
+    margin: 0 0 15px 0; /* Increased space below the title */
+    padding: 15px 20px; /* Increased padding around the text */
+    background-color: #e9ecef; /* Light background to differentiate */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Stronger shadow for more definition */
     transition: background-color 0.3s ease;
 }
 
 .menu-category h2:hover {
-    background-color: #ddd;
+    background-color: #ddd; /* Change background color on hover */
 }
 
 /* Category Description Styling */
 .menu-category p {
-    font-size: 18px;
-    font-weight: 400;
-    color: #7f8c8d;
-    margin: 0 0 20px 0;
-    padding: 0 20px;
-    line-height: 1.6;
+    font-size: 18px; /* Slightly larger font size */
+    font-weight: 400; /* Regular weight for text */
+    color: #7f8c8d; /* Gray color for description */
+    margin: 0 0 20px 0; /* Add space between description and the first item */
+    padding: 0 20px; /* Padding to align with title */
+    line-height: 1.6; /* Increase line spacing for better readability */
 }
 
 /* Menu Item Styling */
 .menu-item {
     margin-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 20px; /* Indent items to separate them from the description */
 }
 
 /* Image hover effect */
 .menu-item img {
     border-radius: 5px;
-    transform: scale(1.15);
+    transform: scale(1.15); /* Scale the image by 15% */
     transition: transform 0.3s ease;
 }
 
 .menu-item img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Simple hover effect */
 }
 
 /* Meal Detail View */
 #mealDetail img {
     max-width: 100%;
     border-radius: 10px;
-}
-
-/* Body padding to ensure room for the sidebar */
-body {
-    padding-left: 260px;
 }
