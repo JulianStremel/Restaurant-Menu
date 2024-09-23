@@ -22,9 +22,10 @@ function loadMenuData(language) {
     for (let category in data) {
         const categoryData = data[category];
 
-        // Create a category div
+        // Create a category div with a unique ID for shortcut navigation
         const categoryDiv = document.createElement('div');
         categoryDiv.classList.add('menu-category');
+        categoryDiv.id = category.toLowerCase().replace(/\s+/g, '-'); // Create ID for each category
 
         // Add the category title and description
         const categoryHeader = document.createElement('h2');
@@ -93,3 +94,14 @@ backToMenu.addEventListener('click', () => {
 
 // Load default menu (English)
 loadMenuData('en');
+
+// Smooth scroll for the shortcut navigation
+document.querySelectorAll('#shortcutMenu a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

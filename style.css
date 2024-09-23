@@ -57,3 +57,35 @@
     max-width: 100%;
     border-radius: 10px;
 }
+
+/* Sticky Navigation Menu Styling */
+.sticky-nav {
+    position: fixed;
+    top: 20px; /* Adjust this value if needed */
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.sticky-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sticky-nav ul li {
+    margin: 0 10px;
+}
+
+.sticky-nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.sticky-nav ul li a:hover {
+    text-decoration: underline;
+}
