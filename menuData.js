@@ -26,9 +26,9 @@ const menuData = {
                 ]
             },
             "Combo meals": {
-                description: "Delicious combinations of our finest ingredients to satisfy your hunger.",
+                description: "Delicious combinations of our finest ingredients to satisfy your hunger. Most of them come with fried egg and fries.",
                 items: [
-                    { name: "Montanejos Cold Cuts", price: "€11", description: "Selection of cold cuts from Montanejos", image: "Combination-sausages.jpeg" },
+                    { name: "Montanejos Cold Cuts", price: "€11", description: "Selection of cold cuts from Montanejos: Chorizo, blood sausage and longaniza", image: "Combination-sausages.jpeg" },
                     { name: "Grilled Loin", price: "€11", description: "Grilled pork loin served with fries", image: "Combination-pork-loin.jpeg" },
                     { name: "Breaded Chicken", price: "€11", description: "Breaded chicken fillet served with fries and a fried egg", image: "Combination-chicken.jpeg" },
                     { name: "Grilled Cuttlefish", price: "€16", description: "Grilled cuttlefish served with garlic sauce", image: "Starters-cuttlefish.jpeg" },
@@ -147,9 +147,9 @@ const menuData = {
                 ]
             },
             "Assièttes Combinées": {
-                description: "Délicieuses combinaisons de nos meilleurs ingrédients pour satisfaire votre faim.",
+                description: "Délicieuses combinaisons de nos meilleurs ingrédients pour satisfaire votre faim. Ils sont en règle générale servi avec un oeuf frit et des frites",
                 items: [
-                    { name: "Charcuterie de Montanejos", price: "€11", description: "Sélection de charcuteries de Montanejos", image: "Combination-sausages.jpeg" },
+                    { name: "Charcuterie de Montanejos", price: "€11", description: "Sélection de charcuteries de Montanejos: Chorizo, boudin et longaniza", image: "Combination-sausages.jpeg" },
                     { name: "Longe de Porc Grillée", price: "€11", description: "Longe de porc grillée servie avec des frites", image: "Combination-pork-loin.jpeg" },
                     { name: "Poulet Pané", price: "€11", description: "Escalope de poulet panée avec frites et un oeuf frit", image: "Combination-chicken.jpeg" },
                     { name: "Seiche Grillée", price: "€16", description: "Seiche grillée avec sauce à l'ail", image: "Starters-cuttlefish.jpeg" },
