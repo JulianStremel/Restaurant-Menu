@@ -56,6 +56,30 @@ const menuData = {
                 { name: "D-Lux Burrito", price: "€8.50", description: "Chicken, lettuce, tomato, and bacon wrapped in a burrito", image: "Burritos-d-lux.jpeg" },
                 { name: "Tejano Burrito", price: "€8.50", description: "Eggplant, zucchini, tomato, and chicken strips", image: "burrito2.jpg" }
             ],
+            "Drinks": [
+                { name: "Tinto de Verano", price: "€2.50", description: "Refreshing red wine with soda", image: "Bebidas-tinto-de-verano.jpeg" },
+                { name: "Draft Beer (Caña)", price: "€1.70", description: "Draft beer - small", image: "Bebidas-cerveza-cana.jpeg" },
+                { name: "Draft Beer (Doble)", price: "€2.50", description: "Draft beer - medium", image: "Bebidas-cerveza-doble.jpeg" },
+                { name: "Draft Beer (Pint)", price: "€4", description: "Draft beer - large", image: "Bebidas-cerveza-tanque.jpeg" },
+                { name: "Bottled Beer", price: "€2.50", description: "Bottled beer - (non-alcoholic, toasted, lager, or radler)", image: "Bebidas-cerveza-tercio.jpeg" },
+                { name: "Coca Cola", price: "€2.50", description: "Classic Coca Cola", image: "Bebidas-coca-cola.jpeg" },
+                { name: "Fanta Lemon-Orange", price: "€2.50", description: "Lemon or orange Fanta", image: "Bebidas-fanta.jpeg" },
+                { name: "Nestea, Aquarius", price: "€2.50", description: "Cold lemon tea", image: "Bebidas-nestea.jpeg" },
+                { name: "Bottled Juices", price: "€2", description: "Bottled juice: Pineapple, Peach, Orange", image: "Bebidas-zumo.jpeg" },
+                { name: "Small Water", price: "€2", description: "Bottled water 50cl", image: "Bebidas-agua-pequeña.jpeg" },
+                { name: "Large Water 1.5l", price: "€2.50", description: "Bottled water 1.5L", image: "Bebidas-agua-grande.jpeg" },
+                { name: "Sparkling Water", price: "€2", description: "Sparkling water", image: "Bebidas-agua-con-gas.jpeg" },
+                { name: "Tonic", price: "€2", description: "Tonic water", image: "Bebidas-tonica.jpeg" },
+                { name: "Espresso", price: "€1.20", description: "Espresso coffee", image: "Bebidas-cafe-solo.jpeg" },
+                { name: "Macchiato", price: "€1.40", description: "Macchiato coffee", image: "Bebidas-cafe-cortado.jpeg" },
+                { name: "Café con leche", price: "€1.60", description: "Coffee with milk", image: "Bebidas-cafe-con-leche.jpeg" },
+                { name: "Americano", price: "€2", description: "American coffee", image: "Bebidas-cafe-americano.jpeg" },
+                { name: "Hot Chocolate", price: "€1.50", description: "Hot Chocolate", image: "Bebidas-batido.jpeg" },
+                { name: "Tea and Infusions", price: "€1.50", description: "Tea and infusions", image: "Bebidas-infusiones.jpeg" },
+                { name: "Red Wine Glass", price: "€2.50", description: "Glass of red wine", image: "Bebidas-copa-tinto.jpeg" },
+                { name: "White Wine Glass", price: "€2.50", description: "Glass of white wine", image: "Bebidas-copa-blanco.jpeg" },
+                { name: "Rum & Coke", price: "€6", description: "Rum and Coca Cola", image: "Bebidas-cubata.jpeg" }
+            ],
             "Wines": [
                 { name: "Bobal Rosé", price: "€16", description: "Finca del Mar Rosado", image: "wine1.jpg" },
                 { name: "Bobal Blanco", price: "€16", description: "Finca del Mar Blanco", image: "wine2.jpg" },
@@ -93,6 +117,30 @@ const menuData = {
                 { name: "Gambas Galiana", price: "€22", description: "Gambas géantes style Galiana", image: "Specialties-galiana-jumbo-prawns.jpeg" },
                 { name: "Ragoût de Queue de Boeuf", price: "€18", description: "Queue de boeuf mijotée au vin rouge", image: "Specialties-oxtail.jpeg" },
                 { name: "Côte de Boeuf 600g", price: "€28", description: "Côte de boeuf grillée, parfaitement cuite", image: "Specialties-ribeye.jpeg" }
+            ],
+            "Boissons": [
+                { name: "Tinto de Verano", price: "€2.50", description: "Vin rouge rafraîchissant avec soda", image: "Bebidas-tinto-de-verano.jpeg" },
+                { name: "Bière pression (Petit)", price: "€1.70", description: "Bière pression - petite", image: "Bebidas-cerveza-cana.jpeg" },
+                { name: "Bière pression (Moyen)", price: "€2.50", description: "Bière pression - moyenne", image: "Bebidas-cerveza-doble.jpeg" },
+                { name: "Bière pression (Grand)", price: "€4", description: "Bière pression - grande", image: "Bebidas-cerveza-tanque.jpeg" },
+                { name: "Bière bouteille 300ml", price: "€2.50", description: "Bière en bouteille (sans alcohol, brune, blonde ou radler)", image: "Bebidas-cerveza-tercio.jpeg" },
+                { name: "Coca", price: "€2.50", description: "Coca Cola classique", image: "Bebidas-coca-cola.jpeg" },
+                { name: "Fanta Citron-Orange", price: "€2.50", description: "Fanta citron ou orange", image: "Bebidas-fanta.jpeg" },
+                { name: "Nestea, Aquarius", price: "€2.50", description: "Thé froid au citron", image: "Bebidas-nestea.jpeg" },
+                { name: "Jus en bouteille", price: "€2", description: "Jus en bouteille : Ananas, Pêche, Orange", image: "Bebidas-zumo.jpeg" },
+                { name: "Petite bouteille d'Eau", price: "€2", description: "Bouteille d'eau 50cl", image: "Bebidas-agua-pequeña.jpeg" },
+                { name: "Grande bouteille d'Eau 1.5l", price: "€2.50", description: "Bouteille d'eau 1.5L", image: "Bebidas-agua-grande.jpeg" },
+                { name: "Eau Pétillante", price: "€2", description: "Eau gazeuse", image: "Bebidas-agua-con-gas.jpeg" },
+                { name: "Tonic", price: "€2", description: "Eau tonique", image: "Bebidas-tonica.jpeg" },
+                { name: "Verre de Vin Rouge", price: "€2.50", description: "Verre de vin rouge", image: "Bebidas-copa-tinto.jpeg" },
+                { name: "Verre de Vin Blanc", price: "€2.50", description: "Verre de vin blanc", image: "Bebidas-copa-blanco.jpeg" },
+                { name: "Expresso", price: "€1.20", description: "Café expresso", image: "Bebidas-cafe-solo.jpeg" },
+                { name: "Café Macchiato", price: "€1.40", description: "Café macchiato", image: "Bebidas-cafe-cortado.jpeg" },
+                { name: "Café au Lait", price: "€1.60", description: "Café au lait", image: "Bebidas-cafe-con-leche.jpeg" },
+                { name: "Café Americano", price: "€2", description: "Café allongé", image: "Bebidas-cafe-americano.jpeg" },
+                { name: "Chocolat chaud", price: "€1.50", description: "Milkshake", image: "Bebidas-batido.jpeg" },
+                { name: "Thé et Infusions", price: "€1.50", description: "Thé et infusions", image: "Bebidas-infusiones.jpeg" },
+                { name: "Rhum & Coca", price: "€6", description: "Rhum et Coca Cola", image: "Bebidas-cubata.jpeg" }
             ]
             // Add other categories following the same structure as English
         }
@@ -149,21 +197,30 @@ const menuData = {
                             { name: "Emperador Salsa Verde", price: "€15.00", description: "Filete de emperador acompañado con salsa verde", image: "Combination-swordfish.jpeg" }
                         ],
                             "Bebidas": [
-                                { name: "Tinto de Verano", price: "€3.50", description: "Refrescante bebida a base de vino tinto y gaseosa", image: "Bebidas-tinto-de-verano.jpeg" },
-                                { name: "Cerveza de Tirador (Caña)", price: "€2.00", description: "Cerveza de tirador - caña (tostada, lager, o radler)", image: "Bebidas-cerveza-cana.jpeg" },
-                                { name: "Cerveza de Tirador (Doble)", price: "€3.00", description: "Cerveza de tirador - doble (tostada, lager, o radler)", image: "Bebidas-cerveza-doble.jpeg" },
-                                { name: "Cerveza de Tirador (Pinta)", price: "€4.50", description: "Cerveza de tirador - pinta (tostada, lager, o radler)", image: "Bebidas-cerveza-pinta.jpeg" },
+                                { name: "Tinto de Verano", price: "€2.50", description: "Refrescante bebida a base de vino tinto y gaseosa", image: "Bebidas-tinto-de-verano.jpeg" },
+                                { name: "Cerveza de Tirador (Caña)", price: "€1.70", description: "Cerveza de tirador - caña", image: "Bebidas-cerveza-cana.jpeg" },
+                                { name: "Cerveza de Tirador (Doble)", price: "€2.50", description: "Cerveza de tirador - doble", image: "Bebidas-cerveza-doble.jpeg" },
+                                { name: "Cerveza de Tirador (Tanque)", price: "€4", description: "Cerveza de tirador - pinta", image: "Bebidas-cerveza-tanque.jpeg" },
+                                { name: "Cerveza tercio", price: "€2.50", description: "Cerveza botella de tercio -  (Sin Alcohol, tostada, lager, o radler)", image: "Bebidas-cerveza-tercio.jpeg" },
                                 { name: "Coca Cola", price: "€2.50", description: "Coca Cola clásica", image: "Bebidas-coca-cola.jpeg" },
-                                { name: "Coca Cola Zero", price: "€2.50", description: "Coca Cola sin azúcar", image: "Bebidas-coca-cola-zero.jpeg" },
-                                { name: "Fanta Limón", price: "€2.50", description: "Refresco de limón", image: "Bebidas-fanta-limon.jpeg" },
-                                { name: "Fanta Naranja", price: "€2.50", description: "Refresco de naranja", image: "Bebidas-fanta-naranja.jpeg" },
-                                { name: "Nestea", price: "€2.50", description: "Té frío con limón", image: "Bebidas-nestea.jpeg" },
-                                { name: "Agua (50 cl)", price: "€1.50", description: "Agua embotellada 50 cl", image: "Bebidas-agua-50cl.jpeg" },
-                                { name: "Agua (1,5 L)", price: "€2.50", description: "Agua embotellada 1,5 L", image: "Bebidas-agua-1-5l.jpeg" },
-                                { name: "Agua con Gas", price: "€2.50", description: "Agua con gas", image: "Bebidas-agua-con-gas.jpeg" },
-                                { name: "Tónica", price: "€2.50", description: "Refresco de tónica", image: "Bebidas-tonica.jpeg" },
-                                { name: "Copa de Tinto", price: "€3.50", description: "Copa de vino tinto", image: "Bebidas-copa-tinto.jpeg" },
-                                { name: "Copa de Blanco", price: "€3.50", description: "Copa de vino blanco", image: "Bebidas-copa-blanco.jpeg" }
+                                { name: "Fanta Limón-Naranja", price: "€2.50", description: "Refresco de limón o de naranja", image: "Bebidas-fanta.jpeg" },
+                                { name: "Nestea, Aquarius", price: "€2.50", description: "Té frío con limón", image: "Bebidas-nestea.jpeg" },
+                                { name: "Zumos", price: "€2", description: "Zumos de botellín, Piña, Melocotón, Naranja", image: "Bebidas-zumo.jpeg" },
+                                { name: "Agua pequeña", price: "€2", description: "Agua embotellada 50 cl", image: "Bebidas-agua-pequeña.jpeg" },
+                                { name: "Agua grande", price: "€2.50", description: "Agua embotellada 1,5 L", image: "Bebidas-agua-grande.jpeg" },
+                                { name: "Agua con Gas", price: "€2", description: "Agua con gas", image: "Bebidas-agua-con-gas.jpeg" },
+                                { name: "Tónica", price: "€2", description: "Refresco de tónica", image: "Bebidas-tonica.jpeg" },
+                                { name: "Café solo", price: "€1.20", description: "Copa de vino blanco", image: "Bebidas-cafe-solo.jpeg" },
+                                { name: "Café cortado", price: "€1.40", description: "Copa de vino blanco", image: "Bebidas-cafe-cortado.jpeg" },
+                                { name: "Café con leche", price: "€1.60", description: "Copa de vino blanco", image: "Bebidas-cafe-con-leche.jpeg" },
+                                { name: "Café Americano", price: "€2", description: "Copa de vino blanco", image: "Bebidas-cafe-americano.jpeg" },
+                                { name: "Batido", price: "€1.50", description: "Batido estilo colacao", image: "Bebidas-batido.jpeg" },
+                                { name: "Té y infusiones", price: "€1.50", description: "Batido estilo colacao", image: "Bebidas-infusiones.jpeg" },
+                                { name: "Copa de vino Tinto", price: "€2.50", description: "Copa de vino tinto", image: "Bebidas-copa-tinto.jpeg" },
+                                { name: "Copa de vino Blanco", price: "€2.50", description: "Copa de vino blanco", image: "Bebidas-copa-blanco.jpeg" },
+                                { name: "Cubata", price: "€6", description: "Batido estilo colacao", image: "Bebidas-cubata.jpeg" }
+
+
                             ]
                         
                     }
