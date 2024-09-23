@@ -55,7 +55,7 @@ const menuData = {
             ],
             "Burritos": [
                 { name: "D-Lux Burrito", price: "€8.50", description: "Chicken, lettuce, tomato, and bacon wrapped in a burrito", image: "Burritos-d-lux.jpeg" },
-                { name: "Tejano Burrito", price: "€8.50", description: "Eggplant, zucchini, tomato, and chicken strips", image: "burrito2.jpg" }
+                { name: "Texan Burrito", price: "€8.50", description: "Eggplant, zucchini, tomato, and chicken strips", image: "burrito2.jpg" }
             ],
             "Drinks": [
                 { name: "Tinto de Verano", price: "€2.50", description: "Refreshing red wine with soda", image: "Bebidas-tinto-de-verano.jpeg" },
@@ -98,28 +98,55 @@ const menuData = {
                 { name: "Salade Végétarienne", price: "€12", description: "Salade mixte avec des légumes", image: "salad4.jpg" },
                 { name: "Carpaccio de Courgette", price: "€12", description: "Tranches de courgette avec de l'huile d'olive", image: "Salads-zucchini-carpaccio.jpeg" }
             ],
+ 
             "Entrées / Tapas": [
                 { name: "Pain Tomate et Ajoaceite", price: "€4.80", description: "Pain grillé avec tomate et ajoaceite", image: "Starters-bread-tomato-aioli.jpeg" },
-                { name: "Aubergines Frites au Miel", price: "€9.80", description: "Aubergines frites avec du miel", image: "Starters-fried-eggplant-with-honey.jpeg" },
-                { name: "Calamars Frits", price: "€9.90", description: "Calamars frits croustillants", image: "Starters-calamari.jpeg" },
-                { name: "Croquettes de Jambon Ibérique", price: "€9.60", description: "Croquettes de jambon ibérique", image: "Starters-ham-croquettes.jpeg" },
-                { name: "Frites au Fromage et Bacon", price: "€9.90", description: "Frites garnies de fromage gouda et de bacon", image: "Starters-fries-gouda-cheese.jpeg" }
+                { name: "Aubergines Frites au Miel", price: "€9.80", description: "Aubergines frites avec miel", image: "Starters-fried-eggplant-with-honey.jpeg" },
+                { name: "Calamars Frits à l'Andalouse", price: "€9.90", description: "Calamars frits à la façon andalouse", image: "Starters-calamari.jpeg" },
+                { name: "Œufs Brouillés avec Jambon", price: "€9.60", description: "Œufs frits avec jambon sur des frites", image: "Starters-broken-eggs-with-ham.jpeg" },
+                { name: "Croquettes de Morue", price: "€9.00", description: "Croquettes croustillantes de morue", image: "Starters-ham-croquettes.jpeg" },
+                { name: "Croquettes de Jambon Ibérique", price: "€9.00", description: "Croquettes croustillantes de jambon ibérique", image: "Starters-ham-croquettes.jpeg" },
+                { name: "Croquettes aux Champignons", price: "€9.00", description: "Croquettes aux champignons avec une touche d'ail", image: "Starters-ham-croquettes.jpeg" },
+                { name: "Pommes de Terre au Gouda et Bacon", price: "€9.90", description: "Pommes de terre frites couvertes de gouda et bacon", image: "Starters-fries-gouda-cheese.jpeg" },
+                { name: "Frites de Patate Douce au Roquefort", price: "€9.00", description: "Frites de patate douce avec sauce roquefort", image: "Starters-sweet-fries-roquefort.jpeg" },
+                { name: "Plateau de Jambon Serrano Bodega", price: "€13.00", description: "Jambon serrano bodega servi sur une planche", image: "starter10.jpg" },
+                { name: "Seiche Entière à la Plancha", price: "€14.00", description: "Seiche entière grillée avec ail et persil", image: "Starters-cuttlefish.jpeg" },
+                { name: "Patatas Bravas", price: "€9.50", description: "Pommes de terre frites avec sauce brava", image: "Starters-bravas-wedges.jpeg" }
             ],
+            
             "Assièttes Combinées": [
                 { name: "Charcuterie de Montanejos", price: "€11", description: "Sélection de charcuteries de Montanejos", image: "comb1.jpg" },
                 { name: "Longe de Porc Grillée", price: "€11", description: "Longe de porc grillée servie avec des frites", image: "Combination-pork-loin.jpeg" },
                 { name: "Poulet Pané", price: "€11", description: "Escalope de poulet panée avec frites et un oeuf frit", image: "Combination-chicken.jpeg" },
                 { name: "Seiche Grillée", price: "€16", description: "Seiche grillée avec sauce à l'ail", image: "Starters-cuttlefish.jpeg" },
-                { name: "Calamars Frits", price: "€13", description: "Calamars frits avec salade et frites", image: "comb5.jpg" }
-            ],
-            "Spécialités de la Maison": [
-                { name: "Lard de Soria", price: "€5.50", description: "Tranche de lard croustillante de Soria", image: "Specialties-pork-skin.jpeg" },
-                { name: "Poulpe, recette du village", price: "€18", description: "Poulpe recette du village", image: "Specialties-octopus.jpeg" },
-                { name: "Gambas Galiana", price: "€22", description: "Gambas géantes style Galiana", image: "Specialties-galiana-jumbo-prawns.jpeg" },
-                { name: "Ragoût de Queue de Boeuf", price: "€18", description: "Queue de boeuf mijotée au vin rouge", image: "Specialties-oxtail.jpeg" },
-                { name: "Côte de Boeuf 600g", price: "€28", description: "Côte de boeuf grillée, parfaitement cuite", image: "Specialties-ribeye.jpeg" },
-                { name: "Gulas du Nord avec Palourdes", price: "€12.00", description: "Gulas du nord accompagnées de palourdes fraîches", image: "Specialties-gulas.jpeg" }
+                { name: "Calamars Frits", price: "€13", description: "Calamars frits avec salade et frites", image: "Combination-calamary.jpeg" },
+                { name: "Espadon Sauce Verte", price: "€15.00", description: "Filet d'espadon accompagné de sauce verte, salade et frites", image: "Combination-swordfish.jpeg" }
 
+            ],
+ 
+                "Spécialités de la maison": [
+                    { name: "Lard de Soria", price: "€5.50", description: "Lard croustillants de la région de Soria", image: "Specialties-pork-skin.jpeg" },
+                    { name: "Queue de Taureau au Vin Rouge", price: "€16.90", description: "Queue de taureau mijotée au vin rouge", image: "Specialties-oxtail.jpeg" },
+                    { name: "Joue de Porc Mijares", price: "€15.50", description: "Joue de porc mijotée avec des frites", image: "Specialties-pork-cheeks.jpeg" },
+                    { name: "Entrecote de Boeuf 600g", price: "€28.00", description: "Entrecote de boeuf de 600g, grillée à point", image: "Specialties-ribeye.jpeg" },
+                    { name: "Poulpe Vidigonero", price: "€18.00", description: "Poulpe grillé à la façon Vidigonero (recette du chef)", image: "Specialties-octopus.jpeg" },
+                    { name: "Gambas Galiana", price: "€22.00", description: "Gambas géantes style Galiana", image: "Specialties-galiana-jumbo-prawns.jpeg" },
+                    { name: "Gulas du Nord avec Palourdes", price: "€12.00", description: "Gulas du nord accompagnées de palourdes fraîches", image: "Specialties-gulas.jpeg" },
+                    { name: "Patatas Twister", price: "€9.00", description: "Pommes de terre en spirale avec diverses sauces", image: "special5.jpg" },
+                    { name: "Pain Farci aux Charcuteries", price: "€11.00", description: "Pain farci aux charcuteries variées", image: "special6.jpg" }
+                ],
+                "Hamburgers": [
+                    { name: "Spécial de la Maison", price: "€12.00", description: "Hamburger de bœuf avec laitue, tomate, oignon caramélisé, fromage, bacon et œuf frit", image: "burger1.jpg" },
+                    { name: "Fromage de Chèvre", price: "€12.00", description: "Hamburger de bœuf avec fromage de chèvre et sauce à la moutarde", image: "Burgers-goat-cheese-burger.jpeg" },
+                    { name: "Montanejos Adventure au Poulet", price: "€12.00", description: "Hamburger de poulet avec bacon, mayonnaise, laitue, tomate, et fromage", image: "Burgers-chicken-burger.jpeg" },
+                    { name: "Végétarien", price: "€12.00", description: "Hamburger de falafel avec oignon caramélisé et fromage", image: "Burgers-falafel-burger.jpeg" },
+                    { name: "Vegan", price: "€12.00", description: "Hamburger végan de quinoa avec légumes grillés", image: "burger5.jpg" }
+                ],
+                
+                
+                "Burritos": [
+                    { name: "Burrito D-Lux", price: "€8.50", description: "Poulet, laitue, tomate et bacon enveloppés dans un burrito", image: "Burritos-d-lux.jpeg" },
+                    { name: "Burrito Texan", price: "€8.50", description: "Aubergine, courgette, tomate et morceaux de poulet", image: "burrito2.jpg" }
             ],
             "Boissons": [
                 { name: "Tinto de Verano", price: "€2.50", description: "Vin rouge rafraîchissant avec soda", image: "Bebidas-tinto-de-verano.jpeg" },
