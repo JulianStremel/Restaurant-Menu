@@ -17,12 +17,16 @@
         </select>
     </div>
 
-    <!-- Menu Title -->
-    <h1 class="text-center">Restaurant Menu</h1>
+    <!-- Vertical Scrollable Sidebar -->
+    <div class="d-flex">
+        <nav id="sidebarMenu" class="nav flex-column">
+            <!-- Links will be dynamically inserted here by JavaScript -->
+        </nav>
 
-    <!-- Main Menu Content Section -->
-    <div id="menuContent" class="container mt-4">
-        <!-- JavaScript will dynamically insert menu data here -->
+        <!-- Main Menu Content Section -->
+        <div id="menuContent" class="container mt-4">
+            <!-- JavaScript will dynamically insert menu data here -->
+        </div>
     </div>
 
     <!-- Detailed Meal View Section -->
@@ -35,28 +39,9 @@
             <button id="backToMenu" class="btn btn-primary mt-3">Back to Menu</button>
         </div>
     </div>
-    
-<!-- Sticky Navigation Menu -->
-<div class="sticky-nav">
-    <ul class="nav">
-        <li class="nav-item"><a href="#salads" class="nav-link">Salads</a></li>
-        <li class="nav-item"><a href="#starters-and-tapas" class="nav-link">Starters and Tapas</a></li>
-        <li class="nav-item"><a href="#combo-meals" class="nav-link">Combo Meals</a></li>
-        <li class="nav-item"><a href="#house-specialties" class="nav-link">House Specialties</a></li>
-        <li class="nav-item"><a href="#burgers" class="nav-link">Burgers</a></li>
-        <li class="nav-item"><a href="#baguette-sandwiches" class="nav-link">Baguette Sandwiches</a></li>
-        <li class="nav-item"><a href="#sandwiches" class="nav-link">Sandwiches</a></li>
-        <li class="nav-item"><a href="#burritos" class="nav-link">Burritos</a></li>
-        <li class="nav-item"><a href="#drinks" class="nav-link">Drinks</a></li>
-        <li class="nav-item"><a href="#wines" class="nav-link">Wines</a></li>
-    </ul>
-</div>
-
-
 
     <!-- Script Includes -->
     <script src="menuData.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-

@@ -1,7 +1,6 @@
 // Get the language selector dropdown and container for menu content
 const languageSelect = document.getElementById('languageSelect');
 const menuContent = document.getElementById('menuContent');
-const stickyNav = document.querySelector('.sticky-nav');
 
 // Elements for detailed view
 const mealDetail = document.getElementById('mealDetail');
@@ -11,33 +10,32 @@ const mealDescription = document.getElementById('mealDescription');
 const mealPrice = document.getElementById('mealPrice');
 const backToMenu = document.getElementById('backToMenu');
 
+// Sidebar navigation
+const sidebarMenu = document.getElementById('sidebarMenu');
+
 // Variable to store the scroll position
 let previousScrollPosition = 0;
-
-// Helper function to sanitize category names into valid IDs
-function sanitizeId(category) {
-    return category.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase(); // Replace non-alphanumeric characters with a dash
-}
 
 // Function to load the menu data based on the selected language
 function loadMenuData(language) {
     const data = menuData[language].categories;
     menuContent.innerHTML = ''; // Clear previous content
+    sidebarMenu.innerHTML = ''; // Clear previous sidebar links
 
     // Loop through each category in the menu
     for (let category in data) {
         const categoryData = data[category];
 
-        // Create a category div with a sanitized ID for scrolling
+        // Create a category div
         const categoryDiv = document.createElement('div');
         categoryDiv.classList.add('menu-category');
-        categoryDiv.setAttribute('id', sanitizeId(category)); // Set category ID
+        categoryDiv.id = category.replace(/\s+/g, '-'); // Assign unique ID to each category
 
         // Add the category title and description
         const categoryHeader = document.createElement('h2');
         categoryHeader.innerText = category;
         const categoryDescription = document.createElement('p');
-        categoryDescription.innerText = categoryData.description; // Insert category description
+        categoryDescription.innerText = categoryData.description;
 
         // Append the category title and description to the category div
         categoryDiv.appendChild(categoryHeader);
@@ -62,6 +60,12 @@ function loadMenuData(language) {
 
         // Add the category with its items to the menu content
         menuContent.appendChild(categoryDiv);
+
+        // Add navigation link to the sidebar
+        const navLink = document.createElement('a');
+        navLink.href = `#${category.replace(/\s+/g, '-')}`; // Use the same ID as the category div
+        navLink.innerText = category;
+        sidebarMenu.appendChild(navLink);
     }
 }
 
@@ -96,22 +100,6 @@ backToMenu.addEventListener('click', () => {
 
     // Restore the previous scroll position
     window.scrollTo(0, previousScrollPosition);
-});
-
-// Sticky navigation scroll functionality
-document.querySelectorAll('.sticky-nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = sanitizeId(this.getAttribute('href').substring(1)); // Get target ID without "#"
-        const targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - stickyNav.offsetHeight, // Adjust for sticky nav height
-                behavior: 'smooth'
-            });
-        }
-    });
 });
 
 // Load default menu (English)

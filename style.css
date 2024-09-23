@@ -1,89 +1,34 @@
-/* General Reset for consistent styles */
-body, h1, h2, h5, p {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Main layout for sidebar and content */
+.d-flex {
+    display: flex;
+    align-items: flex-start;
 }
 
-/* Sticky Navigation Menu Styling */
-.sticky-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+/* Sidebar Menu Styling */
+#sidebarMenu {
+    width: 250px;
+    padding: 20px;
     background-color: #f8f9fa;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    overflow-x: auto;
-    white-space: nowrap;
-    display: flex;
-    justify-content: center;
+    height: 100vh; /* Full height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    position: sticky;
+    top: 0;
 }
 
-/* Adjust navigation links */
-.sticky-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: max-content;
-}
-
-.sticky-nav ul li {
-    margin: 0 15px;
-}
-
-.sticky-nav ul li a {
+#sidebarMenu a {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
+    padding: 10px 0;
+    display: block;
+    margin-bottom: 10px;
 }
 
-.sticky-nav ul li a:hover {
+#sidebarMenu a:hover {
     text-decoration: underline;
 }
 
-/* Mobile-first approach for sticky nav */
-@media (max-width: 768px) {
-    .sticky-nav {
-        padding: 5px 0; /* Reduce padding to minimize height */
-        overflow-x: auto; /* Allow horizontal scrolling */
-        white-space: nowrap;
-    }
-
-    .sticky-nav ul {
-        display: inline-flex;
-    }
-
-    .sticky-nav ul li {
-        margin: 0 8px; /* Reduce margin between items */
-    }
-
-    .sticky-nav ul li a {
-        font-size: 14px; /* Smaller font size for mobile */
-    }
-
-    #languageSelect {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        z-index: 1100; /* Ensure it stays above sticky nav */
-    }
-
-    /* Further reduce sticky nav height and font sizes on very small screens */
-    @media (max-width: 480px) {
-        .sticky-nav ul li a {
-            font-size: 12px; /* Make font even smaller */
-        }
-
-        .sticky-nav {
-            padding: 3px 0; /* Reduce padding even more */
-        }
-    }
-}
-
-/* Category and Description Styling */
+/* Menu Category Styling */
 .menu-category {
     margin-bottom: 40px;
     padding: 10px 0;
@@ -110,7 +55,7 @@ body, h1, h2, h5, p {
     background-color: #ddd;
 }
 
-/* Category Description */
+/* Category Description Styling */
 .menu-category p {
     font-size: 18px;
     font-weight: 400;
@@ -143,4 +88,7 @@ body, h1, h2, h5, p {
     border-radius: 10px;
 }
 
-/* Body padding to ensure
+/* Body padding to ensure room for the sidebar */
+body {
+    padding-left: 260px;
+}
