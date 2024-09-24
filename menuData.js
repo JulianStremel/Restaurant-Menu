@@ -29,7 +29,7 @@ const menuData = {
                 description: "Delicious combinations of our finest ingredients to satisfy your hunger. Most of them come with fried egg and fries.",
                 items: [
                     { name: "Montanejos Cold Cuts", price: "€11", description: "Selection of cold cuts from Montanejos: Chorizo, blood sausage and longaniza", image: "Combination-sausages.jpeg" },
-                    { name: "Grilled Loin", price: "€11", description: "Grilled pork loin served with fries", image: "Combination-pork-loin.jpeg" },
+                    { name: "Grilled Loin", price: "€11", description: "Grilled pork loin served with an egg and fries", image: "Combination-pork-loin.jpeg" },
                     { name: "Breaded Chicken", price: "€11", description: "Breaded chicken fillet served with fries and a fried egg", image: "Combination-chicken.jpeg" },
                     { name: "Grilled Cuttlefish", price: "€16", description: "Grilled cuttlefish served with garlic sauce", image: "Starters-cuttlefish.jpeg" },
                     { name: "Fried Calamari", price: "€13", description: "Fried calamari with fries and salad", image: "Combination-calamary.jpeg" }
@@ -149,7 +149,7 @@ const menuData = {
                 description: "Délicieuses combinaisons de nos meilleurs ingrédients pour satisfaire votre faim. Ils sont en règle générale servi avec un oeuf frit et des frites",
                 items: [
                     { name: "Charcuterie de Montanejos", price: "€11", description: "Sélection de charcuteries de Montanejos: Chorizo, boudin et longaniza", image: "Combination-sausages.jpeg" },
-                    { name: "Longe de Porc Grillée", price: "€11", description: "Longe de porc grillée servie avec des frites", image: "Combination-pork-loin.jpeg" },
+                    { name: "Longe de Porc Grillée", price: "€11", description: "Longe de porc grillée servie avec un oeuf et des frites", image: "Combination-pork-loin.jpeg" },
                     { name: "Poulet Pané", price: "€11", description: "Escalope de poulet panée avec frites et un oeuf frit", image: "Combination-chicken.jpeg" },
                     { name: "Seiche Grillée", price: "€16", description: "Seiche grillée avec sauce à l'ail", image: "Starters-cuttlefish.jpeg" },
                     { name: "Calamars Frits", price: "€13", description: "Calamars frits avec salade et frites", image: "Combination-calamary.jpeg" },
@@ -257,7 +257,7 @@ const menuData = {
                description: "Disfruta de nuestras combinaciones únicas de platos principales con guarniciones para una comida completa y satisfactoria.",
                     items: [
                         { name: "Embutidos Montanejos", "price": "€11.00", "description": "Surtido de embutidos variados de Montanejos", "image": "Combination-sausages.jpeg" },
-                        { name: "Lomo Caña", "price": "€11.00", "description": "Lomo de cerdo servido con patatas fritas", "image": "Combination-pork-loin.jpeg" },
+                        { name: "Lomo Caña", "price": "€11.00", "description": "Lomo de cerdo servido con patatas y huevo frito", "image": "Combination-pork-loin.jpeg" },
                         { name: "Pollo Empanado", "price": "€11.00", "description": "Pollo empanado con patatas fritas y huevo frito", "image": "Combination-chicken.jpeg" },
                         { name: "Sepia Plancha", "price": "€16.00", "description": "Sepia a la plancha con ajo y perejil", "image": "Starters-cuttlefish.jpeg" },
                         { name: "Calamares Rebozados", "price": "€13.00", "description": "Calamares rebozados con patatas fritas y ensalada", "image": "Combination-calamary.jpeg" },
