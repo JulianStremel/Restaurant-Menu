@@ -209,7 +209,7 @@ const menuData = {
                     { name: "Café Macchiato", price: "€1.40", description: "Café macchiato", image: "Bebidas-cafe-cortado.jpeg" },
                     { name: "Café au Lait", price: "€1.60", description: "Café au lait", image: "Bebidas-cafe-con-leche.jpeg" },
                     { name: "Café Americano", price: "€2", description: "Café allongé", image: "Bebidas-cafe-americano.jpeg" },
-                    { name: "Chocolat chaud", price: "€1.50", description: "Milkshake", image: "Bebidas-batido.jpeg" },
+                    { name: "Chocolat chaud", price: "€1.50", description: "Boisson au chocolat", image: "Bebidas-batido.jpeg" },
                     { name: "Thé et Infusions", price: "€1.50", description: "Thé et infusions", image: "Bebidas-infusiones.jpeg" },
                     { name: "Rhum & Coca", price: "€6", description: "Rhum et Coca Cola", image: "Bebidas-cubata.jpeg" }
                 ]
