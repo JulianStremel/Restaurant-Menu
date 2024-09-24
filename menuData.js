@@ -112,7 +112,7 @@ const menuData = {
                 description: "Carefully selected wines to complement any meal.",
                 items: [
                     { name: "Rosé, Finca del Mar", price: "€16", description: "1 bottle Finca del Mar Rosé", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
-                    { name: "Whote wine Chardonnay, Finca del Mar", price: "€16", description: "Finca del Mar Blanco", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
+                    { name: "White wine Chardonnay, Finca del Mar", price: "€16", description: "Finca del Mar Blanco", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
                     { name: "Red wine Rioja, Altos Ibericos", price: "€20", description: "1 bottle red wine Altos Ibericos, Rioja", image: "Vinos-botella-tinto-altos-ibericos.jpeg" }
                 ]
             }
