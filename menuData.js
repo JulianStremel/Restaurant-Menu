@@ -7,18 +7,18 @@ const menuData = {
                     { name: "Crunchy Salad (Goat Cheese)", price: "€14", description: "Crispy salad with goat cheese", image: "Salads-goat-cheese.jpeg" },
                     { name: "Caesar Salad (Chicken)", price: "€14", description: "Classic Caesar salad with chicken", image: "Salads-Caesar-salad.jpeg" },
                     { name: "Valencian Salad (Tuna)", price: "€12", description: "Traditional Valencian salad with tuna", image: "Salads-valenciana.jpeg" },
-                    { name: "Vegetarian Salad", price: "€12", description: "Fresh mixed salad with vegetables", image: "salad4.jpg" },
+                    { name: "Vegetarian Salad", price: "€12", description: "Fresh mixed salad with vegetables, no tuna", image: "Salads-valenciana.jpeg" },
                     { name: "Zucchini Carpaccio", price: "€12", description: "Zucchini slices with olive oil and seasoning", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
             },
-            "Starters / Tapas": {
+            "Starters and Tapas": {
                 description: "A selection of generous small plates, ideal for sharing or as a starter. Some portions are hearty enough to enjoy as a light meal if you're not too hungry.",
                 items: [
                     { name: "Tomato & Garlic Bread", price: "€4.80", description: "Toasted bread with tomato and garlic butter", image: "Starters-bread-tomato-aioli.jpeg" },
                     { name: "Fried Eggplant with Honey", price: "€9.80", description: "Eggplant fries drizzled with honey", image: "Starters-fried-eggplant-with-honey.jpeg" },
                     { name: "Fried Calamari", price: "€9.90", description: "Crispy calamari with a side of lemon", image: "Starters-calamari.jpeg" },
                     { name: "Broken Eggs with Ham", price: "€9.90", description: "Eggs, Ham and fries", image: "Starters-broken-eggs-with-ham.jpeg" },
-                    { name: "Iberian Ham Croquettes", price: "€9.60", description: "Iberian ham croquettes, crispy and delicious", image: "Starters-ham-croquettes.jpeg" },
+                    { name: "Croquettes", price: "€9.60", description: "Iberian ham croquettes, mushroom or cod fish, crispy and delicious", image: "Starters-mushrooms-croquettes.jpeg" },
                     { name: "Fries with Cheese and Bacon", price: "€9.90", description: "Fries topped with gouda cheese and bacon", image: "Starters-fries-gouda-cheese.jpeg" },
                     { name: "Cuttlefish", price: "€9.90", description: "Cuttlefish", image: "Starters-cuttlefish.jpeg" },
                     { name: "Patatas Bravas (Wedges)", price: "€9.90", description: "Patatas Bravas Wedges", image: "Starters-bravas-wedges.jpeg" },
@@ -50,7 +50,7 @@ const menuData = {
             "Burgers": {
                 description: "For €3 extra, add fries to your burger for the perfect meal.",
                 items: [
-                    { name: "House Special Burger", price: "€12", description: "Beef burger with fried egg, bacon, and caramelized onions", image: "burger1.jpg" },
+                    { name: "House Special Burger", price: "€12", description: "Beef burger with fried egg, bacon, and caramelized onions", image: "Burgers-house-burger.jpeg" },
                     { name: "Goat Cheese Burger", price: "€12", description: "Beef burger with goat cheese and mustard sauce", image: "Burgers-goat-cheese-burger.jpeg" },
                     { name: "Montanejos Adventure chicken Burger", price: "€12", description: "Chicken burger with bacon, egg, and special sauce", image: "Burgers-chicken-burger.jpeg" },
                     { name: "Vegetarian Burger", price: "€12", description: "Falafel burger with caramelized onions and cheese", image: "Burgers-falafel-burger.jpeg" },
@@ -88,11 +88,11 @@ const menuData = {
                     { name: "Draft Beer (Caña)", price: "€1.70", description: "Draft beer - small", image: "Bebidas-cerveza-cana.jpeg" },
                     { name: "Draft Beer (Doble)", price: "€2.50", description: "Draft beer - medium", image: "Bebidas-cerveza-doble.jpeg" },
                     { name: "Draft Beer (Pint)", price: "€4", description: "Draft beer - large", image: "Bebidas-cerveza-tanque.jpeg" },
-                    { name: "Bottled Beer", price: "€2.50", description: "Bottled beer - (non-alcoholic, toasted, lager, or radler)", image: "Bebidas-cerveza-tercio.jpeg" },
+                    { name: "Bottled Beer", price: "€2.50", description: "Bottled beer - (non-alcoholic, toasted, lager, or radler)", image: "Bebidas-cerveza-tercio-estrella-galicia.jpeg" },
                     { name: "Coca Cola", price: "€2.50", description: "Coca Cola classic or Zero", image: "Bebidas-coca-cola.jpeg" },
                     { name: "Fanta Lemon-Orange", price: "€2.50", description: "Lemon or orange Fanta", image: "Bebidas-fanta.jpeg" },
                     { name: "Nestea, Aquarius", price: "€2.50", description: "Cold lemon tea", image: "Bebidas-nestea.jpeg" },
-                    { name: "Bottled Juices", price: "€2", description: "Bottled juice: Pineapple, Peach, Orange", image: "Bebidas-zumo.jpeg" },
+                    { name: "Bottled Juices", price: "€2", description: "Bottled juice: Pineapple, Peach, Orange", image: "Bebidas-zumos.jpeg" },
                     { name: "Small Water", price: "€2", description: "Bottled water 50cl", image: "Bebidas-agua-pequeña.jpeg" },
                     { name: "Large Water 1.5l", price: "€2.50", description: "Bottled water 1.5L", image: "Bebidas-agua-grande.jpeg" },
                     { name: "Sparkling Water", price: "€2", description: "Sparkling water", image: "Bebidas-agua-con-gas.jpeg" },
@@ -105,15 +105,15 @@ const menuData = {
                     { name: "Tea and Infusions", price: "€1.50", description: "Tea and infusions", image: "Bebidas-infusiones.jpeg" },
                     { name: "Red Wine Glass", price: "€2.50", description: "Glass of red wine", image: "Bebidas-copa-tinto.jpeg" },
                     { name: "White Wine Glass", price: "€2.50", description: "Glass of white wine", image: "Bebidas-copa-blanco.jpeg" },
-                    { name: "Rum & Coke", price: "€6", description: "Rum and Coca Cola", image: "Bebidas-cubata.jpeg" }
+                    { name: "Rhum & Coke", price: "€6", description: "Rhum and Coca-Cola", image: "Bebidas-cubata.jpeg" }
                 ]
             },
             "Wines": {
                 description: "Carefully selected wines to complement any meal.",
                 items: [
-                    { name: "Bobal Rosé", price: "€16", description: "Finca del Mar Rosado", image: "wine1.jpg" },
-                    { name: "Bobal Blanco", price: "€16", description: "Finca del Mar Blanco", image: "wine2.jpg" },
-                    { name: "Melior Matarromera", price: "€20", description: "Ribera del Duero", image: "wine3.jpg" }
+                    { name: "Rosé, Finca del Mar", price: "€16", description: "1 bottle Finca del Mar Rosé", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
+                    { name: "Whote wine Chardonnay, Finca del Mar", price: "€16", description: "Finca del Mar Blanco", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
+                    { name: "Red wine Rioja, Altos Ibericos", price: "€20", description: "1 bottle red wine Altos Ibericos, Rioja", image: "Vinos-botella-tinto-altos-ibericos.jpeg" }
                 ]
             }
         }
@@ -126,19 +126,18 @@ const menuData = {
                     { name: "Salade Croquante (Fromage de chèvre)", price: "€14", description: "Salade croquante avec du fromage de chèvre", image: "Salads-goat-cheese.jpeg" },
                     { name: "Salade César (Poulet)", price: "€14", description: "Salade César classique avec poulet", image: "Salads-Caesar-salad.jpeg" },
                     { name: "Salade Valencienne (Thon)", price: "€12", description: "Salade valencienne traditionnelle avec du thon", image: "Salads-valenciana.jpeg" },
-                    { name: "Salade Végétarienne", price: "€12", description: "Salade mixte avec des légumes", image: "salad4.jpg" },
+                    { name: "Salade Végétarienne", price: "€12", description: "Salade mixte avec des légumes", image: "Salads-valenciana.jpeg" },
                     { name: "Carpaccio de Courgette", price: "€12", description: "Tranches de courgette avec de l'huile d'olive", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
             },
-            "Entrées / Tapas": {
+            "Entrées et Tapas": {
                 description: "Une sélection de petites assiettes généreuses, idéales à partager ou en entrée. Certaines portions sont suffisamment copieuses pour constituer un repas léger si vous n'avez pas très faim.",
                 items: [
                     { name: "Pain Tomate et Ajoaceite", price: "€4.80", description: "Pain grillé avec tomate et ajoaceite", image: "Starters-bread-tomato-aioli.jpeg" },
                     { name: "Aubergines Frites au Miel", price: "€9.80", description: "Aubergines frites avec miel", image: "Starters-fried-eggplant-with-honey.jpeg" },
                     { name: "Calamars Frits à l'Andalouse", price: "€9.90", description: "Calamars frits à la façon andalouse", image: "Starters-calamari.jpeg" },
                     { name: "Œufs Brouillés avec Jambon", price: "€9.60", description: "Œufs frits avec jambon sur des frites", image: "Starters-broken-eggs-with-ham.jpeg" },
-                    { name: "Croquettes de Morue", price: "€9.00", description: "Croquettes croustillantes de morue", image: "Starters-ham-croquettes.jpeg" },
-                    { name: "Croquettes de Jambon Ibérique", price: "€9.00", description: "Croquettes croustillantes de jambon ibérique", image: "Starters-ham-croquettes.jpeg" },
+                    { name: "Croquettes croustillantes", price: "€9.00", description: "Croquettes croustillantes de jambon ibérique, champignons ou morue", image: "Starters-mushrooms-croquettes.jpeg" },
                     { name: "Pommes de Terre au Gouda et Bacon", price: "€9.90", description: "Pommes de terre frites couvertes de gouda et bacon", image: "Starters-fries-gouda-cheese.jpeg" },
                     { name: "Frites de Patate Douce au Roquefort", price: "€9.00", description: "Frites de patate douce avec sauce roquefort", image: "Starters-sweet-fries-roquefort.jpeg" },
                     { name: "Plateau de Jambon Serrano Bodega", price: "€13.00", description: "Jambon serrano bodega servi sur une planche", image: "starter10.jpg" },
@@ -174,7 +173,7 @@ const menuData = {
             "Hamburgers": {
                 description: "Pour 3€ supplémentaires, ajoutez des frites à votre hamburger pour un repas parfait.",
                 items: [
-                    { name: "Spécial de la Maison", price: "€12.00", description: "Hamburger de bœuf avec laitue, tomate, oignon caramélisé, fromage, bacon et œuf frit", image: "burger1.jpg" },
+                    { name: "Spécial de la Maison", price: "€12.00", description: "Hamburger de bœuf avec laitue, tomate, oignon caramélisé, fromage, bacon et œuf frit", image: "Burgers-house-burger.jpeg" },
                     { name: "Fromage de Chèvre", price: "€12.00", description: "Hamburger de bœuf avec fromage de chèvre et sauce à la moutarde", image: "Burgers-goat-cheese-burger.jpeg" },
                     { name: "Montanejos Adventure au Poulet", price: "€12.00", description: "Hamburger de poulet avec bacon, mayonnaise, laitue, tomate, et fromage", image: "Burgers-chicken-burger.jpeg" },
                     { name: "Végétarien", price: "€12.00", description: "Hamburger de falafel avec oignon caramélisé et fromage", image: "Burgers-falafel-burger.jpeg" },
@@ -195,11 +194,11 @@ const menuData = {
                     { name: "Bière pression (Petit)", price: "€1.70", description: "Bière pression - petite", image: "Bebidas-cerveza-cana.jpeg" },
                     { name: "Bière pression (Moyen)", price: "€2.50", description: "Bière pression - moyenne", image: "Bebidas-cerveza-doble.jpeg" },
                     { name: "Bière pression (Grand)", price: "€4", description: "Bière pression - grande", image: "Bebidas-cerveza-tanque.jpeg" },
-                    { name: "Bière bouteille 300ml", price: "€2.50", description: "Bière en bouteille (sans alcool, brune, blonde ou radler)", image: "Bebidas-cerveza-tercio.jpeg" },
+                    { name: "Bière bouteille 300ml", price: "€2.50", description: "Bière en bouteille (sans alcool, brune, blonde ou radler)", image: "Bebidas-cerveza-tercio-estrella-galicia.jpeg" },
                     { name: "Coca", price: "€2.50", description: "Coca classique ou Zéro", image: "Bebidas-coca-cola.jpeg" },
                     { name: "Fanta Citron-Orange", price: "€2.50", description: "Fanta citron ou orange", image: "Bebidas-fanta.jpeg" },
                     { name: "Nestea, Aquarius", price: "€2.50", description: "Thé froid au citron", image: "Bebidas-nestea.jpeg" },
-                    { name: "Jus en bouteille", price: "€2", description: "Jus en bouteille : Ananas, Pêche, Orange", image: "Bebidas-zumo.jpeg" },
+                    { name: "Jus en bouteille", price: "€2", description: "Jus en bouteille : Ananas, Pêche, Orange", image: "Bebidas-zumos.jpeg" },
                     { name: "Petite bouteille d'Eau", price: "€2", description: "Bouteille d'eau 50cl", image: "Bebidas-agua-pequeña.jpeg" },
                     { name: "Grande bouteille d'Eau 1.5l", price: "€2.50", description: "Bouteille d'eau 1.5L", image: "Bebidas-agua-grande.jpeg" },
                     { name: "Eau Pétillante", price: "€2", description: "Eau gazeuse", image: "Bebidas-agua-con-gas.jpeg" },
@@ -218,9 +217,10 @@ const menuData = {
             "Vins": {
                 description: "Des vins soigneusement sélectionnés pour accompagner tout repas.",
                 items: [
-                    { name: "Bobal Rosé", price: "€16", description: "Finca del Mar Rosado", image: "wine1.jpg" },
-                    { name: "Bobal Blanco", price: "€16", description: "Finca del Mar Blanco", image: "wine2.jpg" },
-                    { name: "Melior Matarromera", price: "€20", description: "Ribera del Duero", image: "wine3.jpg" }
+                    { name: "Rosé, Finca del Mar", price: "16€", description: "1 bouteille de Finca del Mar Rosé", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
+                    { name: "Vin blanc Chardonnay, Finca del Mar", price: "16€", description: "Finca del Mar Blanc", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
+                    { name: "Vin rouge Rioja, Altos Ibericos", price: "20€", description: "1 bouteille de vin rouge Altos Ibericos, Rioja", image: "Vinos-botella-tinto-altos-ibericos.jpeg" }
+                    
                 ]
             }
         }
@@ -233,19 +233,18 @@ const menuData = {
                     { name: "Ensalada Crujiente (Queso de cabra)", price: "€14", description: "Ensalada crujiente con queso de cabra", image: "Salads-goat-cheese.jpeg" },
                     { name: "Ensalada César (Pollo)", price: "€14", description: "Ensalada César clásica con pollo", image: "Salads-Caesar-salad.jpeg" },
                     { name: "Ensalada Valenciana (Atún)", price: "€12", description: "Ensalada valenciana con atún", image: "Salads-valenciana.jpeg" },
-                    { name: "Ensalada Vegetariana", price: "€12", description: "Ensalada mixta con verduras frescas", image: "salad4.jpg" },
+                    { name: "Ensalada Vegetariana", price: "€12", description: "Ensalada mixta con verduras frescas", image: "Salads-valenciana.jpeg" },
                     { name: "Carpaccio de Calabacín", price: "€12", description: "Rodajas de calabacín con aceite de oliva", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
             },
-            "Entrantes / Tapas": {
+            "Entrantes y Tapas": {
                 description: "Una selección de platos pequeños y generosos, ideales para compartir o como entrante. Algunas porciones son lo suficientemente abundantes como para disfrutar como comida ligera si no hay mucha hambre.",
                 items: [
                     { name: "Pan con Tomate y Ajoaceite", price: "€4.80", description: "Pan tostado con tomate y ajoaceite", image: "Starters-bread-tomato-aioli.jpeg" },
                     { name: "Berenjenas Fritas con Miel", price: "€9.80", description: "Berenjenas fritas con miel", image: "Starters-fried-eggplant-with-honey.jpeg" },
                     { name: "Calamares a la andaluza", price: "€9.90", description: "Calamares fritos al estilo andaluz", image: "Starters-calamari.jpeg" },
                     { name: "Huevos Rotos con Jamón", price: "€9.60", description: "Huevos fritos con jamón sobre patatas fritas", image: "Starters-broken-eggs-with-ham.jpeg" },
-                    { name: "Croquetas de Bacalao", price: "€9.00", description: "Croquetas de bacalao crujientes", image: "Starters-ham-croquettes.jpeg" },
-                    { name: "Croquetas de Jamón Ibérico", price: "€9.00", description: "Croquetas de jamón ibérico crujientes", image: "Starters-ham-croquettes.jpeg" },
+                    { name: "Croquetas", price: "€9.00", description: "Croquetas de jamón ibérico, bacalao o setas", image: "Starters-mushrooms-croquettes.jpeg" },
                     { name: "Patatas con Queso Gouda y Bacon", price: "€9.90", description: "Patatas fritas cubiertas con queso gouda y bacon", image: "Starters-fries-gouda-cheese.jpeg" },
                     { name: "Tirás Boniato con Roquefort", price: "€9.00", description: "Tiras de boniato frito con salsa roquefort", image: "Starters-sweet-fries-roquefort.jpeg" },
                     { name: "Tabla Jamón Serrano Bodega", price: "€13.00", description: "Jamón serrano bodega servido en tabla", image: "starter10.jpg" },
@@ -285,7 +284,7 @@ const menuData = {
             "Hamburguesas": {
                 description: "Por 3€ extra, añade patatas fritas a tu hamburguesa para un menú completo.",
                 items: [
-                    { name: "Especial de la Casa", price: "€12.00", description: "Hamburguesa de ternera con lechuga, tomate, cebolla caramelizada, queso, bacon y huevo frito", image: "burger1.jpg" },
+                    { name: "Especial de la Casa", price: "€12.00", description: "Hamburguesa de ternera con lechuga, tomate, cebolla caramelizada, queso, bacon y huevo frito", image: "Burgers-house-burger.jpeg" },
                     { name: "Queso de Cabra", price: "€12.00", description: "Hamburguesa de ternera con queso de cabra y salsa de mostaza", image: "Burgers-goat-cheese-burger.jpeg" },
                     { name: "Montanejos Adventure con Pollo", price: "€12.00", description: "Hamburguesa de pollo con bacon, mayonesa, lechuga, tomate, y queso", image: "Burgers-chicken-burger.jpeg" },
                     { name: "Vegetariana", price: "€12.00", description: "Hamburguesa de falafel con cebolla caramelizada y queso", image: "Burgers-falafel-burger.jpeg" },
@@ -306,11 +305,11 @@ const menuData = {
                     { name: "Cerveza de Tirador (Caña)", price: "€1.70", description: "Cerveza de tirador - caña", image: "Bebidas-cerveza-cana.jpeg" },
                     { name: "Cerveza de Tirador (Doble)", price: "€2.50", description: "Cerveza de tirador - doble", image: "Bebidas-cerveza-doble.jpeg" },
                     { name: "Cerveza de Tirador (Tanque)", price: "€4", description: "Cerveza de tirador - pinta", image: "Bebidas-cerveza-tanque.jpeg" },
-                    { name: "Cerveza tercio", price: "€2.50", description: "Cerveza botella de tercio (Sin Alcohol, tostada, lager, o radler)", image: "Bebidas-cerveza-tercio.jpeg" },
+                    { name: "Cerveza tercio", price: "€2.50", description: "Cerveza botella de tercio (Sin Alcohol, tostada, lager, o radler)", image: "Bebidas-cerveza-tercio-estrella-galicia.jpeg" },
                     { name: "Coca Cola", price: "€2.50", description: "Coca Cola normal o Zero", image: "Bebidas-coca-cola.jpeg" },
                     { name: "Fanta Limón-Naranja", price: "€2.50", description: "Refresco de limón o naranja", image: "Bebidas-fanta.jpeg" },
                     { name: "Nestea, Aquarius", price: "€2.50", description: "Té frío con limón", image: "Bebidas-nestea.jpeg" },
-                    { name: "Zumos", price: "€2", description: "Zumos de botellín: Piña, Melocotón, Naranja", image: "Bebidas-zumo.jpeg" },
+                    { name: "Zumos", price: "€2", description: "Zumos de botellín: Piña, Melocotón, Naranja", image: "Bebidas-zumos.jpeg" },
                     { name: "Agua pequeña", price: "€2", description: "Agua embotellada 50 cl", image: "Bebidas-agua-pequeña.jpeg" },
                     { name: "Agua grande", price: "€2.50", description: "Agua embotellada 1.5 L", image: "Bebidas-agua-grande.jpeg" },
                     { name: "Agua con Gas", price: "€2", description: "Agua con gas", image: "Bebidas-agua-con-gas.jpeg" },
@@ -329,9 +328,10 @@ const menuData = {
             "Vinos": {
                 description: "Vinos cuidadosamente seleccionados para acompañar cualquier comida.",
                 items: [
-                    { name: "Bobal Rosé", price: "€16", description: "Finca del Mar Rosado", image: "wine1.jpg" },
-                    { name: "Bobal Blanco", price: "€16", description: "Finca del Mar Blanco", image: "wine2.jpg" },
-                    { name: "Melior Matarromera", price: "€20", description: "Ribera del Duero", image: "wine3.jpg" }
+                    { name: "Rosado, Finca del Mar", price: "16€", description: "1 botella de Finca del Mar Rosado", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
+                    { name: "Vino blanco Chardonnay, Finca del Mar", price: "16€", description: "Finca del Mar Blanco", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
+                    { name: "Vino tinto Rioja, Altos Ibéricos", price: "20€", description: "1 botella de vino tinto Altos Ibéricos, Rioja", image: "Vinos-botella-tinto-altos-ibericos.jpeg" }
+                    
                 ]
             }
         }
