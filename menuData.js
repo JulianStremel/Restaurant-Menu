@@ -7,7 +7,7 @@ const menuData = {
                     { name: "Crunchy Salad (Goat Cheese)", price: "€14", description: "Crispy salad with goat cheese", image: "Salads-goat-cheese.jpeg" },
                     { name: "Caesar Salad (Chicken)", price: "€14", description: "Classic Caesar salad with chicken", image: "Salads-Caesar-salad.jpeg" },
                     { name: "Valencian Salad (Tuna)", price: "€12", description: "Traditional Valencian salad with tuna", image: "Salads-valenciana.jpeg" },
-                    { name: "Vegetarian Salad", price: "€12", description: "Fresh mixed salad with vegetables, no tuna", image: "Salads-valenciana.jpeg" },
+                    { name: "Vegetarian Salad without tuna", price: "€12", description: "Fresh mixed salad with vegetables, no tuna", image: "Salads-valenciana.jpeg" },
                     { name: "Zucchini Carpaccio", price: "€12", description: "Zucchini slices with olive oil and seasoning", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
             },
@@ -93,7 +93,7 @@ const menuData = {
                     { name: "Fanta Lemon-Orange", price: "€2.50", description: "Lemon or orange Fanta", image: "Bebidas-fanta.jpeg" },
                     { name: "Nestea, Aquarius", price: "€2.50", description: "Cold lemon tea", image: "Bebidas-nestea.jpeg" },
                     { name: "Bottled Juices", price: "€2", description: "Bottled juice: Pineapple, Peach, Orange", image: "Bebidas-zumos.jpeg" },
-                    { name: "Small Water", price: "€2", description: "Bottled water 50cl", image: "Bebidas-agua-pequeña.jpeg" },
+                    { name: "Small Water", price: "€2", description: "Bottled water 50cl", image: "Bebidas-agua-pequena.jpeg" },
                     { name: "Large Water 1.5l", price: "€2.50", description: "Bottled water 1.5L", image: "Bebidas-agua-grande.jpeg" },
                     { name: "Sparkling Water", price: "€2", description: "Sparkling water", image: "Bebidas-agua-con-gas.jpeg" },
                     { name: "Tonic", price: "€2", description: "Tonic water", image: "Bebidas-tonica.jpeg" },
@@ -126,7 +126,7 @@ const menuData = {
                     { name: "Salade Croquante (Fromage de chèvre)", price: "€14", description: "Salade croquante avec du fromage de chèvre", image: "Salads-goat-cheese.jpeg" },
                     { name: "Salade César (Poulet)", price: "€14", description: "Salade César classique avec poulet", image: "Salads-Caesar-salad.jpeg" },
                     { name: "Salade Valencienne (Thon)", price: "€12", description: "Salade valencienne traditionnelle avec du thon", image: "Salads-valenciana.jpeg" },
-                    { name: "Salade Végétarienne", price: "€12", description: "Salade mixte avec des légumes", image: "Salads-valenciana.jpeg" },
+                    { name: "Salade Végétarienne sans thon", price: "€12", description: "Salade mixte sans thon", image: "Salads-valenciana.jpeg" },
                     { name: "Carpaccio de Courgette", price: "€12", description: "Tranches de courgette avec de l'huile d'olive", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
             },
@@ -199,7 +199,7 @@ const menuData = {
                     { name: "Fanta Citron-Orange", price: "€2.50", description: "Fanta citron ou orange", image: "Bebidas-fanta.jpeg" },
                     { name: "Nestea, Aquarius", price: "€2.50", description: "Thé froid au citron", image: "Bebidas-nestea.jpeg" },
                     { name: "Jus en bouteille", price: "€2", description: "Jus en bouteille : Ananas, Pêche, Orange", image: "Bebidas-zumos.jpeg" },
-                    { name: "Petite bouteille d'Eau", price: "€2", description: "Bouteille d'eau 50cl", image: "Bebidas-agua-pequeña.jpeg" },
+                    { name: "Petite bouteille d'Eau", price: "€2", description: "Bouteille d'eau 50cl", image: "Bebidas-agua-pequena.jpeg" },
                     { name: "Grande bouteille d'Eau 1.5l", price: "€2.50", description: "Bouteille d'eau 1.5L", image: "Bebidas-agua-grande.jpeg" },
                     { name: "Eau Pétillante", price: "€2", description: "Eau gazeuse", image: "Bebidas-agua-con-gas.jpeg" },
                     { name: "Tonic", price: "€2", description: "Eau tonique", image: "Bebidas-tonica.jpeg" },
@@ -233,7 +233,7 @@ const menuData = {
                     { name: "Ensalada Crujiente (Queso de cabra)", price: "€14", description: "Ensalada crujiente con queso de cabra", image: "Salads-goat-cheese.jpeg" },
                     { name: "Ensalada César (Pollo)", price: "€14", description: "Ensalada César clásica con pollo", image: "Salads-Caesar-salad.jpeg" },
                     { name: "Ensalada Valenciana (Atún)", price: "€12", description: "Ensalada valenciana con atún", image: "Salads-valenciana.jpeg" },
-                    { name: "Ensalada Vegetariana", price: "€12", description: "Ensalada mixta con verduras frescas", image: "Salads-valenciana.jpeg" },
+                    { name: "Ensalada Vegetariana sin atún", price: "€12", description: "Ensalada mixta con verduras frescas sin atún", image: "Salads-valenciana.jpeg" },
                     { name: "Carpaccio de Calabacín", price: "€12", description: "Rodajas de calabacín con aceite de oliva", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
             },
@@ -310,7 +310,7 @@ const menuData = {
                     { name: "Fanta Limón-Naranja", price: "€2.50", description: "Refresco de limón o naranja", image: "Bebidas-fanta.jpeg" },
                     { name: "Nestea, Aquarius", price: "€2.50", description: "Té frío con limón", image: "Bebidas-nestea.jpeg" },
                     { name: "Zumos", price: "€2", description: "Zumos de botellín: Piña, Melocotón, Naranja", image: "Bebidas-zumos.jpeg" },
-                    { name: "Agua pequeña", price: "€2", description: "Agua embotellada 50 cl", image: "Bebidas-agua-pequeña.jpeg" },
+                    { name: "Agua pequeña", price: "€2", description: "Agua embotellada 50 cl", image: "Bebidas-agua-pequena.jpeg" },
                     { name: "Agua grande", price: "€2.50", description: "Agua embotellada 1.5 L", image: "Bebidas-agua-grande.jpeg" },
                     { name: "Agua con Gas", price: "€2", description: "Agua con gas", image: "Bebidas-agua-con-gas.jpeg" },
                     { name: "Tónica", price: "€2", description: "Refresco de tónica", image: "Bebidas-tonica.jpeg" },
