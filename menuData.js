@@ -115,7 +115,27 @@ const menuData = {
                     { name: "White wine Chardonnay, Finca del Mar", price: "€16", description: "Finca del Mar Blanco", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
                     { name: "Red wine Rioja, Altos Ibericos", price: "€20", description: "1 bottle red wine Altos Ibericos, Rioja", image: "Vinos-botella-tinto-altos-ibericos.jpeg" }
                 ]
-            }
+            },
+            "Desserts": {
+                description: "Finish your meal with a sweet touch.",
+                items: [
+                        { name: "Cheesecake", price: "€5.50", description: "A classic creamy cheesecake.", image: "Desserts-cheesecake.jpeg" },
+                        { name: "Lotus Biscuit Cake", price: "€5.90", description: "A delicious cake made with Lotus biscuits.", image: "Desserts-lotus-biscuit-cake.jpeg" },
+                        { name: "Death by Chocolate", price: "€6.40", description: "Rich and indulgent chocolate dessert.", image: "Desserts-death-by-chocolate.jpeg" },
+                        { name: "Grandma's Cake", price: "€5.50", description: "Traditional cake made with a family recipe.", image: "Desserts-grandmas-cake.jpeg" },
+                        { name: "Velvet Cake", price: "€5.50", description: "Soft and moist velvet cake.", image: "Desserts-velvet-cake.jpeg" },
+                        { name: "Chocolate Fondant", price: "€5.20", description: "Warm chocolate fondant with a molten center.", image: "Desserts-chocolate-fondant.jpeg" },
+                        { name: "Bailey's Fondant", price: "€5.20", description: "Fondant infused with Bailey's liqueur.", image: "Desserts-baileys-fondant.jpeg" },
+                        { name: "White Chocolate Fondant (Gluten-Free)", price: "€5.20", description: "Gluten-free white chocolate fondant.", image: "Desserts-white-chocolate-fondant.jpeg" },
+                        { name: "Brownie with Cookie Crumble", price: "€6.00", description: "A brownie topped with cookie crumble.", image: "Desserts-brownie-cookie-crumble.jpeg" },
+                        { name: "Cream Tart (Gluten-Free)", price: "€4.90", description: "Gluten-free cream tart.", image: "Desserts-cream-tart.jpeg" },
+                        { name: "Whisky Cake", price: "€5.20", description: "A moist cake infused with whisky.", image: "Desserts-whisky-cake.jpeg" },
+                        { name: "Chocolate Truffles", price: "€5.20", description: "Decadent chocolate truffles.", image: "Desserts-chocolate-truffles.jpeg" },
+                        { name: "Nougat Ice Cream Cup (Gluten-Free)", price: "€3.00", description: "A gluten-free nougat ice cream cup.", image: "Desserts-nougat-ice-cream.jpeg" },
+                        { name: "Orange with Cinnamon (Gluten-Free)", price: "€3.80", description: "Fresh orange slices with cinnamon.", image: "Desserts-orange-cinnamon.jpeg" }
+                ]
+            }         
+
         }
     },
     fr: {
@@ -222,7 +242,27 @@ const menuData = {
                     { name: "Vin rouge Rioja, Altos Ibericos", price: "20€", description: "1 bouteille de vin rouge Altos Ibericos, Rioja", image: "Vinos-botella-tinto-altos-ibericos.jpeg" }
                     
                 ]
+            },
+            "Desserts": {
+                description: "Terminez votre repas avec une touche sucrée.",
+                items: [
+                    { name: "Cheesecake", price: "5,50 €", description: "Un cheesecake crémeux classique.", image: "Desserts-cheesecake.jpeg" },
+                    { name: "Gâteau Biscuit Lotus", price: "5,90 €", description: "Un délicieux gâteau fait avec des biscuits Lotus.", image: "Desserts-lotus-biscuit-cake.jpeg" },
+                    { name: "Mort par Chocolat", price: "6,40 €", description: "Un dessert riche et indulgent au chocolat.", image: "Desserts-death-by-chocolate.jpeg" },
+                    { name: "Gâteau de Grand-mère", price: "5,50 €", description: "Un gâteau traditionnel préparé avec une recette familiale.", image: "Desserts-grandmas-cake.jpeg" },
+                    { name: "Gâteau Velours", price: "5,50 €", description: "Un gâteau velouté, doux et moelleux.", image: "Desserts-velvet-cake.jpeg" },
+                    { name: "Fondant au Chocolat", price: "5,20 €", description: "Fondant au chocolat chaud avec un centre coulant.", image: "Desserts-chocolate-fondant.jpeg" },
+                    { name: "Fondant au Bailey's", price: "5,20 €", description: "Fondant infusé au Bailey's.", image: "Desserts-baileys-fondant.jpeg" },
+                    { name: "Fondant au Chocolat Blanc (Sans Gluten)", price: "5,20 €", description: "Fondant au chocolat blanc sans gluten.", image: "Desserts-white-chocolate-fondant.jpeg" },
+                    { name: "Brownie avec Émietté de Cookies", price: "6,00 €", description: "Un brownie garni d'émietté de cookies.", image: "Desserts-brownie-cookie-crumble.jpeg" },
+                    { name: "Tarte à la Crème (Sans Gluten)", price: "4,90 €", description: "Tarte à la crème sans gluten.", image: "Desserts-cream-tart.jpeg" },
+                    { name: "Gâteau au Whisky", price: "5,20 €", description: "Un gâteau moelleux infusé au whisky.", image: "Desserts-whisky-cake.jpeg" },
+                    { name: "Truffes au Chocolat", price: "5,20 €", description: "Des truffes au chocolat décadentes.", image: "Desserts-chocolate-truffles.jpeg" },
+                    { name: "Tasse de Glace au Nougat (Sans Gluten)", price: "3,00 €", description: "Une tasse de glace au nougat sans gluten.", image: "Desserts-nougat-ice-cream.jpeg" },
+                    { name: "Orange à la Cannelle (Sans Gluten)", price: "3,80 €", description: "Des tranches d'orange fraîches à la cannelle.", image: "Desserts-orange-cinnamon.jpeg" }
+                ]
             }
+            
         }
     },
     es: {
@@ -333,7 +373,27 @@ const menuData = {
                     { name: "Vino tinto Rioja, Altos Ibéricos", price: "20€", description: "1 botella de vino tinto Altos Ibéricos, Rioja", image: "Vinos-botella-tinto-altos-ibericos.jpeg" }
                     
                 ]
+            },
+            "Postres": {
+                description: "Termina tu comida con un toque dulce.",
+                items: [
+                  { name: "Tarta de queso", price: "5,50 €", "description": "Una clásica tarta de queso cremosa.", "image": "Desserts-cheesecake.jpeg" },
+                  { name: "Tarta Galleta 'Lotus'", price: "5,90 €", description: "Deliciosa tarta hecha con galletas Lotus.", image: "Desserts-lotus-biscuit-cake.jpeg" },
+                  { name: "Muerte por chocolate", price: "6,40 €", description: "Un postre de chocolate rico e indulgente.", image: "Desserts-death-by-chocolate.jpeg" },
+                  { name: "Tarta de la abuela", price: "5,50 €", description: "Tarta tradicional hecha con receta familiar.", image: "Desserts-grandmas-cake.jpeg" },
+                  { name: "Tarta velvet", price: "5,50 €", description: "Tarta suave y esponjosa.", image: "Desserts-velvet-cake.jpeg" },
+                  { name: "Coulant de chocolate", price: "5,20 €", description: "Coulant de chocolate caliente con centro fundido.", image: "Desserts-chocolate-fondant.jpeg" },
+                  { name: "Coulant de Bailey's", price: "5,20 €", description: "Coulant infusionado con licor de Bailey's.", image: "Desserts-baileys-fondant.jpeg" },
+                  { name: "Coulant chocolate blanco (S/G)", price: "5,20 €", description: "Coulant de chocolate blanco sin gluten.", image: "Desserts-white-chocolate-fondant.jpeg" },
+                  { name: "Brownie con Galleta cookies", price: "6,00 €", description: "Brownie cubierto con galleta crumble.", image: "Desserts-brownie-cookie-crumble.jpeg" },
+                  { name: "Contesa de nata (S/G)", price: "4,90 €", description: "Tarta de nata sin gluten.", image: "Desserts-cream-tart.jpeg" },
+                  { name: "Tarta al whisky", price: "5,20 €", description: "Tarta esponjosa infusionada con whisky.", image: "Desserts-whisky-cake.jpeg" },
+                  { name: "Trufas de chocolate", price: "5,20 €", description: "Trufas de chocolate decadentes.", image: "Desserts-chocolate-truffles.jpeg" },
+                  { name: "Tarrina helado turrón (S/G)", price: "3,00 €", description: "Tarrina de helado de turrón sin gluten.", image: "Desserts-nougat-ice-cream.jpeg" },
+                  { name: "Naranja con canela (S/G)", price: "3,80 €", description: "Rodajas de naranja fresca con canela.", image: "Desserts-orange-cinnamon.jpeg" }
+                ]
             }
+            
         }
     }
 };
