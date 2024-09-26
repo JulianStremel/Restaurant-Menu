@@ -186,8 +186,7 @@ const menuData = {
                     { name: "Poulpe Vidigonero", price: "€18.00", description: "Poulpe grillé à la façon Vidigonero (recette du chef)", image: "Specialties-octopus.jpeg" },
                     { name: "Gambas Galiana", price: "€22.00", description: "Gambas géantes style Galiana", image: "Specialties-galiana-jumbo-prawns.jpeg" },
                     { name: "Gulas du Nord avec Palourdes", price: "€12.00", description: "Gulas du nord accompagnées de palourdes fraîches", image: "Specialties-gulas.jpeg" },
-                    { name: "Patatas Twister", price: "€9.00", description: "Pommes de terre en spirale avec diverses sauces", image: "special5.jpg" },
-                    { name: "Pain Farci aux Charcuteries", price: "€11.00", description: "Pain farci aux charcuteries variées", image: "special6.jpg" }
+                    { name: "Patatas Twister", price: "€9.00", description: "Pommes de terre en spirale avec diverses sauces", image: "special5.jpg" }
                 ]
             },
             "Hamburgers": {
@@ -317,8 +316,7 @@ const menuData = {
                     { name: "Pulpo Vidigonero", price: "€18.00", description: "Pulpo a la brasa estilo Vidigonero", image: "Specialties-octopus.jpeg" },
                     { name: "Gambón Galiana", price: "€22.00", description: "Gambón de gran tamaño estilo Galiana", image: "Specialties-galiana-jumbo-prawns.jpeg" },
                     { name: "Gulas del Norte con Almejas", price: "€12.00", description: "Gulas del norte acompañadas de almejas frescas", image: "Specialties-gulas.jpeg" },
-                    { name: "Patatas Twister", price: "€9.00", description: "Patatas en espiral con salsas variadas", image: "special5.jpg" },
-                    { name: "Hogaza Embutido", price: "€11.00", description: "Hogaza de pan rellena con embutidos variados", image: "special6.jpg" }
+                    { name: "Patatas Twister", price: "€9.00", description: "Patatas en espiral con salsas variadas", image: "special5.jpg" }
                 ]
             },
             "Hamburguesas": {
