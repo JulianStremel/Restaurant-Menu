@@ -60,25 +60,25 @@ const menuData = {
             "Baguette Sandwiches": {
                 description: "Classic baguette sandwiches packed with flavorful ingredients.",
                 items: [
-                    { name: "Chivito Especial", price: "€11", description: "Lettuce, tomato, cheese, bacon, fried egg, and ham", image: "sub1.jpg" },
-                    { name: "Polvorilla", price: "€11", description: "Tomato, ham, cheese, and bacon on a toasted bun", image: "sub2.jpg" },
-                    { name: "Alex Sub", price: "€10", description: "Gouda cheese, bacon, lomo, and fries", image: "sub3.jpg" },
-                    { name: "Héctor Sub", price: "€10", description: "Caramelized onions, bacon, and melted cheese", image: "sub4.jpg" }
+                    { name: "Chivito Especial", price: "€11", description: "Lettuce, tomato, cheese, bacon, fried egg, and ham", image: "default-image.jpeg" },
+                    { name: "Polvorilla", price: "€11", description: "Tomato, ham, cheese, and bacon on a toasted bun", image: "default-image.jpeg" },
+                    { name: "Alex Sub", price: "€10", description: "Gouda cheese, bacon, lomo, and fries", image: "default-image.jpeg" },
+                    { name: "Héctor Sub", price: "€10", description: "Caramelized onions, bacon, and melted cheese", image: "default-image.jpeg" }
                 ]
             },
             "Sandwiches": {
                 description: "Delicious sandwiches for a quick and satisfying meal.",
                 items: [
-                    { name: "Andrea", price: "€8", description: "Ham, lettuce, tomato, and pickles", image: "sandwich1.jpg" },
-                    { name: "Tuna Sandwich", price: "€7", description: "Tuna, lettuce, and olives in a toasted sandwich", image: "sandwich2.jpg" },
-                    { name: "Mixed Sandwich", price: "€4", description: "Simple ham and cheese sandwich", image: "sandwich3.jpg" }
+                    { name: "Andrea", price: "€8", description: "Ham, lettuce, tomato, and pickles", image: "default-image.jpeg" },
+                    { name: "Tuna Sandwich", price: "€7", description: "Tuna, lettuce, and olives in a toasted sandwich", image: "default-image.jpeg" },
+                    { name: "Mixed Sandwich", price: "€4", description: "Simple ham and cheese sandwich", image: "default-image.jpeg" }
                 ]
             },
             "Burritos": {
                 description: "Hearty and flavorful burritos for a filling meal.",
                 items: [
                     { name: "D-Lux Burrito", price: "€8.50", description: "Chicken, lettuce, tomato, and bacon wrapped in a burrito", image: "Burritos-d-lux.jpeg" },
-                    { name: "Texan Burrito", price: "€8.50", description: "Eggplant, zucchini, tomato, and chicken strips", image: "burrito2.jpg" }
+                    { name: "Texan Burrito", price: "€8.50", description: "Eggplant, zucchini, tomato, and chicken strips", image: "default-image.jpeg" }
                 ]
             },
             "Drinks": {

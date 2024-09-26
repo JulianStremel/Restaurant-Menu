@@ -1,44 +1,4 @@
-/* Menu Content Container Styling */
-#menuContent {
-    max-height: 80vh; /* Limit height to 80% of the viewport */
-    overflow-y: auto; /* Enable vertical scroll */
-    padding-right: 10px; /* Add padding for scroll bar */
-}
-
-/* Custom scrollbar styling for Webkit browsers (Chrome, Safari, etc.) */
-#menuContent::-webkit-scrollbar {
-    width: 12px; /* Set the width of the scrollbar */
-}
-
-#menuContent::-webkit-scrollbar-track {
-    background: #f4f4f9; /* Background of the scrollbar track */
-    border-radius: 10px; /* Rounded corners for the track */
-}
-
-#menuContent::-webkit-scrollbar-thumb {
-    background-color: #888; /* Scrollbar color */
-    border-radius: 10px; /* Rounded scrollbar edges */
-    border: 2px solid #f4f4f9; /* Padding between thumb and track */
-}
-
-#menuContent::-webkit-scrollbar-thumb:hover {
-    background-color: #555; /* Darker color on hover */
-}
-
-/* Add some additional styles for cross-browser scrollbar support */
-#menuContent {
-    scrollbar-width: thin; /* For Firefox: make the scrollbar thin */
-    scrollbar-color: #888 #f4f4f9; /* For Firefox: thumb and track colors */
-}
-
-/* Optional: Adjust padding for the scrollbar on mobile */
-@media (max-width: 768px) {
-    #menuContent {
-        padding-right: 15px; /* More padding on smaller screens */
-    }
-}
-
-/* Other CSS rules remain unchanged */
+/* Menu Category Styling */
 .menu-category {
     margin-bottom: 40px;
     padding: 10px 0;
@@ -92,28 +52,42 @@
     transform: scale(1.1); /* Simple hover effect */
 }
 
-
 /* Meal Detail View */
 #mealDetail img {
     max-width: 100%;
     border-radius: 10px;
-    margin-bottom: 15px; /* Add space below the image */
 }
 
-#mealDetail h2 {
-    font-size: 24px; /* Size of the meal name */
-    margin-top: 15px; /* Add space between the image and the meal name */
-    margin-bottom: 10px; /* Space between the meal name and the description */
+/* Adjust list for horizontal scrolling */
+.sticky-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    width: max-content;
 }
 
-#mealDetail p {
-    font-size: 18px; /* Size of the description text */
-    margin-bottom: 15px; /* Space between the description and the price */
+.sticky-nav ul li {
+    margin: 0 15px;
+    display: inline;
 }
 
-#mealDetail h4 {
-    font-size: 20px; /* Size of the price text */
+.sticky-nav ul li a {
+    text-decoration: none;
+    color: #007bff;
     font-weight: bold;
-    color: #2c3e50; /* Darker color for the price */
-    margin-bottom: 20px; /* Add space below the price to separate from the button */
+}
+
+.sticky-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .sticky-nav {
+        padding: 10px;
+    }
+
+    .sticky-nav ul li {
+        margin: 0 10px;
+    }
 }
