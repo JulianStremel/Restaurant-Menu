@@ -22,7 +22,8 @@ const menuData = {
                     { name: "Fries with Cheese and Bacon", price: "€9.90", description: "Fries topped with gouda cheese and bacon", image: "Starters-fries-gouda-cheese.jpeg" },
                     { name: "Cuttlefish", price: "€9.90", description: "Cuttlefish", image: "Starters-cuttlefish.jpeg" },
                     { name: "Patatas Bravas (Wedges)", price: "€9.90", description: "Patatas Bravas Wedges", image: "Starters-bravas-wedges.jpeg" },
-                    { name: "Sweet fried Potatos with Roquefort", price: "€9.90", description: "A nice portion of sweet fried potatoes with melted Roquefort cheese", image: "Starters-sweet-fries-roquefort.jpeg" }
+                    { name: "Sweet fried Potatos with Roquefort", price: "€9.90", description: "A nice portion of sweet fried potatoes with melted Roquefort cheese", image: "Starters-sweet-fries-roquefort.jpeg" },
+                    {name: "Patatas Twister", price: "€10.00", description: "Twisted fries with special sauce", image: "Starters-twister-fries.jpeg"}
                 ]
             },
             "Combo meals": {
@@ -162,7 +163,8 @@ const menuData = {
                     { name: "Frites de Patate Douce au Roquefort", price: "€9.00", description: "Frites de patate douce avec sauce roquefort", image: "Starters-sweet-fries-roquefort.jpeg" },
                     { name: "Plateau de Jambon Serrano Bodega", price: "€13.00", description: "Jambon serrano bodega servi sur une planche", image: "starter10.jpg" },
                     { name: "Seiche Entière à la Plancha", price: "€14.00", description: "Seiche entière grillée avec ail et persil", image: "Starters-cuttlefish.jpeg" },
-                    { name: "Patatas Bravas", price: "€9.50", description: "Pommes de terre frites avec sauce brava", image: "Starters-bravas-wedges.jpeg" }
+                    { name: "Patatas Bravas", price: "€9.50", description: "Pommes de terre frites avec sauce brava", image: "Starters-bravas-wedges.jpeg" },
+                    { name: "Frites Twister", price: "€10.00", description: "Pommes de terre en spirale avec diverses sauces", image: "Starters-twister-fries.jpeg" }
                 ]
             },
             "Assièttes Combinées": {
@@ -185,8 +187,8 @@ const menuData = {
                     { name: "Entrecote de Boeuf 600g", price: "€28.00", description: "Entrecote de boeuf de 600g, grillée à point", image: "Specialties-ribeye.jpeg" },
                     { name: "Poulpe Vidigonero", price: "€18.00", description: "Poulpe grillé à la façon Vidigonero (recette du chef)", image: "Specialties-octopus.jpeg" },
                     { name: "Gambas Galiana", price: "€22.00", description: "Gambas géantes style Galiana", image: "Specialties-galiana-jumbo-prawns.jpeg" },
-                    { name: "Gulas du Nord avec Palourdes", price: "€12.00", description: "Gulas du nord accompagnées de palourdes fraîches", image: "Specialties-gulas.jpeg" },
-                    { name: "Patatas Twister", price: "€9.00", description: "Pommes de terre en spirale avec diverses sauces", image: "special5.jpg" }
+                    { name: "Gulas du Nord avec Palourdes", price: "€12.00", description: "Gulas du nord accompagnées de palourdes fraîches", image: "Specialties-gulas.jpeg" }
+
                 ]
             },
             "Hamburgers": {
@@ -288,7 +290,8 @@ const menuData = {
                     { name: "Tirás Boniato con Roquefort", price: "€9.00", description: "Tiras de boniato frito con salsa roquefort", image: "Starters-sweet-fries-roquefort.jpeg" },
                     { name: "Tabla Jamón Serrano Bodega", price: "€13.00", description: "Jamón serrano bodega servido en tabla", image: "starter10.jpg" },
                     { name: "Sepia Enterita a la Plancha", price: "€14.00", description: "Sepia entera a la plancha con ajo y perejil", image: "Starters-cuttlefish.jpeg" },
-                    { name: "Patatas Bravas", price: "€9.50", description: "Patatas fritas con salsa brava", image: "Starters-bravas-wedges.jpeg" }
+                    { name: "Patatas Bravas", price: "€9.50", description: "Patatas fritas con salsa brava", image: "Starters-bravas-wedges.jpeg" },
+                    { name: "Patatas Twister", price: "€10.00", description: "Patatas en espiral con salsas variadas", image: "Starters-twister-fries.jpeg" }
                 ]
             },
             
@@ -315,8 +318,8 @@ const menuData = {
                     { name: "Chuletón Ternera 600g", price: "€28.00", description: "Chuletón de ternera de 600g, a la parrilla", image: "Specialties-ribeye.jpeg" },
                     { name: "Pulpo Vidigonero", price: "€18.00", description: "Pulpo a la brasa estilo Vidigonero", image: "Specialties-octopus.jpeg" },
                     { name: "Gambón Galiana", price: "€22.00", description: "Gambón de gran tamaño estilo Galiana", image: "Specialties-galiana-jumbo-prawns.jpeg" },
-                    { name: "Gulas del Norte con Almejas", price: "€12.00", description: "Gulas del norte acompañadas de almejas frescas", image: "Specialties-gulas.jpeg" },
-                    { name: "Patatas Twister", price: "€9.00", description: "Patatas en espiral con salsas variadas", image: "special5.jpg" }
+                    { name: "Gulas del Norte con Almejas", price: "€12.00", description: "Gulas del norte acompañadas de almejas frescas", image: "Specialties-gulas.jpeg" }
+                    
                 ]
             },
             "Hamburguesas": {
