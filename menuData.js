@@ -55,7 +55,7 @@ const menuData = {
                     { name: "Goat Cheese Burger", price: "€12", description: "Beef burger with goat cheese and mustard sauce", vegan: "no", image: "Burgers-goat-cheese-burger.jpeg" },
                     { name: "Montanejos Adventure chicken Burger", price: "€12", description: "Chicken burger with bacon, egg, and special sauce", vegan: "no", image: "Burgers-chicken-burger.jpeg" },
                     { name: "Vegetarian Burger", price: "€12", description: "Falafel burger with caramelized onions and cheese.  **if you want fries please mention it when you order", vegan: "no", image: "Burgers-falafel-burger.jpeg" },
-                    { name: "Vegan Burger", price: "€12", description: "Quinoa burger with roasted vegetables and tomato.  **if you want fries please mention it when you order", vegan: "yes", image: "Burgers-falafel-burger.jpeg" }
+                    { name: "Vegan Burger", price: "€12", description: "Quinoa burger with roasted vegetables and tomato.  **if you want fries please mention it when you order", vegan: "yes", image: "Burgers-vegan-burger.jpeg" }
                 ]
             },
             "Baguette Sandwiches": {
@@ -198,7 +198,7 @@ const menuData = {
                     { name: "Fromage de Chèvre", price: "€12.00", description: "Hamburger de bœuf avec fromage de chèvre et sauce à la moutarde", vegan: "no", image: "Burgers-goat-cheese-burger.jpeg" },
                     { name: "Montanejos Adventure au Poulet", price: "€12.00", description: "Hamburger de poulet avec bacon, mayonnaise, laitue, tomate, et fromage", vegan: "no", image: "Burgers-chicken-burger.jpeg" },
                     { name: "Végétarien", price: "€12.00", description: "Hamburger de falafel avec oignon caramélisé et fromage. **les frites doivent être commandées à part", vegan: "no", image: "Burgers-falafel-burger.jpeg" },
-                    { name: "Vegan", price: "€12.00", description: "Hamburger végan de quinoa avec légumes grillés.  **les frites doivent être commandées à part", vegan: "yes", image: "Burgers-falafel-burger.jpeg" }
+                    { name: "Vegan", price: "€12.00", description: "Hamburger végan de quinoa avec légumes grillés.  **les frites doivent être commandées à part", vegan: "yes", image: "Burgers-vegan-burger.jpeg" }
                 ]
             },
             "Burritos": {
@@ -329,7 +329,7 @@ const menuData = {
                     { name: "Queso de Cabra", price: "€12.00", description: "Hamburguesa de ternera con queso de cabra y salsa de mostaza", vegan: "no", image: "Burgers-goat-cheese-burger.jpeg" },
                     { name: "Montanejos Adventure con Pollo", price: "€12.00", description: "Hamburguesa de pollo con bacon, mayonesa, lechuga, tomate, y queso", vegan: "no", image: "Burgers-chicken-burger.jpeg" },
                     { name: "Vegetariana", price: "€12.00", description: "Hamburguesa de falafel con cebolla caramelizada y queso **Las patatas se piden a parte", vegan: "no", image: "Burgers-falafel-burger.jpeg" },
-                    { name: "Vegana", price: "€12.00", description: "Hamburguesa vegana de quinoa con verduras asadas  **Las patatas se piden a parte", vegan: "yes", image: "Burgers-falafel-burger.jpeg" }
+                    { name: "Vegana", price: "€12.00", description: "Hamburguesa vegana de quinoa con verduras asadas  **Las patatas se piden a parte", vegan: "yes", image: "Burgers-vegan-burger.jpeg" }
                 ]
             },
             "Burritos": {
