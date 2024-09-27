@@ -9,7 +9,7 @@ const menuData = {
                     { name: "Caesar Salad (Chicken)", price: "€14", description: "Classic Caesar salad with chicken", vegan: "no", image: "Salads-Caesar-salad.jpeg" },
                     { name: "Valencian Salad (Tuna)", price: "€12", description: "Traditional Valencian salad with tuna", vegan: "no", image: "Salads-valenciana.jpeg" },
                     { name: "Vegetarian Salad without tuna", price: "€12", description: "Fresh mixed salad with vegetables, no tuna", vegan: "yes", image: "Salads-valenciana.jpeg" },
-                    { name: "Zucchini Carpaccio", price: "€12", description: "Zucchini slices with olive oil and seasoning", vegan: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
+                    { name: "Zucchini Carpaccio", price: "€12", description: "Zucchini slices drizzled with olive oil and seasoning. For a vegan option, simply request it without the cheese.", vegan: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
             },
             "Starters and Tapas": {
@@ -151,7 +151,7 @@ const menuData = {
                     { name: "Salade César (Poulet)", price: "€14", description: "Salade César classique avec poulet", vegan: "no", image: "Salads-Caesar-salad.jpeg" },
                     { name: "Salade Valencienne (Thon)", price: "€12", description: "Salade valencienne traditionnelle avec du thon", vegan: "no", image: "Salads-valenciana.jpeg" },
                     { name: "Salade Végétarienne sans thon", price: "€12", description: "Salade mixte sans thon", vegan: "yes", image: "Salads-valenciana.jpeg" },
-                    { name: "Carpaccio de Courgette", price: "€12", description: "Tranches de courgette avec de l'huile d'olive", vegan: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
+                    { name: "Carpaccio de Courgette", price: "€12", description: "Tranches de courgette arrosées d'huile d'olive et assaisonnées. Pour une version végan, demandez simplement sans fromage.", vegan: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
             },
             "Entrées et Tapas": {
@@ -281,7 +281,7 @@ const menuData = {
                     { name: "Ensalada César (Pollo)", price: "€14", description: "Ensalada César clásica con pollo", vegan: "no", image: "Salads-Caesar-salad.jpeg" },
                     { name: "Ensalada Valenciana (Atún)", price: "€12", description: "Ensalada valenciana con atún", vegan: "no", image: "Salads-valenciana.jpeg" },
                     { name: "Ensalada Vegetariana sin atún", price: "€12", description: "Ensalada mixta con verduras frescas sin atún", vegan: "yes", image: "Salads-valenciana.jpeg" },
-                    { name: "Carpaccio de Calabacín", price: "€12", description: "Rodajas de calabacín con aceite de oliva", vegan: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
+                    { name: "Carpaccio de Calabacín", price: "€12", description: "Rodajas de calabacín con aceite de oliva y condimentos. Para la opción vegana, simplemente pídalo sin queso.", vegan: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
             },
             "Entrantes y Tapas": {
