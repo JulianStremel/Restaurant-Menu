@@ -114,9 +114,22 @@ const menuData = {
             "Wines": {
                 description: "Carefully selected wines to complement any meal.",
                 items: [
-                    { name: "Rosé, Finca del Mar", price: "€16", description: "1 bottle Finca del Mar Rosé", vegan: "no", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
-                    { name: "White wine Chardonnay, Finca del Mar", price: "€16", description: "Finca del Mar Blanco", vegan: "no", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
-                    { name: "Red wine Rioja, Altos Ibericos", price: "€20", description: "1 bottle red wine Altos Ibericos, Rioja", vegan: "no", image: "Vinos-botella-tinto-altos-ibericos.jpeg" }
+                    { name: "Rosado, Finca del Mar", price: "11€", description: "1 bottle of Finca del Mar Rosé", vegan: "yes", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
+                    { name: "Chardonnay White Wine, Finca del Mar", price: "11€", description: "Finca del Mar White", vegan: "yes", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
+                    { name: "Tinto, Finca del Mar", price: "11€", description: "1 bottle of Finca del Mar Red", vegan: "yes", image: "Vinos-botella-tinto-finca-del-mar.jpeg" },
+                    { name: "Red Wine Rioja, Altos Ibéricos", price: "14€", description: "1 bottle of red wine Altos Ibéricos, Rioja", vegan: "yes", image: "Vinos-botella-tinto-altos-ibericos.jpeg" },
+                    { name: "Garnacha Tintorera, Uva Pirata", price: "12€", description: "1 bottle of Uva Pirata Garnacha Tintorera", vegan: "yes", image: "Vinos-botella-garnacha-tintorera-uva-pirata.jpeg" },
+                    { name: "Garnacha Blanca, Uva Pirata", price: "12€", description: "1 bottle of Uva Pirata Garnacha White", vegan: "yes", image: "Vinos-botella-garnacha-blanca-uva-pirata.jpeg" },
+                    { name: "El Miracle Art", price: "16€", description: "1 bottle of wine El Miracle Art", vegan: "yes", image: "Vinos-botella-el-miracle-art.jpeg" },
+                    { name: "Bobal Noir", price: "18€", description: "1 bottle of Bobal Noir wine", vegan: "yes", image: "Vinos-botella-bobal-negro.jpeg" },
+                    { name: "Bobal Rosé", price: "18€", description: "1 bottle of Bobal Rosé wine", vegan: "yes", image: "Vinos-botella-bobal-rosa.jpeg" },
+                    { name: "Bobal Blanc", price: "18€", description: "1 bottle of Bobal Blanc wine", vegan: "yes", image: "Vinos-botella-bobal-blanco.jpeg" },
+                    { name: "Coto Crianza, Rioja", price: "12€", description: "1 bottle of Coto Crianza", vegan: "yes", image: "Vinos-botella-coto-crianza.jpeg" },
+                    { name: "Beronia Crianza, Rioja", price: "18€", description: "1 bottle of Beronia Crianza", vegan: "yes", image: "Vinos-botella-beronia-crianza.jpeg" },
+                    { name: "Melior Matarromera, Ribera del Duero", price: "20€", description: "1 bottle of Melior Matarromera", vegan: "yes", image: "Vinos-botella-melior-matarromera.jpeg" },
+                    { name: "Punto Geodésico, Ribera del Duero", price: "37€", description: "1 bottle of Punto Geodésico", vegan: "yes", image: "Vinos-botella-punto-geodesico.jpeg" },
+                    { name: "Trus Roble, Ribera del Duero", price: "17€", description: "1 bottle of Trus Roble", vegan: "yes", image: "Vinos-botella-trus-roble.jpeg" },
+                    { name: "Santa Rosa, Enrique Mendoza", price: "28€", description: "1 bottle of Santa Rosa", vegan: "yes", image: "Vinos-botella-santa-rosa.jpeg" }
                 ]
             },
             "Desserts": {
@@ -243,9 +256,22 @@ const menuData = {
             "Vins": {
                 description: "Des vins soigneusement sélectionnés pour accompagner tout repas.",
                 items: [
-                    { name: "Rosé, Finca del Mar", price: "16€", description: "1 bouteille de Finca del Mar Rosé", vegan: "yes", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
-                    { name: "Vin blanc Chardonnay, Finca del Mar", price: "16€", description: "Finca del Mar Blanc", vegan: "yes", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
-                    { name: "Vin rouge Rioja, Altos Ibericos", price: "20€", description: "1 bouteille de vin rouge Altos Ibericos, Rioja", vegan: "yes", image: "Vinos-botella-tinto-altos-ibericos.jpeg" }
+                    { name: "Rosado, Finca del Mar", price: "11€", description: "1 bouteille de Finca del Mar Rosé", vegan: "yes", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
+                    { name: "Vin blanc Chardonnay, Finca del Mar", price: "11€", description: "Finca del Mar Blanc", vegan: "yes", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
+                    { name: "Vin Rouge, Finca del Mar", price: "11€", description: "1 bouteille de Finca del Mar Rouge", vegan: "yes", image: "Vinos-botella-tinto-finca-del-mar.jpeg" },
+                    { name: "Vin rouge Rioja, Altos Ibéricos", price: "14€", description: "1 bouteille de vin rouge Altos Ibéricos, Rioja", vegan: "yes", image: "Vinos-botella-tinto-altos-ibericos.jpeg" },
+                    { name: "Garnacha Tintorera, Uva Pirata", price: "12€", description: "1 bouteille de Uva Pirata Garnacha Tintorera", vegan: "yes", image: "Vinos-botella-garnacha-tintorera-uva-pirata.jpeg" },
+                    { name: "Garnacha Blanca, Uva Pirata", price: "12€", description: "1 bouteille de Uva Pirata Garnacha Blanche", vegan: "yes", image: "Vinos-botella-garnacha-blanca-uva-pirata.jpeg" },
+                    { name: "El Miracle Art", price: "16€", description: "1 bouteille de vin El Miracle Art", vegan: "yes", image: "Vinos-botella-el-miracle-art.jpeg" },
+                    { name: "Bobal Noir", price: "18€", description: "1 bouteille de vin Bobal Noir", vegan: "yes", image: "Vinos-botella-bobal-negro.jpeg" },
+                    { name: "Bobal Rosé", price: "18€", description: "1 bouteille de vin Bobal Rosé", vegan: "yes", image: "Vinos-botella-bobal-rosa.jpeg" },
+                    { name: "Bobal Blanc", price: "18€", description: "1 bouteille de vin Bobal Blanc", vegan: "yes", image: "Vinos-botella-bobal-blanco.jpeg" },
+                    { name: "Coto Crianza, Rioja", price: "12€", description: "1 bouteille de Coto Crianza", vegan: "yes", image: "Vinos-botella-coto-crianza.jpeg" },
+                    { name: "Beronia Crianza, Rioja", price: "18€", description: "1 bouteille de Beronia Crianza", vegan: "yes", image: "Vinos-botella-beronia-crianza.jpeg" },
+                    { name: "Melior Matarromera, Ribera del Duero", price: "20€", description: "1 bouteille de Melior Matarromera", vegan: "yes", image: "Vinos-botella-melior-matarromera.jpeg" },
+                    { name: "Punto Geodésico, Ribera del Duero", price: "37€", description: "1 bouteille de Punto Geodésico", vegan: "yes", image: "Vinos-botella-punto-geodesico.jpeg" },
+                    { name: "Trus Roble, Ribera del Duero", price: "17€", description: "1 bouteille de Trus Roble", vegan: "yes", image: "Vinos-botella-trus-roble.jpeg" },
+                    { name: "Santa Rosa, Enrique Mendoza", price: "28€", description: "1 bouteille de Santa Rosa", vegan: "yes", image: "Vinos-botella-santa-rosa.jpeg" }
                     
                 ]
             },
@@ -377,12 +403,27 @@ const menuData = {
             "Vinos": {
                 description: "Vinos cuidadosamente seleccionados para acompañar cualquier comida.",
                 items: [
-                    { name: "Rosado, Finca del Mar", price: "16€", description: "1 botella de Finca del Mar Rosado", vegan: "yes", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
-                    { name: "Vino blanco Chardonnay, Finca del Mar", price: "16€", description: "Finca del Mar Blanco", vegan: "yes", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
-                    { name: "Vino tinto Rioja, Altos Ibéricos", price: "20€", description: "1 botella de vino tinto Altos Ibéricos, Rioja", vegan: "yes", image: "Vinos-botella-tinto-altos-ibericos.jpeg" }
-                    
+                    { name: "Rosado, Finca del Mar", price: "11€", description: "1 botella de Finca del Mar Rosado", vegan: "yes", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
+                    { name: "Vino blanco Chardonnay, Finca del Mar", price: "11€", description: "Finca del Mar Blanco", vegan: "yes", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
+                    { name: "Tinto, Finca del Mar", price: "11€", description: "1 botella de Finca del Mar Tinto", vegan: "yes", image: "Vinos-botella-tinto-finca-del-mar.jpeg" },
+                    { name: "Vino tinto Rioja, Altos Ibéricos", price: "14€", description: "1 botella de vino tinto Altos Ibéricos, Rioja", vegan: "yes", image: "Vinos-botella-tinto-altos-ibericos.jpeg" },
+                    { name: "Garnacha Tintorera, Uva Pirata", price: "12€", description: "1 botella de Uva Pirata Garnacha Tintorera", vegan: "yes", image: "Vinos-botella-garnacha-tintorera-uva-pirata.jpeg" },
+                    { name: "Garnacha Blanca, Uva Pirata", price: "12€", description: "1 botella de Uva Pirata Garnacha Blanca", vegan: "yes", image: "Vinos-botella-garnacha-blanca-uva-pirata.jpeg" },
+                    { name: "El Miracle Art", price: "16€", description: "1 botella de vino El Miracle Art", vegan: "yes", image: "Vinos-botella-el-miracle-art.jpeg" },
+                    { name: "Bobal Negro", price: "18€", description: "1 botella de vino Bobal Negro", vegan: "yes", image: "Vinos-botella-bobal-negro.jpeg" },
+                    { name: "Bobal Rosa", price: "18€", description: "1 botella de vino Bobal Rosa", vegan: "yes", image: "Vinos-botella-bobal-rosa.jpeg" },
+                    { name: "Bobal Blanco", price: "18€", description: "1 botella de vino Bobal Blanco", vegan: "yes", image: "Vinos-botella-bobal-blanco.jpeg" },
+                    { name: "Coto Crianza, Rioja", price: "12€", description: "1 botella de Coto Crianza", vegan: "yes", image: "Vinos-botella-coto-crianza.jpeg" },
+                    { name: "Beronia Crianza, Rioja", price: "18€", description: "1 botella de Beronia Crianza", vegan: "yes", image: "Vinos-botella-beronia-crianza.jpeg" },
+                    { name: "Melior Matarromera, Ribera del Duero", price: "20€", description: "1 botella de Melior Matarromera", vegan: "yes", image: "Vinos-botella-melior-matarromera.jpeg" },
+                    { name: "Punto Geodésico, Ribera del Duero", price: "37€", description: "1 botella de Punto Geodésico", vegan: "yes", image: "Vinos-botella-punto-geodesico.jpeg" },
+                    { name: "Trus Roble, Ribera del Duero", price: "17€", description: "1 botella de Trus Roble", vegan: "yes", image: "Vinos-botella-trus-roble.jpeg" },
+                    { name: "Santa Rosa, Enrique Mendoza", price: "28€", description: "1 botella de Santa Rosa", vegan: "yes", image: "Vinos-botella-santa-rosa.jpeg" }
                 ]
             },
+                    
+                
+         
             "Postres": {
                 description: "Termina tu comida con un toque dulce.",
                 items: [
