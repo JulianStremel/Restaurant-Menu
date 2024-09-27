@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     const languageSelect = document.getElementById('languageSelect');
-    const categorySelect = document.getElementById('categorySelect'); // List box for categories
+    const categorySelect = document.getElementById('categorySelect');
     const menuContent = document.getElementById('menuContent');
     const mealDetail = document.getElementById('mealDetail');
     const mealImage = document.getElementById('mealImage');
     const mealName = document.getElementById('mealName');
     const mealDescription = document.getElementById('mealDescription');
     const mealPrice = document.getElementById('mealPrice');
-
+    const closeMealDetail = document.getElementById('closeMealDetail');
     let previousScrollPosition = 0;
 
     // Function to truncate text
@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to load menu data
     function loadMenuData(language) {
         const data = menuData[language].categories;
-        categorySelect.innerHTML = '';  // Clear previous category options
+        categorySelect.innerHTML = '';  
 
-        // Populate categories in the list box
+        // Populate regular categories
         for (let category in data) {
             const option = document.createElement('option');
             option.value = category;
@@ -31,19 +31,27 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add Vegan category dynamically
         const veganOption = document.createElement('option');
         veganOption.value = 'vegan';
-        veganOption.innerText = getVeganCategoryLabel(language); // Get localized label for "Vegan"
+        veganOption.innerText = getVeganCategoryLabel(language);
         categorySelect.appendChild(veganOption);
 
-        // Load the first category by default
+        // Add Gluten-Free category for all languages now
+        const glutenFreeOption = document.createElement('option');
+        glutenFreeOption.value = 'glutenfree';
+        glutenFreeOption.innerText = getGlutenFreeCategoryLabel(language);
+        categorySelect.appendChild(glutenFreeOption);
+
+        // Load the first category by default if there are options
         if (categorySelect.options.length > 0) {
             loadCategoryItems(categorySelect.options[0].value, data);
         }
 
-        // Add change event listener for category selection
+        // Event listener for category change
         categorySelect.addEventListener('change', (e) => {
             const selectedCategory = e.target.value;
             if (selectedCategory === 'vegan') {
-                loadVeganItems(language, data);  // Load vegan items if vegan category is selected
+                loadVeganItems(language, data);
+            } else if (selectedCategory === 'glutenfree') {
+                loadGlutenFreeItems(language, data);
             } else {
                 loadCategoryItems(selectedCategory, data);
             }
@@ -52,30 +60,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to load items for a specific category
     function loadCategoryItems(category, data) {
-        menuContent.innerHTML = ''; // Clear previous content
+        menuContent.innerHTML = ''; 
 
-        const categoryData = data[category];
-
-        // Create a category div
+        const categoryData = data[category] || {description: '', items: []};
         const categoryDiv = document.createElement('div');
         categoryDiv.classList.add('menu-category');
 
-        // Add the category title and description
         const categoryHeader = document.createElement('h2');
         categoryHeader.innerText = category;
         const categoryDescription = document.createElement('p');
-        categoryDescription.innerText = categoryData.description;
+        categoryDescription.innerText = categoryData.description || 'No description available.';
 
-        // Append the category title and description to the category div
         categoryDiv.appendChild(categoryHeader);
         categoryDiv.appendChild(categoryDescription);
 
-        // Loop through the items within the category
-        categoryData.items.forEach(item => {
+        (categoryData.items || []).forEach(item => {
             createMenuItem(item, categoryDiv);
         });
 
-        // Add the category with its items to the menu content
         menuContent.appendChild(categoryDiv);
     }
 
@@ -84,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const itemDiv = document.createElement('div');
         itemDiv.classList.add('menu-item', 'd-flex', 'align-items-center');
 
-        // Create an image and attach event listener
         const itemImage = document.createElement('img');
         itemImage.src = item.image;
         itemImage.alt = item.name;
@@ -96,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
             showMealDetail(item.image, item.name, item.description, item.price);
         });
 
-        // Create a description container and attach event listener
         const itemDescription = document.createElement('div');
         itemDescription.style.cursor = 'pointer';
         const truncatedDescription = truncateText(item.description, 100);
@@ -105,7 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
             showMealDetail(item.image, item.name, item.description, item.price);
         });
 
-        // Append the image and description to the item div
         itemDiv.appendChild(itemImage);
         itemDiv.appendChild(itemDescription);
 
@@ -114,39 +113,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to load vegan items from all categories
     function loadVeganItems(language, data) {
-        menuContent.innerHTML = ''; // Clear previous content
+        menuContent.innerHTML = ''; 
 
-        // Create a vegan category div
         const veganCategoryDiv = document.createElement('div');
         veganCategoryDiv.classList.add('menu-category');
 
-        // Add the vegan category title and description
         const categoryHeader = document.createElement('h2');
-        categoryHeader.innerText = getVeganCategoryLabel(language);  // Get localized label for "Vegan"
+        categoryHeader.innerText = getVeganCategoryLabel(language);
         const categoryDescription = document.createElement('p');
         categoryDescription.innerText = getVeganDescription(language);
 
         veganCategoryDiv.appendChild(categoryHeader);
         veganCategoryDiv.appendChild(categoryDescription);
 
-        // Loop through all categories and find vegan items
         for (let category in data) {
-            const categoryData = data[category];
-
-            categoryData.items.forEach(item => {
-                if (item.vegan === 'yes') {
-                    createMenuItem(item, veganCategoryDiv);
-                }
-            });
+            if (data[category].items) {
+                data[category].items.forEach(item => {
+                    if (item.vegan === 'yes') {
+                        createMenuItem(item, veganCategoryDiv);
+                    }
+                });
+            }
         }
 
-        // Add the vegan category with its items to the menu content
         menuContent.appendChild(veganCategoryDiv);
+    }
+
+    // Function to load gluten-free items from all categories
+    function loadGlutenFreeItems(language, data) {
+        menuContent.innerHTML = ''; 
+
+        const glutenFreeCategoryDiv = document.createElement('div');
+        glutenFreeCategoryDiv.classList.add('menu-category');
+
+        const categoryHeader = document.createElement('h2');
+        categoryHeader.innerText = getGlutenFreeCategoryLabel(language);
+        const categoryDescription = document.createElement('p');
+        categoryDescription.innerText = getGlutenFreeDescription(language);
+
+        glutenFreeCategoryDiv.appendChild(categoryHeader);
+        glutenFreeCategoryDiv.appendChild(categoryDescription);
+
+        for (let category in data) {
+            if (data[category].items) {
+                data[category].items.forEach(item => {
+                    if (item.glutenfree === 'yes') {
+                        createMenuItem(item, glutenFreeCategoryDiv);
+                    }
+                });
+            }
+        }
+
+        menuContent.appendChild(glutenFreeCategoryDiv);
     }
 
     // Function to get the localized label for "Vegan" category
     function getVeganCategoryLabel(language) {
-        switch (language) {
+        switch(language) {
             case 'fr':
                 return 'Végan';
             case 'es':
@@ -158,9 +181,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to get the localized description for "Vegan" category
     function getVeganDescription(language) {
-        switch (language) {
+        switch(language) {
             case 'fr':
-                return 'Options végan délicieuses de toutes les catégories';
+                return 'Options véganes délicieuses de toutes les catégories';
             case 'es':
                 return 'Opciones veganas deliciosas de todas las categorías';
             default:
@@ -168,29 +191,66 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Function to show the detailed view of a meal
+    // Function to get the localized label for "Gluten-Free" category
+    function getGlutenFreeCategoryLabel(language) {
+        switch(language) {
+            case 'fr':
+                return 'Sans Gluten';
+            case 'es':
+                return 'Sin Gluten';
+            default:
+                return 'Gluten-Free';
+        }
+    }
+
+    // Function to get the localized description for "Gluten-Free" category
+    function getGlutenFreeDescription(language) {
+        switch(language) {
+            case 'fr':
+                return 'Options sans gluten de toutes les catégories. Veuillez vérifier avec le serveur lors de la commande.';
+            case 'es':
+                return 'Opciones sin gluten de todas las categorías. Por favor, verifique con el camarero al realizar su pedido.';
+            default:
+                return 'Delicious gluten-free options from all categories. Please double-check with the server when placing your order.';
+        }
+    }
+
+    // Function to show the meal detail
     function showMealDetail(image, name, description, price) {
-        previousScrollPosition = window.scrollY;
+        previousScrollPosition = window.pageYOffset;
         menuContent.classList.add('d-none');
         mealImage.src = image;
         mealName.innerText = name;
         mealDescription.innerText = description;
         mealPrice.innerText = price;
         mealDetail.classList.remove('d-none');
+        window.scrollTo(0, 0);
     }
 
     // Event listener to return to the menu on clicking the detail view
-    mealDetail.addEventListener('click', () => {
-        mealDetail.classList.add('d-none');
-        menuContent.classList.remove('d-none');
-        window.scrollTo(0, previousScrollPosition);
+    mealDetail.addEventListener('click', (event) => {
+        if (event.target === mealDetail || !event.target.closest('#closeMealDetail')) {
+            mealDetail.classList.add('d-none');
+            menuContent.classList.remove('d-none');
+            window.scrollTo(0, previousScrollPosition);
+        }
     });
 
-    // Handle language switch event
+    // Close button functionality for meal detail
+    if (closeMealDetail) {
+        closeMealDetail.addEventListener('click', (event) => {
+            event.stopPropagation();
+            mealDetail.classList.add('d-none');
+            menuContent.classList.remove('d-none');
+            window.scrollTo(0, previousScrollPosition);
+        });
+    }
+
+    // Add change event listener for language selection
     languageSelect.addEventListener('change', (e) => {
         loadMenuData(e.target.value);
     });
 
-    // Load default menu (English)
-    loadMenuData('en');
+    // Initial menu load for the default language
+    loadMenuData(languageSelect.value);
 });
