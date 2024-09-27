@@ -260,7 +260,7 @@ const menuData = {
                     { name: "Gâteau au Whisky", price: "5,20 €", description: "Un gâteau moelleux infusé au whisky.", vegan: "no", image: "Desserts-whisky-cake.jpeg" },
                     { name: "Truffes au Chocolat", price: "5,20 €", description: "Des truffes au chocolat décadentes.", vegan: "no", image:"Desserts-chocolate-truffles.jpeg" },
                     { name: "Tasse de Glace au Nougat (Sans Gluten)", price: "3,00 €", description: "Une tasse de glace au nougat sans gluten.", vegan: "no", image: "Desserts-nougat-ice-cream.jpeg" },
-                    { name: "Orange à la Cannelle (Sans Gluten)", price: "3,80 €", description: "Des tranches d'orange fraîches à la cannelle.", vegan: "no", image: "Desserts-orange-cinnamon.jpeg" }
+                    { name: "Orange à la Cannelle (Sans Gluten)", price: "3,80 €", description: "Des tranches d'orange fraîches à la cannelle.", vegan: "yes", image: "Desserts-orange-cinnamon.jpeg" }
                 ]
             }
             
