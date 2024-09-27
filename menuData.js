@@ -5,6 +5,7 @@ const menuData = {
                 description: "Fresh, vibrant salads made with seasonal ingredients and bold flavors.",
                 items: [
                     { name: "Crunchy Salad (Goat Cheese)", price: "€14", description: "Crispy salad with goat cheese", vegan: "no", image: "Salads-goat-cheese.jpeg" },
+                    { name: "Crunchy Vegan Salad (Quinoa patty)", price: "€14", description: "Crispy salad with quinoa patty", vegan: "yes", image: "Salads-goat-cheese.jpeg" },
                     { name: "Caesar Salad (Chicken)", price: "€14", description: "Classic Caesar salad with chicken", vegan: "no", image: "Salads-Caesar-salad.jpeg" },
                     { name: "Valencian Salad (Tuna)", price: "€12", description: "Traditional Valencian salad with tuna", vegan: "no", image: "Salads-valenciana.jpeg" },
                     { name: "Vegetarian Salad without tuna", price: "€12", description: "Fresh mixed salad with vegetables, no tuna", vegan: "yes", image: "Salads-valenciana.jpeg" },
@@ -33,7 +34,8 @@ const menuData = {
                     { name: "Grilled Loin", price: "€11", description: "Grilled pork loin served with an egg and fries", vegan: "no", image: "Combination-pork-loin.jpeg" },
                     { name: "Breaded Chicken", price: "€11", description: "Breaded chicken fillet served with fries and a fried egg", vegan: "no", image: "Combination-chicken.jpeg" },
                     { name: "Grilled Cuttlefish", price: "€16", description: "Grilled cuttlefish served with garlic sauce", vegan: "no", image: "Starters-cuttlefish.jpeg" },
-                    { name: "Fried Calamari", price: "€13", description: "Fried calamari with fries and salad", vegan: "no", image: "Combination-calamary.jpeg" }
+                    { name: "Fried Calamari", price: "€13", description: "Fried calamari with fries and salad", vegan: "no", image: "Combination-calamary.jpeg" },
+                    { name: "Special Vegan Ana", price: "€13", description: "Quinoa patty with salad and patatas bravas", vegan: "yes", image: "Combination-vegan-Ana.jpeg" }
                 ]
             },
             "House Specialties": {
@@ -145,6 +147,7 @@ const menuData = {
                 description: "Des salades fraîches et vibrantes, préparées avec des ingrédients de saison et des saveurs audacieuses.",
                 items: [
                     { name: "Salade Croquante (Fromage de chèvre)", price: "€14", description: "Salade croquante avec du fromage de chèvre", vegan: "no", image: "Salads-goat-cheese.jpeg" },
+                    { name: "Salade croquante vegan (Galette de quinoa)", price: "€14", description: "Salade croquante avec galette de quinoa", vegan: "yes", image: "Salads-crunchy-vegan.jpeg" },
                     { name: "Salade César (Poulet)", price: "€14", description: "Salade César classique avec poulet", vegan: "no", image: "Salads-Caesar-salad.jpeg" },
                     { name: "Salade Valencienne (Thon)", price: "€12", description: "Salade valencienne traditionnelle avec du thon", vegan: "no", image: "Salads-valenciana.jpeg" },
                     { name: "Salade Végétarienne sans thon", price: "€12", description: "Salade mixte sans thon", vegan: "yes", image: "Salads-valenciana.jpeg" },
@@ -175,7 +178,9 @@ const menuData = {
                     { name: "Poulet Pané", price: "€11", description: "Escalope de poulet panée avec frites et un oeuf frit", vegan: "no", image: "Combination-chicken.jpeg" },
                     { name: "Seiche Grillée", price: "€16", description: "Seiche grillée avec sauce à l'ail", vegan: "no", image: "Starters-cuttlefish.jpeg" },
                     { name: "Calamars Frits", price: "€13", description: "Calamars frits avec salade et frites", vegan: "no", image: "Combination-calamary.jpeg" },
-                    { name: "Espadon Sauce Verte", price: "€15.00", description: "Filet d'espadon accompagné de sauce verte, salade et frites", vegan: "no", image: "Combination-swordfish.jpeg" }
+                    { name: "Espadon Sauce Verte", price: "€15.00", description: "Filet d'espadon accompagné de sauce verte, salade et frites", vegan: "no", image: "Combination-swordfish.jpeg" },
+                    { name: "Spécial vegan Ana", price: "€13", description: "Galette de quinoa avec salade et patatas bravas", vegan: "yes", image: "Combination-vegan-Ana.jpeg" }
+
                 ]
             },
             "Spécialités de la maison": {
@@ -272,6 +277,7 @@ const menuData = {
                 description: "Frescas y vibrantes ensaladas elaboradas con ingredientes de temporada y sabores intensos.",
                 items: [
                     { name: "Ensalada Crujiente (Queso de cabra)", price: "€14", description: "Ensalada crujiente con queso de cabra", vegan: "no", image: "Salads-goat-cheese.jpeg" },
+                    { name: "Ensalada crujiente vegana (Hamburguesa de quinoa)", price: "€14", description: "Ensalada crujiente con hamburguesa de quinoa", vegan: "yes", image: "Salads-crunchy-vegan.jpeg" },
                     { name: "Ensalada César (Pollo)", price: "€14", description: "Ensalada César clásica con pollo", vegan: "no", image: "Salads-Caesar-salad.jpeg" },
                     { name: "Ensalada Valenciana (Atún)", price: "€12", description: "Ensalada valenciana con atún", vegan: "no", image: "Salads-valenciana.jpeg" },
                     { name: "Ensalada Vegetariana sin atún", price: "€12", description: "Ensalada mixta con verduras frescas sin atún", vegan: "yes", image: "Salads-valenciana.jpeg" },
@@ -303,7 +309,9 @@ const menuData = {
                         { name: "Pollo Empanado", price: "€11.00", description: "Pollo empanado con patatas fritas y huevo frito", vegan: "no", image: "Combination-chicken.jpeg" },
                         { name: "Sepia Plancha", price: "€16.00", description: "Sepia a la plancha con ajo y perejil", vegan: "no", image: "Starters-cuttlefish.jpeg" },
                         { name: "Calamares Rebozados", price: "€13.00", description: "Calamares rebozados con patatas fritas y ensalada", vegan: "no", image: "Combination-calamary.jpeg" },
-                        { name: "Emperador Salsa Verde", price: "€15.00", description: "Filete de emperador acompañado con salsa verde", vegan: "no", image: "Combination-swordfish.jpeg" }
+                        { name: "Emperador Salsa Verde", price: "€15.00", description: "Filete de emperador acompañado con salsa verde", vegan: "no", image: "Combination-swordfish.jpeg" },
+                        { name: "Especial vegano Ana", price: "€13", description: "Hamburguesa de quinoa con ensalada y patatas bravas", vegan: "yes", image: "Combination-vegan-Ana.jpeg" }
+
                 ]
             },
             
