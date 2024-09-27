@@ -179,7 +179,7 @@ const menuData = {
                     { name: "Seiche Grillée", price: "€16", description: "Seiche grillée avec sauce à l'ail", vegan: "no", image: "Starters-cuttlefish.jpeg" },
                     { name: "Calamars Frits", price: "€13", description: "Calamars frits avec salade et frites", vegan: "no", image: "Combination-calamary.jpeg" },
                     { name: "Espadon Sauce Verte", price: "€15.00", description: "Filet d'espadon accompagné de sauce verte, salade et frites", vegan: "no", image: "Combination-swordfish.jpeg" },
-                    { name: "Spécial vegan Ana", price: "€13", description: "Galette de quinoa avec salade et patatas bravas", vegan: "yes", image: "Combination-vegan-Ana.jpeg" }
+                    { name: "Spécial Vegan Ana", price: "€13", description: "Galette de quinoa avec salade et patatas bravas", vegan: "yes", image: "Combination-vegan-Ana.jpeg" }
 
                 ]
             },
@@ -310,7 +310,7 @@ const menuData = {
                         { name: "Sepia Plancha", price: "€16.00", description: "Sepia a la plancha con ajo y perejil", vegan: "no", image: "Starters-cuttlefish.jpeg" },
                         { name: "Calamares Rebozados", price: "€13.00", description: "Calamares rebozados con patatas fritas y ensalada", vegan: "no", image: "Combination-calamary.jpeg" },
                         { name: "Emperador Salsa Verde", price: "€15.00", description: "Filete de emperador acompañado con salsa verde", vegan: "no", image: "Combination-swordfish.jpeg" },
-                        { name: "Especial vegano Ana", price: "€13", description: "Hamburguesa de quinoa con ensalada y patatas bravas", vegan: "yes", image: "Combination-vegan-Ana.jpeg" }
+                        { name: "Especial Vegano Ana", price: "€13", description: "Hamburguesa de quinoa con ensalada y patatas bravas", vegan: "yes", image: "Combination-vegan-Ana.jpeg" }
 
                 ]
             },
