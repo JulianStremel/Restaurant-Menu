@@ -5,7 +5,7 @@ const menuData = {
                 description: "Fresh, vibrant salads made with seasonal ingredients and bold flavors.",
                 items: [
                     { name: "Crunchy Salad (Goat Cheese)", price: "€14", description: "Crispy salad with goat cheese", vegan: "no", image: "Salads-goat-cheese.jpeg" },
-                    { name: "Crunchy Vegan Salad (Quinoa patty)", price: "€14", description: "Crispy salad with quinoa patty", vegan: "yes", image: "Salads-goat-cheese.jpeg" },
+                    { name: "Crunchy Vegan Salad (Quinoa patty)", price: "€14", description: "Crispy salad with quinoa patty", vegan: "yes", image: "Salads-crunchy-vegan.jpeg" },
                     { name: "Caesar Salad (Chicken)", price: "€14", description: "Classic Caesar salad with chicken", vegan: "no", image: "Salads-Caesar-salad.jpeg" },
                     { name: "Valencian Salad (Tuna)", price: "€12", description: "Traditional Valencian salad with tuna", vegan: "no", image: "Salads-valenciana.jpeg" },
                     { name: "Vegetarian Salad without tuna", price: "€12", description: "Fresh mixed salad with vegetables, no tuna", vegan: "yes", image: "Salads-valenciana.jpeg" },
