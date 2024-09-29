@@ -54,10 +54,10 @@ const menuData = {
                 description: "For €3 extra, add fries to your burger for the perfect meal.",
                 items: [
                     { name: "House Special Burger", price: "€12", description: "Beef burger with fried egg, bacon, and caramelized onions", vegan: "no", glutenfree: "no", image: "Burgers-house-burger.jpeg" },
-                    { name: "Goat Cheese Burger", price: "€12", description: "Beef burger with goat cheese and mustard sauce", vegan: "no", glutenfree: "no", image: "Burgers-goat-cheese-burger.jpeg" },
+                    { name: "Goat Cheese Burger", price: "€12", description: "Beef burger with lettuce, tomato, caramelized onion, mustard sauce, and goat cheese", vegan: "no", glutenfree: "no", image: "Burgers-goat-cheese-burger.jpeg" },
                     { name: "Montanejos Adventure chicken Burger", price: "€12", description: "Chicken burger with bacon, egg, and special sauce", vegan: "no", glutenfree: "no", image: "Burgers-chicken-burger.jpeg" },
-                    { name: "Vegetarian Burger", price: "€12", description: "Falafel burger with caramelized onions and cheese.  **if you want fries please mention it when you order", vegan: "no", glutenfree: "no", image: "Burgers-falafel-burger.jpeg" },
-                    { name: "Vegan Burger", price: "€12", description: "Quinoa burger with roasted vegetables and tomato.  **if you want fries please mention it when you order", vegan: "yes", glutenfree: "no", image: "Burgers-vegan-burger.jpeg" }
+                    { name: "Vegetarian Burger", price: "€12", description: "Falafel burger with lettuce, tomato, caramelized onion, bell pepper, honey mustard, and cheese.  **if you want fries please mention it when you order", vegan: "no", glutenfree: "no", image: "Burgers-falafel-burger.jpeg" },
+                    { name: "Vegan Burger", price: "€12", description: "Vegan quinoa burger with lettuce, tomato, caramelized onion, and bell pepper.  **if you want fries please mention it when you order", vegan: "yes", glutenfree: "no", image: "Burgers-vegan-burger.jpeg" }
                 ]
             },
             "Baguette Sandwiches": {
@@ -213,10 +213,10 @@ const menuData = {
                 description: "Pour 3€ supplémentaires, ajoutez des frites à votre hamburger pour un repas parfait.",
                 items: [
                     { name: "Spécial de la Maison", price: "€12.00", description: "Hamburger de bœuf avec laitue, tomate, oignon caramélisé, fromage, bacon et œuf frit", vegan: "no", glutenfree: "no", image: "Burgers-house-burger.jpeg" },
-                    { name: "Fromage de Chèvre", price: "€12.00", description: "Hamburger de bœuf avec fromage de chèvre et sauce à la moutarde", vegan: "no", glutenfree: "no", image: "Burgers-goat-cheese-burger.jpeg" },
+                    { name: "Fromage de Chèvre", price: "€12.00", description: "Hamburger de bœuf avec laitue, tomate, oignon caramélisé, sauce moutarde et fromage de chèvre", vegan: "no", glutenfree: "no", image: "Burgers-goat-cheese-burger.jpeg" },
                     { name: "Montanejos Adventure au Poulet", price: "€12.00", description: "Hamburger de poulet avec bacon, mayonnaise, laitue, tomate, et fromage", vegan: "no", glutenfree: "no", image: "Burgers-chicken-burger.jpeg" },
-                    { name: "Végétarien", price: "€12.00", description: "Hamburger de falafel avec oignon caramélisé et fromage. **les frites doivent être commandées à part", vegan: "no", glutenfree: "no", image: "Burgers-falafel-burger.jpeg" },
-                    { name: "Vegan", price: "€12.00", description: "Hamburger végan de quinoa avec légumes grillés.  **les frites doivent être commandées à part", vegan: "yes", glutenfree: "no", image: "Burgers-vegan-burger.jpeg" }
+                    { name: "Végétarien", price: "€12.00", description: "Burger de falafel avec laitue, tomate, oignon caramélisé, poivron, moutarde au miel et fromage. **les frites doivent être commandées à part", vegan: "no", glutenfree: "no", image: "Burgers-falafel-burger.jpeg" },
+                    { name: "Vegan", price: "€12.00", description: "Burger végan à la quinoa avec laitue, tomate, oignon caramélisé et poivron.  **les frites doivent être commandées à part", vegan: "yes", glutenfree: "no", image: "Burgers-vegan-burger.jpeg" }
                 ]
             },
             "Burritos": {
@@ -360,10 +360,10 @@ const menuData = {
                 description: "Por 3€ extra, añade patatas fritas a tu hamburguesa para un menú completo.",
                 items: [
                     { name: "Especial de la Casa", price: "€12.00", description: "Hamburguesa de ternera con lechuga, tomate, cebolla caramelizada, queso, bacon y huevo frito", vegan: "no", glutenfree: "no", image: "Burgers-house-burger.jpeg" },
-                    { name: "Queso de Cabra", price: "€12.00", description: "Hamburguesa de ternera con queso de cabra y salsa de mostaza", vegan: "no", glutenfree: "no", image: "Burgers-goat-cheese-burger.jpeg" },
+                    { name: "Queso de Cabra", price: "€12.00", description: "Hamburguesa de ternera con lechuga, tomate, cebolla caramelizada, Salsa de mostaza y queso de cabra", vegan: "no", glutenfree: "no", image: "Burgers-goat-cheese-burger.jpeg" },
                     { name: "Montanejos Adventure con Pollo", price: "€12.00", description: "Hamburguesa de pollo con bacon, mayonesa, lechuga, tomate, y queso", vegan: "no", glutenfree: "no", image: "Burgers-chicken-burger.jpeg" },
-                    { name: "Vegetariana", price: "€12.00", description: "Hamburguesa de falafel con cebolla caramelizada y queso **Las patatas se piden a parte", vegan: "no", glutenfree: "no", image: "Burgers-falafel-burger.jpeg" },
-                    { name: "Vegana", price: "€12.00", description: "Hamburguesa vegana de quinoa con verduras asadas  **Las patatas se piden a parte", vegan: "yes", glutenfree: "no", image: "Burgers-vegan-burger.jpeg" }
+                    { name: "Vegetariana", price: "€12.00", description: "Hamburguesa de falafel con lechuga, tomate, cebolla caramelizada, pimiento, mostaza miel y queso **Las patatas se piden a parte", vegan: "no", glutenfree: "no", image: "Burgers-falafel-burger.jpeg" },
+                    { name: "Vegana", price: "€12.00", description: "Hamburguesa vegana de quinoa con lechuga, tomate, cebolla caramelizada y pimiento.  **Las patatas se piden a parte", vegan: "yes", glutenfree: "no", image: "Burgers-vegan-burger.jpeg" }
                 ]
             },
             "Burritos": {
