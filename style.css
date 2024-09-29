@@ -41,6 +41,15 @@
     padding-left: 20px; /* Indent items to separate them from the description */
 }
 
+.menu-item img {
+    max-width: 100px;    /* Set a maximum width */
+    height: auto;        /* Maintain aspect ratio */
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: contain; /* Keeps the entire image visible, without cropping */
+    transition: transform 0.3s ease;
+}
+
 /* Image hover effect */
 .menu-item img {
     border-radius: 5px;
