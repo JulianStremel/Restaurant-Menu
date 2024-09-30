@@ -9,10 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const mealDescription = document.getElementById('mealDescription');
     const mealPrice = document.getElementById('mealPrice');
     let previousScrollPosition = 0;
-    let currentItemIndex = 0;
-    let currentCategoryItems = [];
-
-    alert("New script is running!");
 
     // Function to truncate text
     function truncateText(text, maxLength) {
@@ -22,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to load menu data
     function loadMenuData(language) {
         const data = menuData[language].categories;
-        categorySelect.innerHTML = '';  
+        categorySelect.innerHTML = '';  // Clear previous categories
 
         updateCategoryLabel(language);
 
@@ -53,9 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Event listener for category change
         categorySelect.addEventListener('change', (e) => {
-            if (!mealDetail.classList.contains('d-none')) {
-                closeDetailView();
-            }
+            closeDetailView();
             const selectedCategory = e.target.value;
             switch(selectedCategory) {
                 case 'vegan':
@@ -88,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to load items for a specific category
     function loadCategoryItems(category, data) {
-        menuContent.innerHTML = ''; 
+        menuContent.innerHTML = ''; // Clear previous content
 
         const categoryData = data[category] || {description: '', items: []};
         const categoryDiv = document.createElement('div');
@@ -102,17 +96,15 @@ document.addEventListener('DOMContentLoaded', () => {
         categoryDiv.appendChild(categoryHeader);
         categoryDiv.appendChild(categoryDescription);
 
-        currentCategoryItems = categoryData.items;  // Store the current category items for swipe functionality
-
-        (currentCategoryItems || []).forEach((item, index) => {
-            createMenuItem(item, categoryDiv, index);
+        (categoryData.items || []).forEach(item => {
+            createMenuItem(item, categoryDiv);
         });
 
         menuContent.appendChild(categoryDiv);
     }
 
     // Function to create a menu item
-    function createMenuItem(item, categoryDiv, index) {
+    function createMenuItem(item, categoryDiv) {
         const itemDiv = document.createElement('div');
         itemDiv.classList.add('menu-item', 'd-flex', 'align-items-center');
 
@@ -124,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
         itemImage.style.height = '100px';
         itemImage.style.cursor = 'pointer';
         itemImage.addEventListener('click', () => {
-            currentItemIndex = index;  // Set the current item index for swipe functionality
             showMealDetail(item.image, item.name, item.description, item.price);
         });
 
@@ -133,7 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const truncatedDescription = truncateText(item.description, 100);
         itemDescription.innerHTML = `<h5>${item.name} - ${item.price}</h5><p>${truncatedDescription}</p>`;
         itemDescription.addEventListener('click', () => {
-            currentItemIndex = index;
             showMealDetail(item.image, item.name, item.description, item.price);
         });
 
@@ -145,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to load vegan items from all categories
     function loadVeganItems(language, data) {
-        menuContent.innerHTML = ''; 
+        menuContent.innerHTML = ''; // Clear previous content
 
         const veganCategoryDiv = document.createElement('div');
         veganCategoryDiv.classList.add('menu-category');
@@ -173,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to load gluten-free items from all categories
     function loadGlutenFreeItems(language, data) {
-        menuContent.innerHTML = ''; 
+        menuContent.innerHTML = ''; // Clear previous content
 
         const glutenFreeCategoryDiv = document.createElement('div');
         glutenFreeCategoryDiv.classList.add('menu-category');
@@ -268,43 +258,9 @@ document.addEventListener('DOMContentLoaded', () => {
         languageSelect.disabled = false; // Enable language change when leaving detail view
     }
 
-    // Swipe detection for navigation between items
-    let touchStartY = 0;
-    let touchEndY = 0;
-
-    mealDetail.addEventListener('touchstart', (e) => {
-        touchStartY = e.changedTouches[0].screenY;
-    });
-
-    mealDetail.addEventListener('touchend', (e) => {
-        touchEndY = e.changedTouches[0].screenY;
-        handleSwipe();
-    });
-
-    function handleSwipe() {
-        const swipeDistance = touchStartY - touchEndY;
-        if (swipeDistance > 50) {
-            // Swipe up for next item
-            if (currentItemIndex < currentCategoryItems.length - 1) {
-                currentItemIndex++;
-                const nextItem = currentCategoryItems[currentItemIndex];
-                showMealDetail(nextItem.image, nextItem.name, nextItem.description, nextItem.price);
-            }
-        } else if (swipeDistance < -50) {
-            // Swipe down for previous item
-            if (currentItemIndex > 0) {
-                currentItemIndex--;
-                const previousItem = currentCategoryItems[currentItemIndex];
-                showMealDetail(previousItem.image, previousItem.name, previousItem.description, previousItem.price);
-            }
-        }
-    }
-
     // Event listener to return to menu from detail view
-    mealDetail.addEventListener('click', (event) => {
-        if (event.target === mealDetail || event.target.closest('.meal-detail-content')) {
-            closeDetailView();
-        }
+    mealDetail.addEventListener('click', () => {
+        closeDetailView();
     });
 
     // Initial menu load for the default language
@@ -312,8 +268,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add change event listener for language selection
     languageSelect.addEventListener('change', (e) => {
-        if (mealDetail.classList.contains('d-none')) {
-            loadMenuData(e.target.value);
+        if (!mealDetail.classList.contains('d-none')) {
+            closeDetailView();
         }
+        loadMenuData(e.target.value);
     });
 });
