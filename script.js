@@ -9,7 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const mealDescription = document.getElementById('mealDescription');
     const mealPrice = document.getElementById('mealPrice');
     let previousScrollPosition = 0;
-    let currentItem = null;  // Store the current item to load it in another language
+    let currentItemIndex = 0;
+    let currentCategoryItems = [];
+
+    alert("New script is running!");
 
     // Function to truncate text
     function truncateText(text, maxLength) {
@@ -48,8 +51,24 @@ document.addEventListener('DOMContentLoaded', () => {
             loadCategoryItems(categorySelect.options[0].value, data);
         }
 
-        // Reset the current item when switching languages
-        currentItem = null;
+        // Event listener for category change
+        categorySelect.addEventListener('change', (e) => {
+            if (!mealDetail.classList.contains('d-none')) {
+                closeDetailView();
+            }
+            const selectedCategory = e.target.value;
+            switch(selectedCategory) {
+                case 'vegan':
+                    loadVeganItems(language, data);
+                    break;
+                case 'glutenfree':
+                    loadGlutenFreeItems(language, data);
+                    break;
+                default:
+                    loadCategoryItems(selectedCategory, data);
+                    break;
+            }
+        });
     }
 
     // Function to update the "Jump to a category" label based on language
@@ -71,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadCategoryItems(category, data) {
         menuContent.innerHTML = ''; 
 
-        const categoryData = data[category] || { description: '', items: [] };
+        const categoryData = data[category] || {description: '', items: []};
         const categoryDiv = document.createElement('div');
         categoryDiv.classList.add('menu-category');
 
@@ -83,15 +102,17 @@ document.addEventListener('DOMContentLoaded', () => {
         categoryDiv.appendChild(categoryHeader);
         categoryDiv.appendChild(categoryDescription);
 
-        (categoryData.items || []).forEach((item, index) => {
-            createMenuItem(item, categoryDiv, index, category); // Pass index and category as unique IDs
+        currentCategoryItems = categoryData.items;  // Store the current category items for swipe functionality
+
+        (currentCategoryItems || []).forEach((item, index) => {
+            createMenuItem(item, categoryDiv, index);
         });
 
         menuContent.appendChild(categoryDiv);
     }
 
     // Function to create a menu item
-    function createMenuItem(item, categoryDiv, index, category) {
+    function createMenuItem(item, categoryDiv, index) {
         const itemDiv = document.createElement('div');
         itemDiv.classList.add('menu-item', 'd-flex', 'align-items-center');
 
@@ -102,9 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
         itemImage.style.width = '100px';
         itemImage.style.height = '100px';
         itemImage.style.cursor = 'pointer';
-        const itemId = `${category}-${index}`; // Create a unique ID based on category and index
         itemImage.addEventListener('click', () => {
-            currentItem = { id: itemId, category }; // Store current item ID and category
+            currentItemIndex = index;  // Set the current item index for swipe functionality
             showMealDetail(item.image, item.name, item.description, item.price);
         });
 
@@ -113,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const truncatedDescription = truncateText(item.description, 100);
         itemDescription.innerHTML = `<h5>${item.name} - ${item.price}</h5><p>${truncatedDescription}</p>`;
         itemDescription.addEventListener('click', () => {
-            currentItem = { id: itemId, category }; // Store current item ID and category
+            currentItemIndex = index;
             showMealDetail(item.image, item.name, item.description, item.price);
         });
 
@@ -140,9 +160,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         for (let category in data) {
             if (data[category].items) {
-                data[category].items.forEach((item, index) => {
+                data[category].items.forEach(item => {
                     if (item.vegan === 'yes') {
-                        createMenuItem(item, veganCategoryDiv, index, category);
+                        createMenuItem(item, veganCategoryDiv);
                     }
                 });
             }
@@ -168,9 +188,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         for (let category in data) {
             if (data[category].items) {
-                data[category].items.forEach((item, index) => {
+                data[category].items.forEach(item => {
                     if (item.glutenfree === 'yes') {
-                        createMenuItem(item, glutenFreeCategoryDiv, index, category);
+                        createMenuItem(item, glutenFreeCategoryDiv);
                     }
                 });
             }
@@ -181,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to get the localized label for "Vegan" category
     function getVeganCategoryLabel(language) {
-        switch (language) {
+        switch(language) {
             case 'fr':
                 return 'Végan';
             case 'es':
@@ -193,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to get the localized description for "Vegan" category
     function getVeganDescription(language) {
-        switch (language) {
+        switch(language) {
             case 'fr':
                 return 'Options véganes de toutes les catégories';
             case 'es':
@@ -205,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to get the localized label for "Gluten-Free" category
     function getGlutenFreeCategoryLabel(language) {
-        switch (language) {
+        switch(language) {
             case 'fr':
                 return 'Sans Gluten';
             case 'es':
@@ -217,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to get the localized description for "Gluten-Free" category
     function getGlutenFreeDescription(language) {
-        switch (language) {
+        switch(language) {
             case 'fr':
                 return 'Options sans gluten de toutes les catégories. Veuillez vérifier avec le serveur lors de la commande.';
             case 'es':
@@ -237,6 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mealPrice.innerText = price;
         mealDetail.classList.remove('d-none');
         window.scrollTo(0, 0);
+        languageSelect.disabled = true;  // Disable language change in detail view
     }
 
     // Function to close detail view
@@ -244,33 +265,45 @@ document.addEventListener('DOMContentLoaded', () => {
         mealDetail.classList.add('d-none');
         menuContent.classList.remove('d-none');
         window.scrollTo(0, previousScrollPosition);
-        currentItem = null; // Clear current item when leaving detail view
+        languageSelect.disabled = false; // Enable language change when leaving detail view
+    }
+
+    // Swipe detection for navigation between items
+    let touchStartY = 0;
+    let touchEndY = 0;
+
+    mealDetail.addEventListener('touchstart', (e) => {
+        touchStartY = e.changedTouches[0].screenY;
+    });
+
+    mealDetail.addEventListener('touchend', (e) => {
+        touchEndY = e.changedTouches[0].screenY;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        const swipeDistance = touchStartY - touchEndY;
+        if (swipeDistance > 50) {
+            // Swipe up for next item
+            if (currentItemIndex < currentCategoryItems.length - 1) {
+                currentItemIndex++;
+                const nextItem = currentCategoryItems[currentItemIndex];
+                showMealDetail(nextItem.image, nextItem.name, nextItem.description, nextItem.price);
+            }
+        } else if (swipeDistance < -50) {
+            // Swipe down for previous item
+            if (currentItemIndex > 0) {
+                currentItemIndex--;
+                const previousItem = currentCategoryItems[currentItemIndex];
+                showMealDetail(previousItem.image, previousItem.name, previousItem.description, previousItem.price);
+            }
+        }
     }
 
     // Event listener to return to menu from detail view
     mealDetail.addEventListener('click', (event) => {
-        closeDetailView();
-    });
-
-    // Event listener for category change
-    categorySelect.addEventListener('change', (e) => {
-        const selectedCategory = e.target.value;
-        if (currentItem) {
-            closeDetailView(); // Close the detail view if a category is selected
-        }
-        const language = languageSelect.value;
-        const data = menuData[language].categories;
-
-        switch (selectedCategory) {
-            case 'vegan':
-                loadVeganItems(language, data);
-                break;
-            case 'glutenfree':
-                loadGlutenFreeItems(language, data);
-                break;
-            default:
-                loadCategoryItems(selectedCategory, data);
-                break;
+        if (event.target === mealDetail || event.target.closest('.meal-detail-content')) {
+            closeDetailView();
         }
     });
 
@@ -279,10 +312,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add change event listener for language selection
     languageSelect.addEventListener('change', (e) => {
-        const selectedLanguage = e.target.value;
-        if (currentItem) {
-            closeDetailView(); // Close detail view when changing the language
+        if (mealDetail.classList.contains('d-none')) {
+            loadMenuData(e.target.value);
         }
-        loadMenuData(selectedLanguage); // Load the menu in the selected language
     });
 });
