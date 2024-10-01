@@ -88,9 +88,9 @@ const menuData = {
                 description: "A refreshing selection of beverages to accompany your meal.",
                 items: [
                     { name: "Tinto de Verano", price: "€2.50", description: "Refreshing red wine with soda", vegan: "no", glutenfree: "no", image: "Bebidas-tinto-de-verano.jpeg" },
-                    { name: "Draft Beer (Caña)", price: "€1.70", description: "Draft beer - small", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-cana.jpeg" },
-                    { name: "Draft Beer (Doble)", price: "€2.50", description: "Draft beer - medium", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-doble.jpeg" },
-                    { name: "Draft Beer (Pint)", price: "€4", description: "Draft beer - large", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-tanque.jpeg" },
+                    { name: "Draft Beer (Caña) / Caña", price: "€1.70", description: "Draft beer - small", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-cana.jpeg" },
+                    { name: "Draft Beer (Doble) / Doble", price: "€2.50", description: "Draft beer - medium", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-doble.jpeg" },
+                    { name: "Draft Beer (Pint) / Tanque", price: "€4", description: "Draft beer - large", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-tanque.jpeg" },
                     { name: "Bottled Beer / Tercio de cerveza", price: "€2.50", description: "Bottled beer - (non-alcoholic, toasted, lager, or radler)", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-tercio-estrella-galicia.jpeg" },
                     { name: "Coca Cola", price: "€2.50", description: "Coca Cola classic or Zero", vegan: "no", glutenfree: "no", image: "Bebidas-coca-cola.jpeg" },
                     { name: "Fanta Lemon-Orange", price: "€2.50", description: "Lemon or orange Fanta", vegan: "no", glutenfree: "no", image: "Bebidas-fanta.jpeg" },
@@ -159,26 +159,26 @@ const menuData = {
             "Salades": {
                 description: "Des salades fraîches et vibrantes, préparées avec des ingrédients de saison et des saveurs audacieuses.",
                 items: [
-                    { name: "Salade Croquante (Fromage de chèvre)", price: "€14", description: "Salade croquante avec du fromage de chèvre", vegan: "no", glutenfree: "no", image: "Salads-goat-cheese.jpeg" },
-                    { name: "Salade croquante vegan (Galette de quinoa)", price: "€14", description: "Salade croquante avec galette de quinoa", vegan: "yes", glutenfree: "no", image: "Salads-crunchy-vegan.jpeg" },
-                    { name: "Salade César (Poulet)", price: "€14", description: "Salade César classique avec poulet", vegan: "no", glutenfree: "no", image: "Salads-Caesar-salad.jpeg" },
-                    { name: "Salade Valencienne (Thon)", price: "€12", description: "Salade valencienne traditionnelle avec du thon", vegan: "no", glutenfree: "yes", image: "Salads-valenciana.jpeg" },
-                    { name: "Salade Végétarienne sans thon", price: "€12", description: "Salade mixte sans thon", vegan: "yes", glutenfree: "yes", image: "Salads-valenciana.jpeg" },
-                    { name: "Carpaccio de Courgette", price: "€12", description: "Tranches de courgette arrosées d'huile d'olive et assaisonnées. Pour une version végan, demandez simplement sans fromage.", vegan: "yes", glutenfree: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
+                    { name: "Salade Croquante (Fromage de chèvre) / Ensalada crujiente queso de cabra", price: "€14", description: "Salade croquante avec du fromage de chèvre", vegan: "no", glutenfree: "no", image: "Salads-goat-cheese.jpeg" },
+                    { name: "Salade croquante vegan (Galette de quinoa) / Ensalada crujiente hamburguesa quinoa", price: "€14", description: "Salade croquante avec galette de quinoa", vegan: "yes", glutenfree: "no", image: "Salads-crunchy-vegan.jpeg" },
+                    { name: "Salade César (Poulet) / Ensalada Cesar", price: "€14", description: "Salade César classique avec poulet", vegan: "no", glutenfree: "no", image: "Salads-Caesar-salad.jpeg" },
+                    { name: "Salade Valencienne (Thon) / Ensalada valenciana con atún", price: "€12", description: "Salade valencienne traditionnelle avec du thon", vegan: "no", glutenfree: "yes", image: "Salads-valenciana.jpeg" },
+                    { name: "Salade Végétarienne sans thon / Ensalada vegetariana", price: "€12", description: "Salade mixte sans thon", vegan: "yes", glutenfree: "yes", image: "Salads-valenciana.jpeg" },
+                    { name: "Carpaccio de Courgette / Carpaccio de calabacín", price: "€12", description: "Tranches de courgette arrosées d'huile d'olive et assaisonnées. Pour une version végan, demandez simplement sans fromage.", vegan: "yes", glutenfree: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
             },
             "Entrées et Tapas": {
                 description: "Une sélection de petites assiettes généreuses, idéales à partager ou en entrée. Certaines portions sont suffisamment copieuses pour constituer un repas léger si vous n'avez pas très faim.",
                 items: [
-                    { name: "Pain Tomate et Ajoaceite", price: "€4.80", description: "Pain grillé avec tomate et ajoaceite", vegan: "no", glutenfree: "no", image: "Starters-bread-tomato-aioli.jpeg" },
-                    { name: "Aubergines Frites au Miel", price: "€9.80", description: "Aubergines frites avec miel", vegan: "no", glutenfree: "no", image: "Starters-fried-eggplant-with-honey.jpeg" },
-                    { name: "Calamars Frits à l'Andalouse", price: "€9.90", description: "Calamars frits à la façon andalouse", vegan: "no", glutenfree: "no", image: "Starters-calamari.jpeg" },
-                    { name: "Œufs Brouillés avec Jambon", price: "€9.60", description: "Œufs frits avec jambon sur des frites", vegan: "no", glutenfree: "no", image: "Starters-broken-eggs-with-ham.jpeg" },
-                    { name: "Croquettes croustillantes", price: "€9.00", description: "Croquettes croustillantes de jambon ibérique, champignons ou morue", vegan: "no", glutenfree: "no", image: "Starters-mushroom-croquettes.jpeg" },
-                    { name: "Pommes de Terre au Gouda et Bacon", price: "€9.90", description: "Pommes de terre frites couvertes de gouda et bacon", vegan: "no", glutenfree: "no", image: "Starters-fries-gouda-cheese.jpeg" },
-                    { name: "Frites de Patate Douce au Roquefort", price: "€9.00", description: "Frites de patate douce avec sauce roquefort", vegan: "no", glutenfree: "no", image: "Starters-sweet-fries-roquefort.jpeg" },
-                    { name: "Plateau de Jambon Serrano Bodega", price: "€13.00", description: "Jambon serrano bodega servi sur une planche", vegan: "no", glutenfree: "no", image: "starter10.jpg" },
-                    { name: "Seiche Entière à la Plancha", price: "€14.00", description: "Seiche entière grillée avec ail et persil", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
+                    { name: "Pain Tomate et Ajoaceite / Pan con tomate y ajoaceite", price: "€4.80", description: "Pain grillé avec tomate et ajoaceite", vegan: "no", glutenfree: "no", image: "Starters-bread-tomato-aioli.jpeg" },
+                    { name: "Aubergines Frites au Miel / Berenjenas con miel", price: "€9.80", description: "Aubergines frites avec miel", vegan: "no", glutenfree: "no", image: "Starters-fried-eggplant-with-honey.jpeg" },
+                    { name: "Calamars Frits à l'Andalouse / Tapa de calamares", price: "€9.90", description: "Calamars frits à la façon andalouse", vegan: "no", glutenfree: "no", image: "Starters-calamari.jpeg" },
+                    { name: "Œufs Brouillés avec Jambon / Huevos revueltos con jamón", price: "€9.60", description: "Œufs frits avec jambon sur des frites", vegan: "no", glutenfree: "no", image: "Starters-broken-eggs-with-ham.jpeg" },
+                    { name: "Croquettes croustillantes / Croquetas", price: "€9.00", description: "Croquettes croustillantes de jambon ibérique, champignons ou morue", vegan: "no", glutenfree: "no", image: "Starters-mushroom-croquettes.jpeg" },
+                    { name: "Pommes de Terre au Gouda et Bacon / Patatas queso gouda", price: "€9.90", description: "Pommes de terre frites couvertes de gouda et bacon", vegan: "no", glutenfree: "no", image: "Starters-fries-gouda-cheese.jpeg" },
+                    { name: "Frites de Patate Douce au Roquefort / Boniato", price: "€9.00", description: "Frites de patate douce avec sauce roquefort", vegan: "no", glutenfree: "no", image: "Starters-sweet-fries-roquefort.jpeg" },
+                    { name: "Plateau de Jambon Serrano Bodega / Tabla de jamón", price: "€13.00", description: "Jambon serrano bodega servi sur une planche", vegan: "no", glutenfree: "no", image: "starter10.jpg" },
+                    { name: "Seiche Entière à la Plancha / Tapa de sepia", price: "€14.00", description: "Seiche entière grillée avec ail et persil", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
                     { name: "Patatas Bravas", price: "€9.50", description: "Pommes de terre frites avec sauce brava", vegan: "yes", glutenfree: "no", image: "Starters-bravas-wedges.jpeg" },
                     { name: "Frites Twister", price: "€10.00", description: "Pommes de terre en spirale avec diverses sauces", vegan: "yes", glutenfree: "no", image: "Starters-twister-fries.jpeg" }
                 ]
@@ -186,37 +186,37 @@ const menuData = {
             "Assièttes Combinées": {
                 description: "Délicieuses combinaisons de nos meilleurs ingrédients pour satisfaire votre faim. Ils sont en règle générale servi avec un oeuf frit et des frites",
                 items: [
-                    { name: "Charcuterie de Montanejos", price: "€11", description: "Sélection de charcuteries de Montanejos: Chorizo, boudin et longaniza", vegan: "no", glutenfree: "no", image: "Combination-sausages.jpeg" },
-                    { name: "Longe de Porc Grillée", price: "€11", description: "Longe de porc grillée servie avec un oeuf et des frites", vegan: "no", glutenfree: "no", image: "Combination-pork-loin.jpeg" },
-                    { name: "Poulet Pané", price: "€11", description: "Escalope de poulet panée avec frites et un oeuf frit", vegan: "no", glutenfree: "no", image: "Combination-chicken.jpeg" },
-                    { name: "Seiche Grillée", price: "€16", description: "Seiche grillée avec sauce à l'ail", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
-                    { name: "Calamars Frits", price: "€13", description: "Calamars frits avec salade et frites", vegan: "no", glutenfree: "no", image: "Combination-calamary.jpeg" },
-                    { name: "Espadon Sauce Verte", price: "€15.00", description: "Filet d'espadon accompagné de sauce verte, salade et frites", vegan: "no", glutenfree: "no", image: "Combination-swordfish.jpeg" },
-                    { name: "Spécial Vegan Ana", price: "€13", description: "Galette de quinoa avec salade et patatas bravas", vegan: "yes", glutenfree: "no", image: "Combination-vegan-Ana.jpeg" }
+                    { name: "Charcuterie de Montanejos / Combinado Embutido", price: "€11", description: "Sélection de charcuteries de Montanejos: Chorizo, boudin et longaniza", vegan: "no", glutenfree: "no", image: "Combination-sausages.jpeg" },
+                    { name: "Longe de Porc Grillée / Combinado Lomo", price: "€11", description: "Longe de porc grillée servie avec un oeuf et des frites", vegan: "no", glutenfree: "no", image: "Combination-pork-loin.jpeg" },
+                    { name: "Poulet Pané / Combinado pollo", price: "€11", description: "Escalope de poulet panée avec frites et un oeuf frit", vegan: "no", glutenfree: "no", image: "Combination-chicken.jpeg" },
+                    { name: "Seiche Grillée / Combinado Sepia", price: "€16", description: "Seiche grillée avec sauce à l'ail", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
+                    { name: "Calamars Frits / Combinado Calamares", price: "€13", description: "Calamars frits avec salade et frites", vegan: "no", glutenfree: "no", image: "Combination-calamary.jpeg" },
+                    { name: "Espadon Sauce Verte / Combinado Emperador", price: "€15.00", description: "Filet d'espadon accompagné de sauce verte, salade et frites", vegan: "no", glutenfree: "no", image: "Combination-swordfish.jpeg" },
+                    { name: "Spécial Vegan Ana / Combinado Ana (hamburgusa quinoa, patatas y ensalada)", price: "€13", description: "Galette de quinoa avec salade et patatas bravas", vegan: "yes", glutenfree: "no", image: "Combination-vegan-Ana.jpeg" }
 
                 ]
             },
             "Spécialités de la maison": {
                 description: "Plats signatures qui montrent l'excellence culinaire de notre restaurant.",
                 items: [
-                    { name: "Lard de Soria", price: "€5.50", description: "Lard croustillants de la région de Soria", vegan: "no", glutenfree: "yes", image: "Specialties-pork-skin.jpeg" },
-                    { name: "Queue de Taureau au Vin Rouge", price: "€16.90", description: "Queue de taureau mijotée au vin rouge", vegan: "no", glutenfree: "no", image: "Specialties-oxtail.jpeg" },
-                    { name: "Joue de Porc Mijares", price: "€15.50", description: "Joue de porc mijotée avec des frites", vegan: "no", glutenfree: "no", image: "Specialties-pork-cheeks.jpeg" },
-                    { name: "Entrecote de Boeuf 600g", price: "€28.00", description: "Entrecote de boeuf de 600g, grillée à point", vegan: "no", glutenfree: "no", image: "Specialties-ribeye.jpeg" },
-                    { name: "Poulpe Vidigonero", price: "€18.00", description: "Poulpe grillé à la façon Vidigonero (recette du chef)", vegan: "no", glutenfree: "yes", image: "Specialties-octopus.jpeg" },
-                    { name: "Gambas Galiana", price: "€22.00", description: "Gambas géantes style Galiana", vegan: "no", glutenfree: "yes", image: "Specialties-galiana-jumbo-prawns.jpeg" },
-                    { name: "Gulas du Nord avec Palourdes", price: "€12.00", description: "Gulas du nord accompagnées de palourdes fraîches", vegan: "no", glutenfree: "no", image: "Specialties-gulas.jpeg" }
+                    { name: "Lard de Soria / Torezno", price: "€5.50", description: "Lard croustillants de la région de Soria", vegan: "no", glutenfree: "yes", image: "Specialties-pork-skin.jpeg" },
+                    { name: "Queue de Taureau au Vin Rouge / Rabo de toro", price: "€16.90", description: "Queue de taureau mijotée au vin rouge", vegan: "no", glutenfree: "no", image: "Specialties-oxtail.jpeg" },
+                    { name: "Joue de Porc Mijares / Carrillada", price: "€15.50", description: "Joue de porc mijotée avec des frites", vegan: "no", glutenfree: "no", image: "Specialties-pork-cheeks.jpeg" },
+                    { name: "Entrecote de Boeuf 600g / Chuletón", price: "€28.00", description: "Entrecote de boeuf de 600g, grillée à point", vegan: "no", glutenfree: "no", image: "Specialties-ribeye.jpeg" },
+                    { name: "Poulpe Vidigonero / Pulpo Vidigonero", price: "€18.00", description: "Poulpe grillé à la façon Vidigonero (recette du chef)", vegan: "no", glutenfree: "yes", image: "Specialties-octopus.jpeg" },
+                    { name: "Gambas Galiana / Gambón Galiana", price: "€22.00", description: "Gambas géantes style Galiana", vegan: "no", glutenfree: "yes", image: "Specialties-galiana-jumbo-prawns.jpeg" },
+                    { name: "Gulas du Nord avec Palourdes / Gulas del norte", price: "€12.00", description: "Gulas du nord accompagnées de palourdes fraîches", vegan: "no", glutenfree: "no", image: "Specialties-gulas.jpeg" }
 
                 ]
             },
             "Hamburgers": {
                 description: "Pour 3€ supplémentaires, ajoutez des frites à votre hamburger pour un repas parfait.",
                 items: [
-                    { name: "Spécial de la Maison", price: "€12.00", description: "Hamburger de bœuf avec laitue, tomate, oignon caramélisé, fromage, bacon et œuf frit", vegan: "no", glutenfree: "no", image: "Burgers-house-burger.jpeg" },
-                    { name: "Fromage de Chèvre", price: "€12.00", description: "Hamburger de bœuf avec laitue, tomate, oignon caramélisé, sauce moutarde et fromage de chèvre", vegan: "no", glutenfree: "no", image: "Burgers-goat-cheese-burger.jpeg" },
-                    { name: "Montanejos Adventure au Poulet", price: "€12.00", description: "Hamburger de poulet avec bacon, mayonnaise, laitue, tomate, et fromage", vegan: "no", glutenfree: "no", image: "Burgers-chicken-burger.jpeg" },
-                    { name: "Végétarien", price: "€12.00", description: "Burger de falafel avec laitue, tomate, oignon caramélisé, poivron, moutarde au miel et fromage. **les frites doivent être commandées à part", vegan: "no", glutenfree: "no", image: "Burgers-falafel-burger.jpeg" },
-                    { name: "Vegan", price: "€12.00", description: "Burger végan à la quinoa avec laitue, tomate, oignon caramélisé et poivron.  **les frites doivent être commandées à part", vegan: "yes", glutenfree: "no", image: "Burgers-vegan-burger.jpeg" }
+                    { name: "Spécial de la Maison / Hamburguesa de la casa", price: "€12.00", description: "Hamburger de bœuf avec laitue, tomate, oignon caramélisé, fromage, bacon et œuf frit", vegan: "no", glutenfree: "no", image: "Burgers-house-burger.jpeg" },
+                    { name: "Fromage de Chèvre / Hamburguesa queso de cabra", price: "€12.00", description: "Hamburger de bœuf avec laitue, tomate, oignon caramélisé, sauce moutarde et fromage de chèvre", vegan: "no", glutenfree: "no", image: "Burgers-goat-cheese-burger.jpeg" },
+                    { name: "Montanejos Adventure au Poulet / Hamburguesa Adventure pollo", price: "€12.00", description: "Hamburger de poulet avec bacon, mayonnaise, laitue, tomate, et fromage", vegan: "no", glutenfree: "no", image: "Burgers-chicken-burger.jpeg" },
+                    { name: "Végétarien / Hamburguesa vegetariana", price: "€12.00", description: "Burger de falafel avec laitue, tomate, oignon caramélisé, poivron, moutarde au miel et fromage. **les frites doivent être commandées à part", vegan: "no", glutenfree: "no", image: "Burgers-falafel-burger.jpeg" },
+                    { name: "Vegan / Hamburguesa vegana", price: "€12.00", description: "Burger végan à la quinoa avec laitue, tomate, oignon caramélisé et poivron.  **les frites doivent être commandées à part", vegan: "yes", glutenfree: "no", image: "Burgers-vegan-burger.jpeg" }
                 ]
             },
             "Sandwich pain baguette": {
@@ -232,35 +232,35 @@ const menuData = {
             "Burritos": {
                 description: "Des burritos copieux et savoureux pour un repas complet.",
                 items: [
-                    { name: "Burrito D-Lux", price: "€8.50", description: "Poulet, laitue, tomate et bacon enveloppés dans un burrito", vegan: "no", glutenfree: "no", image: "Burritos-d-lux.jpeg" },
-                    { name: "Burrito Texan", price: "€8.50", description: "Aubergine, courgette, tomate et morceaux de poulet", vegan: "no", glutenfree: "no", image: "burrito2.jpg" }
+                    { name: "Burrito D-Lux / Burrito D-Lux", price: "€8.50", description: "Poulet, laitue, tomate et bacon enveloppés dans un burrito", vegan: "no", glutenfree: "no", image: "Burritos-d-lux.jpeg" },
+                    { name: "Burrito Texan / Burrito Tejano", price: "€8.50", description: "Aubergine, courgette, tomate et morceaux de poulet", vegan: "no", glutenfree: "no", image: "burrito2.jpg" }
                 ]
             },
             "Boissons": {
                 description: "Une sélection de boissons rafraîchissantes pour accompagner votre repas.",
                 items: [
                     { name: "Tinto de Verano", price: "€2.50", description: "Vin rouge rafraîchissant avec soda", vegan: "no", glutenfree: "no", image: "Bebidas-tinto-de-verano.jpeg" },
-                    { name: "Bière pression (Petit)", price: "€1.70", description: "Bière pression - petite", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-cana.jpeg" },
-                    { name: "Bière pression (Moyen)", price: "€2.50", description: "Bière pression - moyenne", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-doble.jpeg" },
-                    { name: "Bière pression (Grand)", price: "€4", description: "Bière pression - grande", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-tanque.jpeg" },
-                    { name: "Bière bouteille 300ml", price: "€2.50", description: "Bière en bouteille (sans alcool, brune, blonde ou radler)", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-tercio-estrella-galicia.jpeg" },
+                    { name: "Bière pression (Petit) / Cerveza caña", price: "€1.70", description: "Bière pression - petite", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-cana.jpeg" },
+                    { name: "Bière pression (Moyen) / Cerveza doble", price: "€2.50", description: "Bière pression - moyenne", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-doble.jpeg" },
+                    { name: "Bière pression (Grand) / Cerveza tanque", price: "€4", description: "Bière pression - grande", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-tanque.jpeg" },
+                    { name: "Bière bouteille 300ml / Tercio", price: "€2.50", description: "Bière en bouteille (sans alcool, brune, blonde ou radler)", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-tercio-estrella-galicia.jpeg" },
                     { name: "Coca", price: "€2.50", description: "Coca classique ou Zéro", vegan: "no", glutenfree: "no", image: "Bebidas-coca-cola.jpeg" },
                     { name: "Fanta Citron-Orange", price: "€2.50", description: "Fanta citron ou orange", vegan: "no", glutenfree: "no", image: "Bebidas-fanta.jpeg" },
                     { name: "Nestea, Aquarius", price: "€2.50", description: "Thé froid au citron", vegan: "no", glutenfree: "no", image: "Bebidas-nestea.jpeg" },
-                    { name: "Jus en bouteille", price: "€2", description: "Jus en bouteille : Ananas, Pêche, Orange et mixte (orange-carotte)", vegan: "no", glutenfree: "no", image: "Bebidas-zumos.jpeg" },
-                    { name: "Petite bouteille d'Eau", price: "€2", description: "Bouteille d'eau 50cl", vegan: "no", glutenfree: "no", image: "Bebidas-agua-pequena.jpeg" },
-                    { name: "Grande bouteille d'Eau 1.5l", price: "€2.50", description: "Bouteille d'eau 1.5L", vegan: "no", glutenfree: "no", image: "Bebidas-agua-grande.jpeg" },
-                    { name: "Eau Pétillante", price: "€2", description: "Eau gazeuse", vegan: "no", glutenfree: "no", image: "Bebidas-agua-con-gas.jpeg" },
-                    { name: "Tonic", price: "€2", description: "Eau tonique", vegan: "no", glutenfree: "no", image: "Bebidas-tonica.jpeg" },
-                    { name: "Verre de Vin Rouge", price: "€2.50", description: "Verre de vin rouge", vegan: "no", glutenfree: "no", image: "Bebidas-copa-tinto.jpeg" },
-                    { name: "Verre de Vin Blanc", price: "€2.50", description: "Verre de vin blanc", vegan: "no", glutenfree: "no", image: "Bebidas-copa-blanco.jpeg" },
-                    { name: "Expresso", price: "€1.20", description: "Café expresso", vegan: "no", glutenfree: "no", image: "Bebidas-cafe-solo.jpeg" },
-                    { name: "Café Macchiato", price: "€1.40", description: "Café macchiato", vegan: "no", glutenfree: "no", image: "Bebidas-cafe-cortado.jpeg" },
-                    { name: "Café au Lait", price: "€1.60", description: "Café au lait", vegan: "no", glutenfree: "no", image: "Bebidas-cafe-con-leche.jpeg" },
+                    { name: "Jus en bouteille / zumo", price: "€2", description: "Jus en bouteille : Ananas, Pêche, Orange et mixte (orange-carotte)", vegan: "no", glutenfree: "no", image: "Bebidas-zumos.jpeg" },
+                    { name: "Petite bouteille d'Eau / Agua pequeña", price: "€2", description: "Bouteille d'eau 50cl", vegan: "no", glutenfree: "no", image: "Bebidas-agua-pequena.jpeg" },
+                    { name: "Grande bouteille d'Eau 1.5l / Agua grande", price: "€2.50", description: "Bouteille d'eau 1.5L", vegan: "no", glutenfree: "no", image: "Bebidas-agua-grande.jpeg" },
+                    { name: "Eau Pétillante / Agua con gas", price: "€2", description: "Eau gazeuse", vegan: "no", glutenfree: "no", image: "Bebidas-agua-con-gas.jpeg" },
+                    { name: "Tonic / Tónica", price: "€2", description: "Eau tonique", vegan: "no", glutenfree: "no", image: "Bebidas-tonica.jpeg" },
+                    { name: "Verre de Vin Rouge / copa de vino tinto", price: "€2.50", description: "Verre de vin rouge", vegan: "no", glutenfree: "no", image: "Bebidas-copa-tinto.jpeg" },
+                    { name: "Verre de Vin Blanc / Copa de vino blanco", price: "€2.50", description: "Verre de vin blanc", vegan: "no", glutenfree: "no", image: "Bebidas-copa-blanco.jpeg" },
+                    { name: "Expresso / Café solo", price: "€1.20", description: "Café expresso", vegan: "no", glutenfree: "no", image: "Bebidas-cafe-solo.jpeg" },
+                    { name: "Café Macchiato / Cortado", price: "€1.40", description: "Café macchiato", vegan: "no", glutenfree: "no", image: "Bebidas-cafe-cortado.jpeg" },
+                    { name: "Café au Lait / Café con leche", price: "€1.60", description: "Café au lait", vegan: "no", glutenfree: "no", image: "Bebidas-cafe-con-leche.jpeg" },
                     { name: "Café Americano", price: "€2", description: "Café allongé", vegan: "no", glutenfree: "no", image: "Bebidas-cafe-americano.jpeg" },
-                    { name: "Chocolat chaud", price: "€1.50", description: "Boisson au chocolat", vegan: "no", glutenfree: "no", image: "Bebidas-batido.jpeg" },
-                    { name: "Thé et Infusions", price: "€1.50", description: "Thé et infusions", vegan: "no", glutenfree: "no", image: "Bebidas-infusiones.jpeg" },
-                    { name: "Rhum & Coca", price: "€6", description: "Rhum et Coca Cola", vegan: "no", glutenfree: "no", image: "Bebidas-cubata.jpeg" }
+                    { name: "Chocolat chaud / Colacao", price: "€1.50", description: "Boisson au chocolat", vegan: "no", glutenfree: "no", image: "Bebidas-batido.jpeg" },
+                    { name: "Thé et Infusions / Té", price: "€1.50", description: "Thé et infusions", vegan: "no", glutenfree: "no", image: "Bebidas-infusiones.jpeg" },
+                    { name: "Rhum & Coca / Cubata", price: "€6", description: "Rhum et Coca Cola", vegan: "no", glutenfree: "no", image: "Bebidas-cubata.jpeg" }
                 ]
             },
             "Vins": {
@@ -288,20 +288,20 @@ const menuData = {
             "Desserts": {
                 description: "Terminez votre repas avec une touche sucrée.",
                 items: [
-                    { name: "Cheesecake", price: "5,50 €", description: "Un cheesecake crémeux classique.", vegan: "no", glutenfree: "no", image: "Desserts-cheesecake.jpeg" },
-                    { name: "Gâteau Biscuit Lotus", price: "5,90 €", description: "Un délicieux gâteau fait avec des biscuits Lotus.", vegan: "no", glutenfree: "no", image: "Desserts-lotus-biscuit-cake.jpeg" },
-                    { name: "Mort par Chocolat", price: "6,40 €", description: "Un dessert riche et indulgent au chocolat.", vegan: "no", glutenfree: "no", image: "Desserts-death-by-chocolate.jpeg" },
-                    { name: "Gâteau de Grand-mère", price: "5,50 €", description: "Un gâteau traditionnel préparé avec une recette familiale.", vegan: "no", glutenfree: "no", image: "Desserts-grandmas-cake.jpeg" },
-                    { name: "Gâteau Velours", price: "5,50 €", description: "Un gâteau velouté, doux et moelleux.", vegan: "no", glutenfree: "no", image: "Desserts-velvet-cake.jpeg" },
-                    { name: "Fondant au Chocolat", price: "5,20 €", description: "Fondant au chocolat chaud avec un centre coulant.", vegan: "no", glutenfree: "no", image: "Desserts-chocolate-fondant.jpeg" },
-                    { name: "Fondant au Bailey's", price: "5,20 €", description: "Fondant infusé au Bailey's.", vegan: "no", glutenfree: "no", image: "Desserts-baileys-fondant.jpeg" },
-                    { name: "Fondant au Chocolat Blanc (Sans Gluten)", price: "5,20 €", description: "Fondant au chocolat blanc sans gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-white-chocolate-fondant.jpeg" },
-                    { name: "Brownie avec Émietté de Cookies", price: "6,00 €", description: "Un brownie garni d'émietté de cookies.", vegan: "no", glutenfree: "no", glutenfree: "no", image: "Desserts-brownie-cookie-crumble.jpeg" },
-                    { name: "Tarte à la Crème (Sans Gluten)", price: "4,90 €", description: "Tarte à la crème sans gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-cream-tart.jpeg" },
-                    { name: "Gâteau au Whisky", price: "5,20 €", description: "Un gâteau moelleux infusé au whisky.", vegan: "no", glutenfree: "no", image: "Desserts-whisky-cake.jpeg" },
-                    { name: "Truffes au Chocolat", price: "5,20 €", description: "Des truffes au chocolat décadentes.", vegan: "no", glutenfree: "no", image:"Desserts-chocolate-truffles.jpeg" },
-                    { name: "Tasse de Glace au Nougat (Sans Gluten)", price: "3,00 €", description: "Une tasse de glace au nougat sans gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-nougat-ice-cream.jpeg" },
-                    { name: "Orange à la Cannelle (Sans Gluten)", price: "3,80 €", description: "Des tranches d'orange fraîches à la cannelle.", vegan: "yes", glutenfree: "yes", image: "Desserts-orange-cinnamon.jpeg" }
+                    { name: "Cheesecake / Tarta de queso", price: "5,50 €", description: "Un cheesecake crémeux classique.", vegan: "no", glutenfree: "no", image: "Desserts-cheesecake.jpeg" },
+                    { name: "Gâteau Biscuit Lotus / Tarta galleta Lotus", price: "5,90 €", description: "Un délicieux gâteau fait avec des biscuits Lotus.", vegan: "no", glutenfree: "no", image: "Desserts-lotus-biscuit-cake.jpeg" },
+                    { name: "Mort par Chocolat / Muerte por chocolate", price: "6,40 €", description: "Un dessert riche et indulgent au chocolat.", vegan: "no", glutenfree: "no", image: "Desserts-death-by-chocolate.jpeg" },
+                    { name: "Gâteau de Grand-mère / Tarta de la abuela", price: "5,50 €", description: "Un gâteau traditionnel préparé avec une recette familiale.", vegan: "no", glutenfree: "no", image: "Desserts-grandmas-cake.jpeg" },
+                    { name: "Gâteau Velours / Tarta velvet", price: "5,50 €", description: "Un gâteau velouté, doux et moelleux.", vegan: "no", glutenfree: "no", image: "Desserts-velvet-cake.jpeg" },
+                    { name: "Fondant au Chocolat / Coulant de chocolate", price: "5,20 €", description: "Fondant au chocolat chaud avec un centre coulant.", vegan: "no", glutenfree: "no", image: "Desserts-chocolate-fondant.jpeg" },
+                    { name: "Fondant au Bailey's / Coulant de Bailey's", price: "5,20 €", description: "Fondant infusé au Bailey's.", vegan: "no", glutenfree: "no", image: "Desserts-baileys-fondant.jpeg" },
+                    { name: "Fondant au Chocolat Blanc (Sans Gluten) / Coulant de chocolate blanco", price: "5,20 €", description: "Fondant au chocolat blanc sans gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-white-chocolate-fondant.jpeg" },
+                    { name: "Brownie avec Émietté de Cookies / Brownie", price: "6,00 €", description: "Un brownie garni d'émietté de cookies.", vegan: "no", glutenfree: "no", glutenfree: "no", image: "Desserts-brownie-cookie-crumble.jpeg" },
+                    { name: "Portion glace à la vanille (Sans Gluten) / Contesa de nata", price: "4,90 €", description: "Tarte à la crème sans gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-cream-tart.jpeg" },
+                    { name: "Gâteau au Whisky / Tarta al Whisky", price: "5,20 €", description: "Un gâteau moelleux infusé au whisky.", vegan: "no", glutenfree: "no", image: "Desserts-whisky-cake.jpeg" },
+                    { name: "Truffes au Chocolat / Trufas de chocolate", price: "5,20 €", description: "Des truffes au chocolat décadentes.", vegan: "no", glutenfree: "no", image:"Desserts-chocolate-truffles.jpeg" },
+                    { name: "Glace au Nougat (Sans Gluten) / Tarrina helado turrón", price: "3,00 €", description: "Une tasse de glace au nougat sans gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-nougat-ice-cream.jpeg" },
+                    { name: "Orange à la Cannelle (Sans Gluten) / Naranja con Canela", price: "3,80 €", description: "Des tranches d'orange fraîches à la cannelle.", vegan: "yes", glutenfree: "yes", image: "Desserts-orange-cinnamon.jpeg" }
                 ]
             }
             
