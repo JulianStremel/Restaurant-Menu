@@ -64,7 +64,7 @@ const menuData = {
                 description: "Classic baguette sandwiches packed with flavorful ingredients.",
                 items: [
                     { name: "Chivito Especial / Chivito", price: "€11", description: "Lettuce, tomato, cheese, bacon, fried egg, and ham", vegan: "no", glutenfree: "no", image: "default-image.jpeg" },
-                    { name: "Polvorilla", price: "€11", description: "Tomato, ham, cheese, and bacon on a toasted bun", vegan: "no", glutenfree: "no", image: "default-image.jpeg" },
+                    { name: "Polvorilla", price: "€11", description: "Tomato, ham, cheese, and bacon on a toasted bun", vegan: "no", glutenfree: "no", image: "Bocadillos-polvorilla.jpeg" },
                     { name: "Alex Sub / Bocadillo Alex", price: "€10", description: "Gouda cheese, bacon, lomo, and fries", vegan: "no", glutenfree: "no", image: "default-image.jpeg" },
                     { name: "Héctor Sub / Bocadillo Hector", price: "€10", description: "Caramelized onions, bacon, and melted cheese", vegan: "no", glutenfree: "no", image: "default-image.jpeg" }
                 ]
@@ -219,6 +219,16 @@ const menuData = {
                     { name: "Vegan", price: "€12.00", description: "Burger végan à la quinoa avec laitue, tomate, oignon caramélisé et poivron.  **les frites doivent être commandées à part", vegan: "yes", glutenfree: "no", image: "Burgers-vegan-burger.jpeg" }
                 ]
             },
+            "Sandwich pain baguette": {
+                "description": "Sandwichs baguette classiques garnis d'ingrédients savoureux.",
+                "items": [
+                    { "name": "Chivito spécial / Chivito", "price": "11€", "description": "Laitue, tomate, fromage, bacon, œuf frit, et jambon", "vegan": "non", "glutenfree": "non", "image": "default-image.jpeg" },
+                    { "name": "Polvorilla", "price": "11€", "description": "Tomate, jambon, fromage, et bacon sur un pain grillé", "vegan": "non", "glutenfree": "non", "image": "Bocadillos-polvorilla.jpeg" },
+                    { "name": "Alex / Bocadillo Alex", "price": "10€", "description": "Fromage gouda, bacon, lomo, et frites", "vegan": "non", "glutenfree": "non", "image": "default-image.jpeg" },
+                    { "name": "Héctor / Bocadillo Hector", "price": "10€", "description": "Oignons caramélisés, bacon, et fromage fondu", "vegan": "non", "glutenfree": "non", "image": "default-image.jpeg" }
+                ]
+            },
+            
             "Burritos": {
                 description: "Des burritos copieux et savoureux pour un repas complet.",
                 items: [
@@ -340,9 +350,7 @@ const menuData = {
 
                 ]
             },
-            
-            
-            
+        
             "Especiales Mijares": {
                 description: "Platos especiales que muestran la excelencia culinaria de nuestro restaurante.",
                 items: [
@@ -366,6 +374,16 @@ const menuData = {
                     { name: "Vegana", price: "€12.00", description: "Hamburguesa vegana de quinoa con lechuga, tomate, cebolla caramelizada y pimiento.  **Las patatas se piden a parte", vegan: "yes", glutenfree: "no", image: "Burgers-vegan-burger.jpeg" }
                 ]
             },
+            "Bocadillos": {
+                "description": "Bocadillos clásicos en baguette llenos de ingredientes sabrosos.",
+                "items": [
+                    { "name": "Chivito Especial", "price": "11€", "description": "Lechuga, tomate, queso, bacon, huevo frito y jamón", "vegan": "no", "glutenfree": "no", "image": "default-image.jpeg" },
+                    { "name": "Polvorilla", "price": "11€", "description": "Tomate, jamón, queso y bacon en un pan tostado", "vegan": "no", "glutenfree": "no", "image": "Bocadillos-polvorilla.jpeg" },
+                    { "name": "Alex", "price": "10€", "description": "Queso gouda, bacon, lomo y patatas fritas", "vegan": "no", "glutenfree": "no", "image": "default-image.jpeg" },
+                    { "name": "Héctor", "price": "10€", "description": "Cebollas caramelizadas, bacon y queso derretido", "vegan": "no", "glutenfree": "no", "image": "default-image.jpeg" }
+                ]
+            },
+            
             "Burritos": {
                 description: "Burritos sabrosos y contundentes para una comida completa.",
                 items: [
