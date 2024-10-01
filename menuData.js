@@ -4,12 +4,12 @@ const menuData = {
             "Salads": {
                 description: "Fresh, vibrant salads made with seasonal ingredients and bold flavors.",
                 items: [
-                    { name: "Crunchy Salad (Goat Cheese)", price: "€14", description: "Crispy salad with goat cheese", vegan: "no", glutenfree: "no", image: "Salads-goat-cheese.jpeg" },
-                    { name: "Crunchy Vegan Salad (Quinoa patty)", price: "€14", description: "Crispy salad with quinoa patty", vegan: "yes", glutenfree: "no", image: "Salads-crunchy-vegan.jpeg" },
-                    { name: "Caesar Salad (Chicken)", price: "€14", description: "Classic Caesar salad with chicken", vegan: "no", glutenfree: "no", image: "Salads-Caesar-salad.jpeg" },
-                    { name: "Valencian Salad (Tuna)", price: "€12", description: "Traditional Valencian salad with tuna", vegan: "no", glutenfree: "no", image: "Salads-valenciana.jpeg" },
-                    { name: "Vegetarian Salad without tuna", price: "€12", description: "Fresh mixed salad with vegetables, no tuna", vegan: "yes", glutenfree: "no", image: "Salads-valenciana.jpeg" },
-                    { name: "Zucchini Carpaccio", price: "€12", description: "Zucchini slices drizzled with olive oil and seasoning. For a vegan option, simply request it without the cheese.", vegan: "yes", glutenfree: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
+                    { name: "Crunchy Salad (Goat Cheese) / Ensalada crujiente queso de cabra", price: "€14", description: "Crispy salad with goat cheese", vegan: "no", glutenfree: "no", image: "Salads-goat-cheese.jpeg" },
+                    { name: "Crunchy Vegan Salad (Quinoa patty) / Ensalada crujiente hamburguesa quinoa", price: "€14", description: "Crispy salad with quinoa patty", vegan: "yes", glutenfree: "no", image: "Salads-crunchy-vegan.jpeg" },
+                    { name: "Caesar Salad (Chicken) / Ensalada Cesar", price: "€14", description: "Classic Caesar salad with chicken", vegan: "no", glutenfree: "no", image: "Salads-Caesar-salad.jpeg" },
+                    { name: "Valencian Salad (Tuna) / Ensalada valenciana con atún", price: "€12", description: "Traditional Valencian salad with tuna", vegan: "no", glutenfree: "no", image: "Salads-valenciana.jpeg" },
+                    { name: "Vegetarian Salad without tuna / Ensalada vegetariana sin atún", price: "€12", description: "Fresh mixed salad with vegetables, no tuna", vegan: "yes", glutenfree: "no", image: "Salads-valenciana.jpeg" },
+                    { name: "Zucchini Carpaccio / Carpaccio de calabacín", price: "€12", description: "Zucchini slices drizzled with olive oil and seasoning. For a vegan option, simply request it without the cheese.", vegan: "yes", glutenfree: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
             },
             "Starters and Tapas": {
