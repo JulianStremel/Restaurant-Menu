@@ -63,7 +63,7 @@ const menuData = {
             "Baguette Sandwiches": {
                 description: "Classic baguette sandwiches packed with flavorful ingredients.",
                 items: [
-                    { name: "Chivito Especial / Chivito", price: "€11", description: "Lettuce, tomato, cheese, bacon, fried egg, and ham", vegan: "no", glutenfree: "no", image: "default-image.jpeg" },
+                    { name: "Chivito Especial / Chivito", price: "€11", description: "Lettuce, tomato, cheese, bacon, fried egg, and ham", vegan: "no", glutenfree: "no", image: "Bocadillos-chivito.jpeg" },
                     { name: "Polvorilla", price: "€11", description: "Tomato, ham, cheese, and bacon on a toasted bun", vegan: "no", glutenfree: "no", image: "Bocadillos-polvorilla.jpeg" },
                     { name: "Alex Sub / Bocadillo Alex", price: "€10", description: "Gouda cheese, bacon, lomo, and fries", vegan: "no", glutenfree: "no", image: "default-image.jpeg" },
                     { name: "Héctor Sub / Bocadillo Hector", price: "€10", description: "Caramelized onions, bacon, and melted cheese", vegan: "no", glutenfree: "no", image: "default-image.jpeg" }
@@ -73,7 +73,7 @@ const menuData = {
                 description: "Delicious sandwiches for a quick and satisfying meal.",
                 items: [
                     { name: "Andrea / Sandwich Andrea", price: "€8", description: "Ham, lettuce, tomato, and pickles", vegan: "no", glutenfree: "no", image: "default-image.jpeg" },
-                    { name: "Tuna Sandwich / Sandwich de atún", price: "€7", description: "Tuna, lettuce, and olives in a toasted sandwich", vegan: "no", glutenfree: "no", image: "default-image.jpeg" },
+                    { name: "Tuna Sandwich / Sandwich de atún", price: "€7", description: "Tuna, mayonnaise, tomato, lettuce, and olives in a toasted sandwich", vegan: "no", glutenfree: "no", image: "Sandwiches-tuna.jpeg" },
                     { name: "Mixed Sandwich / Sandwich mixto", price: "€4", description: "Simple ham and cheese sandwich", vegan: "no", glutenfree: "no", image: "default-image.jpeg" }
                 ]
             },
@@ -81,7 +81,7 @@ const menuData = {
                 description: "Hearty and flavorful burritos for a filling meal.",
                 items: [
                     { name: "D-Lux Burrito / Burrito D-lux", price: "€8.50", description: "Chicken, lettuce, tomato, and bacon wrapped in a burrito", vegan: "no", glutenfree: "no", image: "Burritos-d-lux.jpeg" },
-                    { name: "Texan Burrito / Burrito tejano", price: "€8.50", description: "Eggplant, zucchini, tomato, and chicken strips", vegan: "no", glutenfree: "no", image: "default-image.jpeg" }
+                    { name: "Texan Burrito / Burrito tejano", price: "€8.50", description: "Eggplant, zucchini, tomato, and chicken strips", vegan: "no", glutenfree: "no", image: "Burritos-tejano.jpeg" }
                 ]
             },
             "Drinks": {
@@ -114,6 +114,8 @@ const menuData = {
             "Wines": {
                 description: "Carefully selected wines to complement any meal.",
                 items: [
+                    { name: "Red Wine Glass / Copa de vino tinto", price: "€2.50", description: "Glass of red wine", vegan: "no", glutenfree: "no", image: "Bebidas-copa-tinto.jpeg" },
+                    { name: "White Wine Glass / Copa de vino blanco", price: "€2.50", description: "Glass of white wine", vegan: "no", glutenfree: "no", image: "Bebidas-copa-blanco.jpeg" },
                     { name: "Rosado, Finca del Mar", price: "11€", description: "Finca del Mar Rosado captivates with its delicate pink hue and delivers a bouquet of fresh strawberries and floral notes. This rosé is well-balanced with a refreshing acidity, ideal for sunny afternoons or paired with Mediterranean cuisine.", vegan: "no", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
                     { name: "Chardonnay White Wine, Finca del Mar", price: "11€", description: "Finca del Mar Blanco is a crisp, refreshing white wine, offering flavors of green apple, citrus, and a hint of minerality. Its light body and vibrant acidity make it a perfect match for seafood and light pasta dishes.", vegan: "no", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
                     { name: "Tinto, Finca del Mar", price: "11€", description: "Finca del Mar Tinto is a robust red wine with deep flavors of dark berries, hints of spice, and a smooth finish. Its full body and structured tannins make it excellent for pairing with grilled meats and rich stews.", vegan: "no", image: "Vinos-botella-tinto-finca-del-mar.jpeg" },
@@ -144,7 +146,7 @@ const menuData = {
                         { name: "Bailey's Fondant / Coulant de Baileys", price: "€5.20", description: "Fondant infused with Bailey's liqueur.", vegan: "no", glutenfree: "no", image: "Desserts-baileys-fondant.jpeg" },
                         { name: "White Chocolate Fondant (Gluten-Free) / Coulant choco blanco", price: "€5.20", description: "Gluten-free white chocolate fondant.", vegan: "no", glutenfree: "yes", image: "Desserts-white-chocolate-fondant.jpeg" },
                         { name: "Brownie with Cookie Crumble / Brownie", price: "€6.00", description: "A brownie topped with cookie crumble.", vegan: "no", glutenfree: "no", image: "Desserts-brownie-cookie-crumble.jpeg" },
-                        { name: "Cream Tart (Gluten-Free) / Contesa de Nata", price: "€4.90", description: "Gluten-free cream tart.", vegan: "no", glutenfree: "yes", image: "Desserts-cream-tart.jpeg" },
+                        { name: "Ice cream Tart (Gluten-Free) / Contesa de Nata", price: "€4.90", description: "Gluten-free ice cream tart with cream", vegan: "no", glutenfree: "yes", image: "Desserts-contesa.jpeg" },
                         { name: "Whisky Cake / Tarta al Whisky", price: "€5.20", description: "A moist cake infused with whisky.", vegan: "no", glutenfree: "no", image: "Desserts-whisky-cake.jpeg" },
                         { name: "Chocolate Truffles / Trufas de chocolate", price: "€5.20", description: "Decadent chocolate truffles.", vegan: "no", glutenfree: "no", image: "Desserts-chocolate-truffles.jpeg" },
                         { name: "Nougat Ice Cream Cup (Gluten-Free) / Tarrina helado Turrón", price: "€3.00", description: "A gluten-free nougat ice cream cup.", vegan: "no", glutenfree: "yes", image: "Desserts-nougat-ice-cream.jpeg" },
@@ -222,18 +224,27 @@ const menuData = {
             "Sandwich pain baguette": {
                 "description": "Sandwichs baguette classiques garnis d'ingrédients savoureux.",
                 "items": [
-                    { "name": "Chivito spécial / Chivito", "price": "11€", "description": "Laitue, tomate, fromage, bacon, œuf frit, et jambon", "vegan": "non", "glutenfree": "non", "image": "default-image.jpeg" },
+                    { "name": "Chivito spécial / Chivito", "price": "11€", "description": "Laitue, tomate, fromage, bacon, œuf frit, et jambon", "vegan": "non", "glutenfree": "non", "image": "Bocadillos-chivito.jpeg" },
                     { "name": "Polvorilla", "price": "11€", "description": "Tomate, jambon, fromage, et bacon sur un pain grillé", "vegan": "non", "glutenfree": "non", "image": "Bocadillos-polvorilla.jpeg" },
                     { "name": "Alex / Bocadillo Alex", "price": "10€", "description": "Fromage gouda, bacon, lomo, et frites", "vegan": "non", "glutenfree": "non", "image": "default-image.jpeg" },
                     { "name": "Héctor / Bocadillo Hector", "price": "10€", "description": "Oignons caramélisés, bacon, et fromage fondu", "vegan": "non", "glutenfree": "non", "image": "default-image.jpeg" }
                 ]
             },
+            "Sandwichs": {
+                "description": "Délicieux sandwichs pour un repas rapide et satisfaisant.",
+                "items": [
+                    { name: "Andrea / Sandwich Andrea", price: "8€", description: "Jambon, laitue, tomate et cornichons", vegan: "no", glutenfree: "no", image: "default-image.jpeg" },
+                    { name: "Sandwich au thon / Sandwich de atún", price: "7€", description: "Thon, mayonnaise, tomate, laitue et olives dans un sandwich grillé", vegan: "no", glutenfree: "no", image: "Sandwiches-tuna.jpeg" },
+                    { name: "Sandwich mixte / Sandwich mixto", price: "4€", description: "Simple sandwich au jambon et fromage", vegan: "no", glutenfree: "no", image: "default-image.jpeg" }
+                ]
+            },
+            
             
             "Burritos": {
                 description: "Des burritos copieux et savoureux pour un repas complet.",
                 items: [
                     { name: "Burrito D-Lux / Burrito D-Lux", price: "€8.50", description: "Poulet, laitue, tomate et bacon enveloppés dans un burrito", vegan: "no", glutenfree: "no", image: "Burritos-d-lux.jpeg" },
-                    { name: "Burrito Texan / Burrito Tejano", price: "€8.50", description: "Aubergine, courgette, tomate et morceaux de poulet", vegan: "no", glutenfree: "no", image: "burrito2.jpg" }
+                    { name: "Burrito Texan / Burrito Tejano", price: "€8.50", description: "Aubergine, courgette, tomate et morceaux de poulet", vegan: "no", glutenfree: "no", image: "Burritos-tejano.jpeg" }
                 ]
             },
             "Boissons": {
@@ -266,7 +277,8 @@ const menuData = {
             "Vins": {
                 description: "Des vins soigneusement sélectionnés pour accompagner tout repas.",
                 items: [
-                    { name: "Rosado, Finca del Mar", price: "11€", description: "Le Finca del Mar Rosado séduit avec sa teinte rose délicate et offre un bouquet de fraises fraîches et de notes florales. Ce rosé est bien équilibré avec une acidité rafraîchissante, parfait pour les après-midis ensoleillés ou pour accompagner une cuisine méditerranéenne.", vegan: "no", glutenfree: "no", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
+                    { name: "Verre de Vin Rouge / copa de vino tinto", price: "€2.50", description: "Verre de vin rouge", vegan: "no", glutenfree: "no", image: "Bebidas-copa-tinto.jpeg" },
+                    { name: "Verre de Vin Blanc / Copa de vino blanco", price: "€2.50", description: "Verre de vin blanc", vegan: "no", glutenfree: "no", image: "Bebidas-copa-blanco.jpeg" },{ name: "Rosado, Finca del Mar", price: "11€", description: "Le Finca del Mar Rosado séduit avec sa teinte rose délicate et offre un bouquet de fraises fraîches et de notes florales. Ce rosé est bien équilibré avec une acidité rafraîchissante, parfait pour les après-midis ensoleillés ou pour accompagner une cuisine méditerranéenne.", vegan: "no", glutenfree: "no", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
                     { name: "Vin blanc Chardonnay, Finca del Mar", price: "11€", description: "Le Finca del Mar Blanc est un vin blanc croquant et rafraîchissant, offrant des saveurs de pomme verte, de citron, et une touche de minéralité. Son corps léger et son acidité vivante en font un compagnon idéal pour les fruits de mer et les plats de pâtes légères.", vegan: "no", glutenfree: "no", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
                     { name: "Vin Rouge, Finca del Mar", price: "11€", description: "Finca del Mar Tinto is a robust red wine with deep flavors of dark berries, hints of spice, and a smooth finish. Its full body and structured tannins make it excellent for pairing with grilled meats and rich stews.", vegan: "no", glutenfree: "no", image: "Vinos-botella-tinto-finca-del-mar.jpeg" },
                     { name: "Vin rouge Rioja, Altos Ibéricos", price: "14€", description: "Altos Ibéricos Crianza presents a contemporary take on Rioja with its vibrant Tempranillo character. Expect a wine with aromas of blackberries and dried herbs, complemented by flavors of black currant, cherry, and a hint of black truffle. Its aging in oak imparts a smooth complexity with well-integrated tannins, making it a versatile choice for pairing with a variety of hearty dishes or enjoying on its own.", vegan: "no", glutenfree: "no", image: "Vinos-botella-tinto-altos-ibericos.jpeg" },
@@ -297,7 +309,7 @@ const menuData = {
                     { name: "Fondant au Bailey's / Coulant de Bailey's", price: "5,20 €", description: "Fondant infusé au Bailey's.", vegan: "no", glutenfree: "no", image: "Desserts-baileys-fondant.jpeg" },
                     { name: "Fondant au Chocolat Blanc (Sans Gluten) / Coulant de chocolate blanco", price: "5,20 €", description: "Fondant au chocolat blanc sans gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-white-chocolate-fondant.jpeg" },
                     { name: "Brownie avec Émietté de Cookies / Brownie", price: "6,00 €", description: "Un brownie garni d'émietté de cookies.", vegan: "no", glutenfree: "no", glutenfree: "no", image: "Desserts-brownie-cookie-crumble.jpeg" },
-                    { name: "Portion glace à la vanille (Sans Gluten) / Contesa de nata", price: "4,90 €", description: "Tarte à la crème sans gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-cream-tart.jpeg" },
+                    { name: "Portion glace à la vanille (Sans Gluten) / Contesa de nata", price: "4,90 €", description: "Tarte glace à la vanille sans gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-contesa.jpeg" },
                     { name: "Gâteau au Whisky / Tarta al Whisky", price: "5,20 €", description: "Un gâteau moelleux infusé au whisky.", vegan: "no", glutenfree: "no", image: "Desserts-whisky-cake.jpeg" },
                     { name: "Truffes au Chocolat / Trufas de chocolate", price: "5,20 €", description: "Des truffes au chocolat décadentes.", vegan: "no", glutenfree: "no", image:"Desserts-chocolate-truffles.jpeg" },
                     { name: "Glace au Nougat (Sans Gluten) / Tarrina helado turrón", price: "3,00 €", description: "Une tasse de glace au nougat sans gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-nougat-ice-cream.jpeg" },
@@ -377,10 +389,18 @@ const menuData = {
             "Bocadillos": {
                 "description": "Bocadillos clásicos en baguette llenos de ingredientes sabrosos.",
                 "items": [
-                    { "name": "Chivito Especial", "price": "11€", "description": "Lechuga, tomate, queso, bacon, huevo frito y jamón", "vegan": "no", "glutenfree": "no", "image": "default-image.jpeg" },
+                    { "name": "Chivito Especial", "price": "11€", "description": "Lechuga, tomate, queso, bacon, huevo frito y jamón", "vegan": "no", "glutenfree": "no", "image": "Bocadillos-chivito.jpeg" },
                     { "name": "Polvorilla", "price": "11€", "description": "Tomate, jamón, queso y bacon en un pan tostado", "vegan": "no", "glutenfree": "no", "image": "Bocadillos-polvorilla.jpeg" },
                     { "name": "Alex", "price": "10€", "description": "Queso gouda, bacon, lomo y patatas fritas", "vegan": "no", "glutenfree": "no", "image": "default-image.jpeg" },
                     { "name": "Héctor", "price": "10€", "description": "Cebollas caramelizadas, bacon y queso derretido", "vegan": "no", "glutenfree": "no", "image": "default-image.jpeg" }
+                ]
+            },
+            Sandwiches: {
+                description: "Deliciosos sándwiches para una comida rápida y satisfactoria.",
+                items: [
+                    { name: "Sándwich Andrea", price: "8€", description: "Sándwich con jamón, lechuga, tomate y pepinillos", vegan: "no", glutenfree: "no", image: "default-image.jpeg" },
+                    { name: "Sándwich de atún", price: "7€", description: "Sándwich con atún, mayonesa, tomate, lechuga y aceitunas en un sándwich tostado", vegan: "no", glutenfree: "no", image: "Sandwiches-tuna.jpeg" },
+                    { name: "Sándwich mixto", price: "4€", description: "Sencillo sándwich de jamón y queso", vegan: "no", glutenfree: "no", image: "default-image.jpeg" }
                 ]
             },
             
@@ -388,7 +408,7 @@ const menuData = {
                 description: "Burritos sabrosos y contundentes para una comida completa.",
                 items: [
                     { name: "Burrito D-Lux", price: "€8.50", description: "Pollo, lechuga, tomate y bacon envueltos en un burrito", vegan: "no", glutenfree: "no", image: "Burritos-d-lux.jpeg" },
-                    { name: "Burrito Texan", price: "€8.50", description: "Berenjena, calabacín, tomate y tiras de pollo", vegan: "no", glutenfree: "no", image: "burrito2.jpg" }
+                    { name: "Burrito Tejano", price: "€8.50", description: "Berenjena, calabacín, tomate y tiras de pollo", vegan: "no", glutenfree: "no", image: "Burritos-tejano.jpeg" }
                 ]
             },
             "Bebidas": {
@@ -421,6 +441,8 @@ const menuData = {
             "Vinos": {
                 description: "Vinos cuidadosamente seleccionados para acompañar cualquier comida.",
                 items: [
+                    { name: "Copa de vino Tinto", price: "€2.50", description: "Copa de vino tinto", vegan: "no", glutenfree: "no", image: "Bebidas-copa-tinto.jpeg" },
+                    { name: "Copa de vino Blanco", price: "€2.50", description: "Copa de vino blanco", vegan: "no", glutenfree: "no", image: "Bebidas-copa-blanco.jpeg" },
                     { name: "Rosado, Finca del Mar", price: "11€", description: "Finca del Mar Rosado cautiva con su delicado color rosa y ofrece un bouquet de fresas frescas y notas florales. Este rosado está bien equilibrado con una acidez refrescante, ideal para tardes soleadas o para acompañar con la cocina mediterránea.", vegan: "no", glutenfree: "no", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
                     { name: "Vino blanco Chardonnay, Finca del Mar", price: "11€", description: "Finca del Mar Blanco es un vino blanco crujiente y refrescante, con sabores a manzana verde, cítricos y un toque de mineralidad. Su cuerpo ligero y su acidez vibrante lo hacen perfecto para acompañar mariscos y platos de pasta ligeros.", vegan: "no", glutenfree: "no", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
                     { name: "Tinto, Finca del Mar", price: "11€", description: "Finca del Mar Tinto es un vino tinto robusto con intensos sabores a bayas oscuras, toques de especias y un acabado suave. Su cuerpo completo y taninos estructurados lo hacen excelente para acompañar carnes a la parrilla y guisos ricos.", vegan: "no", glutenfree: "no", image: "Vinos-botella-tinto-finca-del-mar.jpeg" },
@@ -449,13 +471,13 @@ const menuData = {
                   { name: "Tarta velvet", price: "5,50 €", description: "Tarta suave y esponjosa.", vegan: "no", glutenfree: "no", image: "Desserts-velvet-cake.jpeg" },
                   { name: "Coulant de chocolate", price: "5,20 €", description: "Coulant de chocolate caliente con centro fundido.", vegan: "no", glutenfree: "no", image: "Desserts-chocolate-fondant.jpeg" },
                   { name: "Coulant de Bailey's", price: "5,20 €", description: "Coulant infusionado con licor de Bailey's.", vegan: "no", glutenfree: "no", image: "Desserts-baileys-fondant.jpeg" },
-                  { name: "Coulant chocolate blanco (S/G)", price: "5,20 €", description: "Coulant de chocolate blanco sin gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-white-chocolate-fondant.jpeg" },
+                  { name: "Coulant chocolate blanco (Sin gluten)", price: "5,20 €", description: "Coulant de chocolate blanco sin gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-white-chocolate-fondant.jpeg" },
                   { name: "Brownie con Galleta cookies", price: "6,00 €", description: "Brownie cubierto con galleta crumble.", vegan: "no", glutenfree: "no", image: "Desserts-brownie-cookie-crumble.jpeg" },
-                  { name: "Contesa de nata (S/G)", price: "4,90 €", description: "Tarta de nata sin gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-cream-tart.jpeg" },
+                  { name: "Contesa de nata (Sin gluten)", price: "4,90 €", description: "Tarta helado de de nata sin gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-contesa.jpeg" },
                   { name: "Tarta al whisky", price: "5,20 €", description: "Tarta esponjosa infusionada con whisky.", vegan: "no", glutenfree: "no", image: "Desserts-whisky-cake.jpeg" },
                   { name: "Trufas de chocolate", price: "5,20 €", description: "Trufas de chocolate decadentes.", vegan: "no", glutenfree: "no", image:"Desserts-chocolate-truffles.jpeg" },
-                  { name: "Tarrina helado turrón (S/G)", price: "3,00 €", description: "Tarrina de helado de turrón sin gluten.", vegan: "no", glutenfree: "yes", image: "Desserts-nougat-ice-cream.jpeg" },
-                  { name: "Naranja con canela (S/G)", price: "3,80 €", description: "Rodajas de naranja fresca con canela.", vegan: "yes", glutenfree: "yes", image:"Desserts-orange-cinnamon.jpeg" }
+                  { name: "Tarrina helado turrón (sin gluten)", price: "3,00 €", description: "Tarrina de helado de turrón sin gluten", vegan: "no", glutenfree: "yes", image: "Desserts-nougat-ice-cream.jpeg" },
+                  { name: "Naranja con canela (Sin gluten)", price: "3,80 €", description: "Rodajas de naranja fresca con canela.", vegan: "yes", glutenfree: "yes", image:"Desserts-orange-cinnamon.jpeg" }
                 ]
             }
             
