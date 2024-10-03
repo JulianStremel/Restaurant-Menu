@@ -41,7 +41,7 @@ const menuData = {
             "House Specialties": {
                 description: "Signature dishes that showcase the culinary excellence of our restaurant.",
                 items: [
-                    { name: "Soria Torrezno", price: "€5.50", description: "Crispy pork belly from Soria", vegan: "no", glutenfree: "yes", image: "Specialties-pork-skin.jpeg" },
+                    { name: "Pork belly / Torrezno", price: "€5.50", description: "Crispy pork belly from Soria", vegan: "no", glutenfree: "yes", image: "Specialties-pork-skin.jpeg" },
                     { name: "Pork Cheeks / Carrillada", price: "€15.50", description: "Pork cheeks with fried potatoes", vegan: "no", glutenfree: "no", image: "Specialties-pork-cheeks.jpeg" },
                     { name: "Octopus / Pulpo", price: "€18", description: "Octopus, special recipe of the village", vegan: "no", glutenfree: "yes", image: "Specialties-octopus.jpeg" },
                     { name: "Galiana Jumbo Prawns / Gambón Galiana", price: "€22", description: "Galiana Jumbo Prawns", vegan: "no", glutenfree: "yes", image: "Specialties-galiana-jumbo-prawns.jpeg" },
