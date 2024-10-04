@@ -28,14 +28,14 @@ const menuData = {
                 ]
             },
             "Combo meals": {
-                description: "Delicious combinations of our finest ingredients to satisfy your hunger. Most of them come with fried egg and fries.",
+                description: "Delicious Combos of our finest ingredients to satisfy your hunger. Most of them come with fried egg and fries.",
                 items: [
-                    { name: "Montanejos Cold Cuts / Combinado Embutidos Montanejos", price: "€11", description: "Selection of cold cuts from Montanejos: Chorizo, blood sausage and longaniza", vegan: "no", glutenfree: "no", image: "Combination-sausages.jpeg" },
-                    { name: "Grilled Loin / Combinado Lomo", price: "€11", description: "Grilled pork loin served with an egg and fries", vegan: "no", glutenfree: "no", image: "Combination-pork-loin.jpeg" },
-                    { name: "Breaded Chicken / Combinado pollo", price: "€11", description: "Breaded chicken fillet served with fries and a fried egg", vegan: "no", glutenfree: "no", image: "Combination-chicken.jpeg" },
-                    { name: "Grilled Cuttlefish / Combinado sepia", price: "€16", description: "Grilled cuttlefish served with garlic sauce", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
-                    { name: "Fried Calamari / Combinado calamares", price: "€13", description: "Fried calamari with fries and salad", vegan: "no", glutenfree: "no", image: "Combination-calamary.jpeg" },
-                    { name: "Special Vegan Ana / Combinado Ana (hamburgusa quinoa, patatas y ensalada)", price: "€13", description: "Quinoa patty with salad and patatas bravas", vegan: "yes", glutenfree: "no", image: "Combination-vegan-Ana.jpeg" }
+                    { name: "Montanejos Cold Cuts / Combinado Embutidos Montanejos", price: "€11", description: "Selection of cold cuts from Montanejos: Chorizo, blood sausage and longaniza", vegan: "no", glutenfree: "no", image: "Combo-sausages.jpeg" },
+                    { name: "Grilled Loin / Combinado Lomo", price: "€11", description: "Grilled pork loin served with an egg and fries", vegan: "no", glutenfree: "no", image: "Combo-pork-loin.jpeg" },
+                    { name: "Breaded Chicken / Combinado pollo", price: "€11", description: "Breaded chicken fillet served with fries and a fried egg", vegan: "no", glutenfree: "no", image: "Combo-chicken.jpeg" },
+                    { name: "Grilled Cuttlefish / Combinado sepia", price: "€16", description: "Grilled cuttlefish served with garlic sauce", vegan: "no", glutenfree: "yes", image: "Combo-cuttlefish.jpeg" },
+                    { name: "Fried Calamari / Combinado calamares", price: "€13", description: "Fried calamari with fries and salad", vegan: "no", glutenfree: "no", image: "Combo-calamary.jpeg" },
+                    { name: "Special Vegan Ana / Combinado Ana (hamburgusa quinoa, patatas y ensalada)", price: "€13", description: "Quinoa patty with salad and patatas bravas", vegan: "yes", glutenfree: "no", image: "Combo-vegan-Ana.jpeg" }
                 ]
             },
             "House Specialties": {
@@ -188,13 +188,13 @@ const menuData = {
             "Assièttes Combinées": {
                 description: "Délicieuses combinaisons de nos meilleurs ingrédients pour satisfaire votre faim. Ils sont en règle générale servi avec un oeuf frit et des frites",
                 items: [
-                    { name: "Charcuterie de Montanejos / Combinado Embutido", price: "€11", description: "Sélection de charcuteries de Montanejos: Chorizo, boudin et longaniza", vegan: "no", glutenfree: "no", image: "Combination-sausages.jpeg" },
-                    { name: "Longe de Porc Grillée / Combinado Lomo", price: "€11", description: "Longe de porc grillée servie avec un oeuf et des frites", vegan: "no", glutenfree: "no", image: "Combination-pork-loin.jpeg" },
-                    { name: "Poulet Pané / Combinado pollo", price: "€11", description: "Escalope de poulet panée avec frites et un oeuf frit", vegan: "no", glutenfree: "no", image: "Combination-chicken.jpeg" },
-                    { name: "Seiche Grillée / Combinado Sepia", price: "€16", description: "Seiche grillée avec sauce à l'ail", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
-                    { name: "Calamars Frits / Combinado Calamares", price: "€13", description: "Calamars frits avec salade et frites", vegan: "no", glutenfree: "no", image: "Combination-calamary.jpeg" },
-                    { name: "Espadon Sauce Verte / Combinado Emperador", price: "€15.00", description: "Filet d'espadon accompagné de sauce verte, salade et frites", vegan: "no", glutenfree: "no", image: "Combination-swordfish.jpeg" },
-                    { name: "Spécial Vegan Ana / Combinado Ana (hamburgusa quinoa, patatas y ensalada)", price: "€13", description: "Galette de quinoa avec salade et patatas bravas", vegan: "yes", glutenfree: "no", image: "Combination-vegan-Ana.jpeg" }
+                    { name: "Charcuterie de Montanejos / Combinado Embutido", price: "€11", description: "Sélection de charcuteries de Montanejos: Chorizo, boudin et longaniza", vegan: "no", glutenfree: "no", image: "Combo-sausages.jpeg" },
+                    { name: "Longe de Porc Grillée / Combinado Lomo", price: "€11", description: "Longe de porc grillée servie avec un oeuf et des frites", vegan: "no", glutenfree: "no", image: "Combo-pork-loin.jpeg" },
+                    { name: "Poulet Pané / Combinado pollo", price: "€11", description: "Escalope de poulet panée avec frites et un oeuf frit", vegan: "no", glutenfree: "no", image: "Combo-chicken.jpeg" },
+                    { name: "Seiche Grillée / Combinado Sepia", price: "€16", description: "Seiche grillée avec sauce à l'ail", vegan: "no", glutenfree: "yes", image: "Combo-cuttlefish.jpeg" },
+                    { name: "Calamars Frits / Combinado Calamares", price: "€13", description: "Calamars frits avec salade et frites", vegan: "no", glutenfree: "no", image: "Combo-calamary.jpeg" },
+                    { name: "Espadon Sauce Verte / Combinado Emperador", price: "€15.00", description: "Filet d'espadon accompagné de sauce verte, salade et frites", vegan: "no", glutenfree: "no", image: "Combo-swordfish.jpeg" },
+                    { name: "Spécial Vegan Ana / Combinado Ana (hamburgusa quinoa, patatas y ensalada)", price: "€13", description: "Galette de quinoa avec salade et patatas bravas", vegan: "yes", glutenfree: "no", image: "Combo-vegan-Ana.jpeg" }
 
                 ]
             },
@@ -352,13 +352,13 @@ const menuData = {
             "Combinados": {
                description: "Disfruta de nuestras combinaciones únicas de platos principales con guarniciones para una comida completa y satisfactoria.",
                     items: [
-                        { name: "Embutidos Montanejos", price: "€11.00", description: "Surtido de embutidos variados de Montanejos", vegan: "no", glutenfree: "no", image: "Combination-sausages.jpeg" },
-                        { name: "Lomo Caña", price: "€11.00", description: "Lomo de cerdo servido con patatas y huevo frito", vegan: "no", glutenfree: "no", image: "Combination-pork-loin.jpeg" },
-                        { name: "Pollo Empanado", price: "€11.00", description: "Pollo empanado con patatas fritas y huevo frito", vegan: "no", glutenfree: "no", image: "Combination-chicken.jpeg" },
-                        { name: "Sepia Plancha", price: "€16.00", description: "Sepia a la plancha con ajo y perejil", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
-                        { name: "Calamares Rebozados", price: "€13.00", description: "Calamares rebozados con patatas fritas y ensalada", vegan: "no", glutenfree: "no", image: "Combination-calamary.jpeg" },
-                        { name: "Emperador Salsa Verde", price: "€15.00", description: "Filete de emperador acompañado con salsa verde", vegan: "no", glutenfree: "no", image: "Combination-swordfish.jpeg" },
-                        { name: "Especial Vegano Ana", price: "€13", description: "Hamburguesa de quinoa con ensalada y patatas bravas", vegan: "yes", glutenfree: "no", image: "Combination-vegan-Ana.jpeg" }
+                        { name: "Embutidos Montanejos", price: "€11.00", description: "Surtido de embutidos variados de Montanejos", vegan: "no", glutenfree: "no", image: "Combo-sausages.jpeg" },
+                        { name: "Lomo Caña", price: "€11.00", description: "Lomo de cerdo servido con patatas y huevo frito", vegan: "no", glutenfree: "no", image: "Combo-pork-loin.jpeg" },
+                        { name: "Pollo Empanado", price: "€11.00", description: "Pollo empanado con patatas fritas y huevo frito", vegan: "no", glutenfree: "no", image: "Combo-chicken.jpeg" },
+                        { name: "Sepia Plancha", price: "€16.00", description: "Sepia a la plancha con ajo y perejil", vegan: "no", glutenfree: "yes", image: "Combo-cuttlefish.jpeg" },
+                        { name: "Calamares Rebozados", price: "€13.00", description: "Calamares rebozados con patatas fritas y ensalada", vegan: "no", glutenfree: "no", image: "Combo-calamary.jpeg" },
+                        { name: "Emperador Salsa Verde", price: "€15.00", description: "Filete de emperador acompañado con salsa verde", vegan: "no", glutenfree: "no", image: "Combo-swordfish.jpeg" },
+                        { name: "Especial Vegano Ana", price: "€13", description: "Hamburguesa de quinoa con ensalada y patatas bravas", vegan: "yes", glutenfree: "no", image: "Combo-vegan-Ana.jpeg" }
 
                 ]
             },
