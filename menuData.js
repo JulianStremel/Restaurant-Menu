@@ -35,7 +35,7 @@ const menuData = {
                     { name: "Breaded Chicken / Combinado pollo", price: "€11", description: "Breaded chicken fillet served with fries and a fried egg", vegan: "no", glutenfree: "no", image: "Combo-chicken.jpeg" },
                     { name: "Grilled Cuttlefish / Combinado sepia", price: "€16", description: "Grilled cuttlefish served with garlic sauce", vegan: "no", glutenfree: "yes", image: "Combo-cuttlefish.jpeg" },
                     { name: "Fried Calamari / Combinado calamares", price: "€13", description: "Fried calamari with fries and salad", vegan: "no", glutenfree: "no", image: "Combo-calamary.jpeg" },
-                    { name: "Special Vegan Ana / Combinado Ana (hamburgusa quinoa, patatas y ensalada)", price: "€13", description: "Quinoa patty with salad and patatas bravas", vegan: "yes", glutenfree: "no", image: "Combo-vegan-Ana.jpeg" }
+                    { name: "Special Vegan Ana / Combinado Ana (hamburguesa quinoa, patatas y ensalada)", price: "€13", description: "Quinoa patty with salad and patatas bravas", vegan: "yes", glutenfree: "no", image: "Combo-vegan-Ana.jpeg" }
                 ]
             },
             "House Specialties": {
@@ -194,7 +194,7 @@ const menuData = {
                     { name: "Seiche Grillée / Combinado Sepia", price: "€16", description: "Seiche grillée avec sauce à l'ail", vegan: "no", glutenfree: "yes", image: "Combo-cuttlefish.jpeg" },
                     { name: "Calamars Frits / Combinado Calamares", price: "€13", description: "Calamars frits avec salade et frites", vegan: "no", glutenfree: "no", image: "Combo-calamary.jpeg" },
                     { name: "Espadon Sauce Verte / Combinado Emperador", price: "€15.00", description: "Filet d'espadon accompagné de sauce verte, salade et frites", vegan: "no", glutenfree: "no", image: "Combo-swordfish.jpeg" },
-                    { name: "Spécial Vegan Ana / Combinado Ana (hamburgusa quinoa, patatas y ensalada)", price: "€13", description: "Galette de quinoa avec salade et patatas bravas", vegan: "yes", glutenfree: "no", image: "Combo-vegan-Ana.jpeg" }
+                    { name: "Spécial Vegan Ana / Combinado Ana (hamburguesa quinoa, patatas y ensalada)", price: "€13", description: "Galette de quinoa avec salade et patatas bravas", vegan: "yes", glutenfree: "no", image: "Combo-vegan-Ana.jpeg" }
 
                 ]
             },
