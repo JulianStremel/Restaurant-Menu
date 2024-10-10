@@ -74,7 +74,7 @@ const menuData = {
                 items: [
                     { name: "Andrea / Sandwich Andrea", price: "€8", description: "Ham, lettuce, tomato, and pickles", vegan: "no", glutenfree: "no", image: "Sandwiches-Andrea.jpeg" },
                     { name: "Tuna Sandwich / Sandwich de atún", price: "€7", description: "Tuna, mayonnaise, tomato, lettuce, and olives in a toasted sandwich", vegan: "no", glutenfree: "no", image: "Sandwiches-tuna.jpeg" },
-                    { name: "Mixed Sandwich / Sandwich mixto", price: "€4", description: "Simple ham and cheese sandwich", vegan: "no", glutenfree: "no", image: "default-image.jpeg" }
+                    { name: "Mixed Sandwich / Sandwich mixto", price: "€4", description: "Simple ham and cheese sandwich", vegan: "no", glutenfree: "no", image: "Sandwiches-mixto.jpeg" }
                 ]
             },
             "Burritos": {
@@ -235,7 +235,7 @@ const menuData = {
                 "items": [
                     { name: "Andrea / Sandwich Andrea", price: "8€", description: "Jambon, laitue, tomate et cornichons", vegan: "no", glutenfree: "no", image: "Sandwiches-Andrea.jpeg" },
                     { name: "Sandwich au thon / Sandwich de atún", price: "7€", description: "Thon, mayonnaise, tomate, laitue et olives dans un sandwich grillé", vegan: "no", glutenfree: "no", image: "Sandwiches-tuna.jpeg" },
-                    { name: "Sandwich mixte / Sandwich mixto", price: "4€", description: "Simple sandwich au jambon et fromage", vegan: "no", glutenfree: "no", image: "default-image.jpeg" }
+                    { name: "Sandwich mixte / Sandwich mixto", price: "4€", description: "Simple sandwich au jambon et fromage", vegan: "no", glutenfree: "no", image: "Sandwiches-mixto.jpeg" }
                 ]
             },
             
@@ -400,7 +400,7 @@ const menuData = {
                 items: [
                     { name: "Sándwich Andrea", price: "8€", description: "Sándwich con jamón, lechuga, tomate y pepinillos", vegan: "no", glutenfree: "no", image: "Sandwiches-Andrea.jpeg" },
                     { name: "Sándwich de atún", price: "7€", description: "Sándwich con atún, mayonesa, tomate, lechuga y aceitunas en un sándwich tostado", vegan: "no", glutenfree: "no", image: "Sandwiches-tuna.jpeg" },
-                    { name: "Sándwich mixto", price: "4€", description: "Sencillo sándwich de jamón y queso", vegan: "no", glutenfree: "no", image: "default-image.jpeg" }
+                    { name: "Sándwich mixto", price: "4€", description: "Sencillo sándwich de jamón y queso", vegan: "no", glutenfree: "no", image: "Sandwiches-mixto.jpeg" }
                 ]
             },
             
