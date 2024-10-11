@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mealName = document.getElementById('mealName');
     const mealDescription = document.getElementById('mealDescription');
     const mealPrice = document.getElementById('mealPrice');
+    const dessertToggle = document.getElementById('dessertToggle'); // Toggle for desserts
     let previousScrollPosition = 0;
 
     // Function to truncate text
@@ -18,16 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to load menu data
     function loadMenuData(language) {
         const data = menuData[language].categories;
+        const showDesserts = dessertToggle.checked; // Check if desserts should be shown
+
         categorySelect.innerHTML = '';  // Clear previous categories
 
         updateCategoryLabel(language);
 
-        // Populate categories from data
+        // Populate categories from data, excluding desserts based on the toggle
         for (let category in data) {
-            const option = document.createElement('option');
-            option.value = category;
-            option.innerText = category;
-            categorySelect.appendChild(option);
+            if (category !== 'Desserts' || showDesserts) {
+                const option = document.createElement('option');
+                option.value = category;
+                option.innerText = category;
+                categorySelect.appendChild(option);
+            }
         }
 
         // Add Vegan category
@@ -53,10 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const selectedCategory = e.target.value;
             switch(selectedCategory) {
                 case 'vegan':
-                    loadVeganItems(language, data);
+                    loadVeganItems(language, data, showDesserts);
                     break;
                 case 'glutenfree':
-                    loadGlutenFreeItems(language, data);
+                    loadGlutenFreeItems(language, data, showDesserts);
                     break;
                 default:
                     loadCategoryItems(selectedCategory, data);
@@ -134,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Function to load vegan items from all categories
-    function loadVeganItems(language, data) {
+    function loadVeganItems(language, data, showDesserts) {
         menuContent.innerHTML = ''; // Clear previous content
 
         const veganCategoryDiv = document.createElement('div');
@@ -149,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
         veganCategoryDiv.appendChild(categoryDescription);
 
         for (let category in data) {
-            if (data[category].items) {
+            if (data[category].items && (category !== 'Desserts' || showDesserts)) {
                 data[category].items.forEach(item => {
                     if (item.vegan === 'yes') {
                         createMenuItem(item, veganCategoryDiv);
@@ -162,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Function to load gluten-free items from all categories
-    function loadGlutenFreeItems(language, data) {
+    function loadGlutenFreeItems(language, data, showDesserts) {
         menuContent.innerHTML = ''; // Clear previous content
 
         const glutenFreeCategoryDiv = document.createElement('div');
@@ -177,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
         glutenFreeCategoryDiv.appendChild(categoryDescription);
 
         for (let category in data) {
-            if (data[category].items) {
+            if (data[category].items && (category !== 'Desserts' || showDesserts)) {
                 data[category].items.forEach(item => {
                     if (item.glutenfree === 'yes') {
                         createMenuItem(item, glutenFreeCategoryDiv);
@@ -239,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to show the meal detail
     function showMealDetail(image, name, description, price) {
-        previousScrollPosition = window.pageYOffset;
+        previousScrollPosition = window.scrollY;  // Use scrollY instead of pageYOffset
         menuContent.classList.add('d-none');
         mealImage.src = image;
         mealName.innerText = name;
@@ -263,14 +268,16 @@ document.addEventListener('DOMContentLoaded', () => {
         closeDetailView();
     });
 
+    // Check localStorage for toggle state and set initial state
+    const toggleState = localStorage.getItem('dessertToggle') === 'true';
+    dessertToggle.checked = toggleState;
+
+    // Update the menu when the toggle is changed
+    dessertToggle.addEventListener('change', () => {
+        localStorage.setItem('dessertToggle', dessertToggle.checked);
+        loadMenuData(languageSelect.value);  // Reload the menu to reflect toggle state
+    });
+
     // Initial menu load for the default language
     loadMenuData(languageSelect.value);
-
-    // Add change event listener for language selection
-    languageSelect.addEventListener('change', (e) => {
-        if (!mealDetail.classList.contains('d-none')) {
-            closeDetailView();
-        }
-        loadMenuData(e.target.value);
-    });
 });
