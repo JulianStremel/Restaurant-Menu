@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to load menu data
     function loadMenuData(language) {
         const data = menuData[language].categories;
-        categorySelect.innerHTML = '';  
+        categorySelect.innerHTML = '';
 
         updateCategoryLabel(language);
 
@@ -49,6 +49,27 @@ document.addEventListener('DOMContentLoaded', () => {
         // Load the first category if there are any options
         if (categorySelect.options.length > 0) {
             loadCategoryItems(categorySelect.options[0].value, data);
+            window.scrollTo(0, 0); // Scroll to the top of the menu
+        }
+
+        // Event listener for category change (re-attach on each load to prevent multiple listeners)
+        categorySelect.removeEventListener('change', handleCategoryChange);
+        categorySelect.addEventListener('change', handleCategoryChange);
+    }
+
+    // Function to handle category change
+    function handleCategoryChange() {
+        const selectedCategory = categorySelect.value;
+        const data = menuData[languageSelect.value].categories;
+
+        closeDetailView(); // Ensure detail view is closed before changing categories
+
+        if (selectedCategory === 'vegan') {
+            loadVeganItems(languageSelect.value, data);
+        } else if (selectedCategory === 'glutenfree') {
+            loadGlutenFreeItems(languageSelect.value, data);
+        } else {
+            loadCategoryItems(selectedCategory, data);
         }
     }
 
@@ -64,6 +85,30 @@ document.addEventListener('DOMContentLoaded', () => {
             default:
                 jumpToCategoryLabel.innerText = 'Jump to a category';
                 break;
+        }
+    }
+
+    // Function to get the localized label for "Vegan" category
+    function getVeganCategoryLabel(language) {
+        switch (language) {
+            case 'fr':
+                return 'Végan';
+            case 'es':
+                return 'Vegano';
+            default:
+                return 'Vegan';
+        }
+    }
+
+    // Function to get the localized label for "Gluten-Free" category
+    function getGlutenFreeCategoryLabel(language) {
+        switch (language) {
+            case 'fr':
+                return 'Sans Gluten';
+            case 'es':
+                return 'Sin Gluten';
+            default:
+                return 'Gluten-Free';
         }
     }
 
@@ -122,6 +167,34 @@ document.addEventListener('DOMContentLoaded', () => {
         categoryDiv.appendChild(itemDiv);
     }
 
+    // Function to show the meal detail
+    function showMealDetail(image, name, description, price) {
+        previousScrollPosition = window.scrollY;
+        menuContent.classList.add('d-none');
+        mealImage.src = image;
+        mealName.innerText = name;
+        mealDescription.innerText = description;
+        mealPrice.innerText = price;
+        mealDetail.classList.remove('d-none');
+        window.scrollTo(0, 0);
+        languageSelect.disabled = true;
+        dessertToggle.disabled = true;
+    }
+
+    // Function to close detail view
+    function closeDetailView() {
+        mealDetail.classList.add('d-none');
+        menuContent.classList.remove('d-none');
+        window.scrollTo(0, previousScrollPosition);
+        languageSelect.disabled = false;
+        dessertToggle.disabled = false;
+    }
+
+    // Event listener to close detail view when clicking anywhere in the detail view
+    mealDetail.addEventListener('click', () => {
+        closeDetailView();
+    });
+
     // Function to load vegan items from all categories
     function loadVeganItems(language, data) {
         menuContent.innerHTML = '';
@@ -176,18 +249,6 @@ document.addEventListener('DOMContentLoaded', () => {
         menuContent.appendChild(glutenFreeCategoryDiv);
     }
 
-    // Function to get the localized label for "Vegan" category
-    function getVeganCategoryLabel(language) {
-        switch (language) {
-            case 'fr':
-                return 'Végan';
-            case 'es':
-                return 'Vegano';
-            default:
-                return 'Vegan';
-        }
-    }
-
     // Function to get the localized description for "Vegan" category
     function getVeganDescription(language) {
         switch (language) {
@@ -197,18 +258,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return 'Opciones veganas deliciosas de todas las categorías';
             default:
                 return 'Delicious vegan options from all categories';
-        }
-    }
-
-    // Function to get the localized label for "Gluten-Free" category
-    function getGlutenFreeCategoryLabel(language) {
-        switch (language) {
-            case 'fr':
-                return 'Sans Gluten';
-            case 'es':
-                return 'Sin Gluten';
-            default:
-                return 'Gluten-Free';
         }
     }
 
@@ -224,59 +273,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Function to show the meal detail
-    function showMealDetail(image, name, description, price) {
-        previousScrollPosition = window.scrollY;
-        menuContent.classList.add('d-none');
-        mealImage.src = image;
-        mealName.innerText = name;
-        mealDescription.innerText = description;
-        mealPrice.innerText = price;
-        mealDetail.classList.remove('d-none');
-        window.scrollTo(0, 0);
-        languageSelect.disabled = true;
-        dessertToggle.disabled = true;
-    }
-
-    // Function to close detail view
-    function closeDetailView() {
-        mealDetail.classList.add('d-none');
-        menuContent.classList.remove('d-none');
-        window.scrollTo(0, previousScrollPosition);
-        languageSelect.disabled = false;
-        dessertToggle.disabled = false;
-    }
-
-    // Event listener for language change
-    languageSelect.addEventListener('change', (e) => {
-        closeDetailView();
-        loadMenuData(e.target.value);
-    });
-
-    // Event listener for category change
-    categorySelect.addEventListener('change', (e) => {
-        const selectedCategory = e.target.value;
-        closeDetailView();
-        if (selectedCategory === 'vegan') {
-            loadVeganItems(languageSelect.value, menuData[languageSelect.value].categories);
-        } else if (selectedCategory === 'glutenfree') {
-            loadGlutenFreeItems(languageSelect.value, menuData[languageSelect.value].categories);
-        } else {
-            loadCategoryItems(selectedCategory, menuData[languageSelect.value].categories);
-        }
-    });
-
-    // Event listener for the toggle change
+    // Toggle event for dessert toggle switch
     dessertToggle.addEventListener('change', () => {
         showDesserts = dessertToggle.checked;
         loadMenuData(languageSelect.value);
     });
 
-    // Event listener to close meal detail when clicking anywhere in the detail view
-    mealDetail.addEventListener('click', () => {
-        closeDetailView();
+    // Add change event listener for language selection
+    languageSelect.addEventListener('change', (e) => {
+        if (!mealDetail.classList.contains('d-none')) {
+            closeDetailView();
+        }
+        loadMenuData(e.target.value);
     });
 
-    // Initial menu load
+    // Initial menu load for the default language
     loadMenuData(languageSelect.value);
 });
