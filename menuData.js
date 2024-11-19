@@ -7,7 +7,7 @@ const menuData = {
                     { name: "Crunchy Salad (Goat Cheese) / Ensalada crujiente queso de cabra", price: "€14", description: "Crispy salad with goat cheese", vegan: "no", glutenfree: "no", image: "Salads-goat-cheese.jpeg" },
                     { name: "Crunchy Vegan Salad (Quinoa patty) / Ensalada crujiente hamburguesa quinoa", price: "€14", description: "Crispy salad with quinoa patty", vegan: "yes", glutenfree: "no", image: "Salads-crunchy-vegan.jpeg" },
                     { name: "Caesar Salad (Chicken) / Ensalada Cesar", price: "€14", description: "Classic Caesar salad with chicken", vegan: "no", glutenfree: "no", image: "Salads-Caesar-salad.jpeg" },
-                    { name: "Valencian Salad (Tuna) / Ensalada valenciana con atún", price: "€12", description: "Traditional Valencian salad with tuna", vegan: "no", glutenfree: "no", image: "Salads-valenciana.jpeg" },
+                    { name: "Valencian Salad (Tuna) / Ensalada valenciana con atún", price: "€14", description: "Traditional Valencian salad with tuna", vegan: "no", glutenfree: "no", image: "Salads-valenciana.jpeg" },
                     { name: "Vegetarian Salad without tuna / Ensalada vegetariana sin atún", price: "€12", description: "Fresh mixed salad with vegetables, no tuna", vegan: "yes", glutenfree: "no", image: "Salads-valenciana.jpeg" },
                     { name: "Zucchini Carpaccio / Carpaccio de calabacín", price: "€12", description: "Zucchini slices drizzled with olive oil and seasoning. For a vegan option, simply request it without the cheese.", vegan: "yes", glutenfree: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
@@ -15,16 +15,16 @@ const menuData = {
             "Starters and Tapas": {
                 description: "A selection of generous small plates, ideal for sharing or as a starter. Some portions are hearty enough to enjoy as a light meal if you're not too hungry.",
                 items: [
-                    { name: "Tomato & Garlic Bread / Pan con tomate y ajoaceite", price: "€4.80", description: "Toasted bread with tomato and garlic butter", vegan: "no", glutenfree: "no", image: "Starters-bread-tomato-aioli.jpeg" },
-                    { name: "Fried Eggplant with Honey / Berenjena rebozada con miel", price: "€9.80", description: "Eggplant fries drizzled with honey", vegan: "no", glutenfree: "no", image: "Starters-fried-eggplant-with-honey.jpeg" },
+                    { name: "Tomato & Garlic Bread / Pan con tomate y ajoaceite", price: "€5.50", description: "Toasted bread with tomato and garlic butter", vegan: "no", glutenfree: "no", image: "Starters-bread-tomato-aioli.jpeg" },
+                    { name: "Fried Eggplant with Honey / Berenjena rebozada con miel", price: "€9.90", description: "Eggplant fries drizzled with honey", vegan: "no", glutenfree: "no", image: "Starters-fried-eggplant-with-honey.jpeg" },
                     { name: "Fried Calamari / Tapa de calamares", price: "€9.90", description: "Crispy calamari with a side of lemon", vegan: "no", glutenfree: "no", image: "Starters-calamari.jpeg" },
-                    { name: "Broken Eggs with Ham / Huevos rotos con jamón", price: "€9.90", description: "Eggs, Ham and fries", vegan: "no", glutenfree: "no", image: "Starters-broken-eggs-with-ham.jpeg" },
-                    { name: "Croquettes / Croquetas", price: "€9.60", description: "Iberian ham croquettes, mushroom or cod fish, crispy and delicious", vegan: "no", glutenfree: "no", image: "Starters-mushroom-croquettes.jpeg" },
-                    { name: "Fries with Cheese and Bacon / Patatas queso gouda y bacon", price: "€9.90", description: "Fries topped with gouda cheese and bacon", vegan: "no", glutenfree: "no", image: "Starters-fries-gouda-cheese.jpeg" },
-                    { name: "Cuttlefish / Tapa de sepia", price: "€9.90", description: "Cuttlefish", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
-                    { name: "Patatas Bravas (Wedges)", price: "€9.90", description: "Patatas Bravas Wedges", vegan: "yes", glutenfree: "no", image: "Starters-bravas-wedges.jpeg" },
-                    { name: "Sweet fried Potatos with Roquefort / Boniato", price: "€9.90", description: "A nice portion of sweet fried potatoes with melted Roquefort cheese", vegan: "no", glutenfree: "no", image: "Starters-sweet-fries-roquefort.jpeg" },
-                    {name: "Patatas Twister", price: "€10.00", description: "Twisted fries with special sauce", vegan: "yes", glutenfree: "no", image: "Starters-twister-fries.jpeg"}
+                    { name: "Broken Eggs with Ham / Huevos rotos con jamón", price: "€9.60", description: "Eggs, Ham and fries", vegan: "no", glutenfree: "no", image: "Starters-broken-eggs-with-ham.jpeg" },
+                    { name: "Croquettes / Croquetas", price: "€9.00", description: "Iberian ham croquettes, mushroom or cod fish, crispy and delicious", vegan: "no", glutenfree: "no", image: "Starters-mushroom-croquettes.jpeg" },
+                    { name: "Fries with Cheese and Bacon / Patatas queso gouda y bacon", price: "€9.80", description: "Fries topped with gouda cheese and bacon", vegan: "no", glutenfree: "no", image: "Starters-fries-gouda-cheese.jpeg" },
+                    { name: "Cuttlefish / Tapa de sepia", price: "€14.00", description: "Cuttlefish", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
+                    { name: "Patatas Bravas (Wedges)", price: "€9.80", description: "Patatas Bravas Wedges", vegan: "yes", glutenfree: "no", image: "Starters-bravas-wedges.jpeg" },
+                    { name: "Sweet fried Potatos with Roquefort / Boniato", price: "€9.90", description: "A nice portion of sweet fried potatoes with melted Roquefort cheese", vegan: "no", glutenfree: "no", image: "Starters-sweet-fries-roquefort.jpeg" }
+                    
                 ]
             },
             "Combo meals": {
@@ -35,19 +35,20 @@ const menuData = {
                     { name: "Breaded Chicken / Combinado pollo", price: "€11", description: "Breaded chicken fillet served with fries and a fried egg", vegan: "no", glutenfree: "no", image: "Combo-chicken.jpeg" },
                     { name: "Grilled Cuttlefish / Combinado sepia", price: "€16", description: "Grilled cuttlefish served with garlic sauce", vegan: "no", glutenfree: "yes", image: "Combo-cuttlefish.jpeg" },
                     { name: "Fried Calamari / Combinado calamares", price: "€13", description: "Fried calamari with fries and salad", vegan: "no", glutenfree: "no", image: "Combo-calamary.jpeg" },
-                    { name: "Special Vegan Ana / Combinado Ana (hamburguesa quinoa, patatas y ensalada)", price: "€13", description: "Quinoa patty with salad and patatas bravas", vegan: "yes", glutenfree: "no", image: "Combo-vegan-Ana.jpeg" }
+                    { name: "Special Vegan Ana / Combinado Ana (hamburguesa quinoa, patatas y ensalada)", price: "€13", description: "Quinoa patty with salad and patatas bravas", vegan: "yes", glutenfree: "no", image: "Combo-vegan-Ana.jpeg" },
+                    { name: "Swordfish and fries/Emperador Salsa Verde", price: "€15.00", description: "Swordfish fillet accompanied with green sauce", vegan: "no", glutenfree: "no", image: "Combo-swordfish.jpeg" }
                 ]
             },
             "House Specialties": {
                 description: "Signature dishes that showcase the culinary excellence of our restaurant.",
                 items: [
-                    { name: "Pork belly / Torrezno", price: "€5.50", description: "Crispy pork belly from Soria", vegan: "no", glutenfree: "yes", image: "Specialties-pork-skin.jpeg" },
+                    { name: "Pork belly / Torrezno", price: "€6.00", description: "Crispy pork belly from Soria", vegan: "no", glutenfree: "yes", image: "Specialties-pork-skin.jpeg" },
                     { name: "Pork Cheeks / Carrillada", price: "€15.50", description: "Pork cheeks with fried potatoes", vegan: "no", glutenfree: "no", image: "Specialties-pork-cheeks.jpeg" },
-                    { name: "Octopus / Pulpo", price: "€18", description: "Octopus, special recipe of the village", vegan: "no", glutenfree: "yes", image: "Specialties-octopus.jpeg" },
+                    { name: "Octopus / Pulpo", price: "€18.00", description: "Octopus, special recipe of the village", vegan: "no", glutenfree: "yes", image: "Specialties-octopus.jpeg" },
                     { name: "Galiana Jumbo Prawns / Gambón Galiana", price: "€22", description: "Galiana Jumbo Prawns", vegan: "no", glutenfree: "yes", image: "Specialties-galiana-jumbo-prawns.jpeg" },
                     { name: "Slow-Braised Oxtail / Rabo de toro", price: "€18", description: "Slow-Braised Oxtail in a Rich Red Wine Reduction, Served with Elegant Seasonal Accompaniments", vegan: "no", glutenfree: "no", image: "Specialties-oxtail.jpeg" },
-                    { name: "600g Ribeye Steak / Chuletón", price: "€28", description: "Grilled ribeye steak, perfectly cooked", vegan: "no", glutenfree: "no", image: "Specialties-ribeye.jpeg" },
-                    { name: "Northern Eels with Clams / Gulas del norte", price: "€12.00", description: "Northern eels served with fresh clams", vegan: "no", glutenfree: "no", image: "Specialties-gulas.jpeg" }
+                    { name: "600g Ribeye Steak / Chuletón", price: "€28", description: "Grilled ribeye steak, perfectly cooked", vegan: "no", glutenfree: "no", image: "Specialties-ribeye.jpeg" }
+                    
                 ]
             },
             "Burgers": {
@@ -164,7 +165,7 @@ const menuData = {
                     { name: "Salade Croquante (Fromage de chèvre) / Ensalada crujiente queso de cabra", price: "€14", description: "Salade croquante avec du fromage de chèvre", vegan: "no", glutenfree: "no", image: "Salads-goat-cheese.jpeg" },
                     { name: "Salade croquante vegan (Galette de quinoa) / Ensalada crujiente hamburguesa quinoa", price: "€14", description: "Salade croquante avec galette de quinoa", vegan: "yes", glutenfree: "no", image: "Salads-crunchy-vegan.jpeg" },
                     { name: "Salade César (Poulet) / Ensalada Cesar", price: "€14", description: "Salade César classique avec poulet", vegan: "no", glutenfree: "no", image: "Salads-Caesar-salad.jpeg" },
-                    { name: "Salade Valencienne (Thon) / Ensalada valenciana con atún", price: "€12", description: "Salade valencienne traditionnelle avec du thon", vegan: "no", glutenfree: "yes", image: "Salads-valenciana.jpeg" },
+                    { name: "Salade Valencienne (Thon) / Ensalada valenciana con atún", price: "€14", description: "Salade valencienne traditionnelle avec du thon", vegan: "no", glutenfree: "yes", image: "Salads-valenciana.jpeg" },
                     { name: "Salade Végétarienne sans thon / Ensalada vegetariana", price: "€12", description: "Salade mixte sans thon", vegan: "yes", glutenfree: "yes", image: "Salads-valenciana.jpeg" },
                     { name: "Carpaccio de Courgette / Carpaccio de calabacín", price: "€12", description: "Tranches de courgette arrosées d'huile d'olive et assaisonnées. Pour une version végan, demandez simplement sans fromage.", vegan: "yes", glutenfree: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
@@ -172,17 +173,17 @@ const menuData = {
             "Entrées et Tapas": {
                 description: "Une sélection de petites assiettes généreuses, idéales à partager ou en entrée. Certaines portions sont suffisamment copieuses pour constituer un repas léger si vous n'avez pas très faim.",
                 items: [
-                    { name: "Pain Tomate et Ajoaceite / Pan con tomate y ajoaceite", price: "€4.80", description: "Pain grillé avec tomate et ajoaceite", vegan: "no", glutenfree: "no", image: "Starters-bread-tomato-aioli.jpeg" },
-                    { name: "Aubergines Frites au Miel / Berenjenas con miel", price: "€9.80", description: "Aubergines frites avec miel", vegan: "no", glutenfree: "no", image: "Starters-fried-eggplant-with-honey.jpeg" },
+                    { name: "Pain Tomate et Ajoaceite / Pan con tomate y ajoaceite", price: "€5.50", description: "Pain grillé avec tomate et ajoaceite", vegan: "no", glutenfree: "no", image: "Starters-bread-tomato-aioli.jpeg" },
+                    { name: "Aubergines Frites au Miel / Berenjenas con miel", price: "€9.90", description: "Aubergines frites avec miel", vegan: "no", glutenfree: "no", image: "Starters-fried-eggplant-with-honey.jpeg" },
                     { name: "Calamars Frits à l'Andalouse / Tapa de calamares", price: "€9.90", description: "Calamars frits à la façon andalouse", vegan: "no", glutenfree: "no", image: "Starters-calamari.jpeg" },
                     { name: "Œufs Brouillés avec Jambon / Huevos revueltos con jamón", price: "€9.60", description: "Œufs frits avec jambon sur des frites", vegan: "no", glutenfree: "no", image: "Starters-broken-eggs-with-ham.jpeg" },
                     { name: "Croquettes croustillantes / Croquetas", price: "€9.00", description: "Croquettes croustillantes de jambon ibérique, champignons ou morue", vegan: "no", glutenfree: "no", image: "Starters-mushroom-croquettes.jpeg" },
-                    { name: "Pommes de Terre au Gouda et Bacon / Patatas queso gouda", price: "€9.90", description: "Pommes de terre frites couvertes de gouda et bacon", vegan: "no", glutenfree: "no", image: "Starters-fries-gouda-cheese.jpeg" },
-                    { name: "Frites de Patate Douce au Roquefort / Boniato", price: "€9.00", description: "Frites de patate douce avec sauce roquefort", vegan: "no", glutenfree: "no", image: "Starters-sweet-fries-roquefort.jpeg" },
+                    { name: "Pommes de Terre au Gouda et Bacon / Patatas queso gouda", price: "€9.80", description: "Pommes de terre frites couvertes de gouda et bacon", vegan: "no", glutenfree: "no", image: "Starters-fries-gouda-cheese.jpeg" },
+                    { name: "Frites de Patate Douce au Roquefort / Boniato", price: "€9.90", description: "Frites de patate douce avec sauce roquefort", vegan: "no", glutenfree: "no", image: "Starters-sweet-fries-roquefort.jpeg" },
                     { name: "Plateau de Jambon Serrano Bodega / Tabla de jamón", price: "€13.00", description: "Jambon serrano bodega servi sur une planche", vegan: "no", glutenfree: "no", image: "starter10.jpg" },
                     { name: "Seiche Entière à la Plancha / Tapa de sepia", price: "€14.00", description: "Seiche entière grillée avec ail et persil", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
-                    { name: "Patatas Bravas", price: "€9.50", description: "Pommes de terre frites avec sauce brava", vegan: "yes", glutenfree: "no", image: "Starters-bravas-wedges.jpeg" },
-                    { name: "Frites Twister", price: "€10.00", description: "Pommes de terre en spirale avec diverses sauces", vegan: "yes", glutenfree: "no", image: "Starters-twister-fries.jpeg" }
+                    { name: "Patatas Bravas", price: "€9.80", description: "Pommes de terre frites avec sauce brava", vegan: "yes", glutenfree: "no", image: "Starters-bravas-wedges.jpeg" }
+                    
                 ]
             },
             "Assièttes Combinées": {
@@ -201,13 +202,13 @@ const menuData = {
             "Spécialités de la maison": {
                 description: "Plats signatures qui montrent l'excellence culinaire de notre restaurant.",
                 items: [
-                    { name: "Lard de Soria / Torezno", price: "€5.50", description: "Lard croustillants de la région de Soria", vegan: "no", glutenfree: "yes", image: "Specialties-pork-skin.jpeg" },
+                    { name: "Lard de Soria / Torezno", price: "€6.00", description: "Lard croustillants de la région de Soria", vegan: "no", glutenfree: "yes", image: "Specialties-pork-skin.jpeg" },
                     { name: "Queue de Taureau au Vin Rouge / Rabo de toro", price: "€16.90", description: "Queue de taureau mijotée au vin rouge", vegan: "no", glutenfree: "no", image: "Specialties-oxtail.jpeg" },
                     { name: "Joue de Porc Mijares / Carrillada", price: "€15.50", description: "Joue de porc mijotée avec des frites", vegan: "no", glutenfree: "no", image: "Specialties-pork-cheeks.jpeg" },
                     { name: "Entrecote de Boeuf 600g / Chuletón", price: "€28.00", description: "Entrecote de boeuf de 600g, grillée à point", vegan: "no", glutenfree: "no", image: "Specialties-ribeye.jpeg" },
                     { name: "Poulpe Vidigonero / Pulpo Vidigonero", price: "€18.00", description: "Poulpe grillé à la façon Vidigonero (recette du chef)", vegan: "no", glutenfree: "yes", image: "Specialties-octopus.jpeg" },
-                    { name: "Gambas Galiana / Gambón Galiana", price: "€22.00", description: "Gambas géantes style Galiana", vegan: "no", glutenfree: "yes", image: "Specialties-galiana-jumbo-prawns.jpeg" },
-                    { name: "Gulas du Nord avec Palourdes / Gulas del norte", price: "€12.00", description: "Gulas du nord accompagnées de palourdes fraîches", vegan: "no", glutenfree: "no", image: "Specialties-gulas.jpeg" }
+                    { name: "Gambas Galiana / Gambón Galiana", price: "€22.00", description: "Gambas géantes style Galiana", vegan: "no", glutenfree: "yes", image: "Specialties-galiana-jumbo-prawns.jpeg" }
+                   
 
                 ]
             },
@@ -327,7 +328,7 @@ const menuData = {
                     { name: "Ensalada Crujiente (Queso de cabra)", price: "€14", description: "Ensalada crujiente con queso de cabra", vegan: "no", glutenfree: "no", image: "Salads-goat-cheese.jpeg" },
                     { name: "Ensalada crujiente vegana (Hamburguesa de quinoa)", price: "€14", description: "Ensalada crujiente con hamburguesa de quinoa", vegan: "yes", glutenfree: "no", image: "Salads-crunchy-vegan.jpeg" },
                     { name: "Ensalada César (Pollo)", price: "€14", description: "Ensalada César clásica con pollo", vegan: "no", glutenfree: "no", image: "Salads-Caesar-salad.jpeg" },
-                    { name: "Ensalada Valenciana (Atún)", price: "€12", description: "Ensalada valenciana con atún", vegan: "no", glutenfree: "yes", image: "Salads-valenciana.jpeg" },
+                    { name: "Ensalada Valenciana (Atún)", price: "€14", description: "Ensalada valenciana con atún", vegan: "no", glutenfree: "yes", image: "Salads-valenciana.jpeg" },
                     { name: "Ensalada Vegetariana sin atún", price: "€12", description: "Ensalada mixta con verduras frescas sin atún", vegan: "yes", glutenfree: "yes", image: "Salads-valenciana.jpeg" },
                     { name: "Carpaccio de Calabacín", price: "€12", description: "Rodajas de calabacín con aceite de oliva y condimentos. Para la opción vegana, simplemente pídalo sin queso.", vegan: "yes", glutenfree: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
                 ]
@@ -335,17 +336,17 @@ const menuData = {
             "Entrantes y Tapas": {
                 description: "Una selección de platos pequeños y generosos, ideales para compartir o como entrante. Algunas porciones son lo suficientemente abundantes como para disfrutar como comida ligera si no hay mucha hambre.",
                 items: [
-                    { name: "Pan con Tomate y Ajoaceite", price: "€4.80", description: "Pan tostado con tomate y ajoaceite", vegan: "no", glutenfree: "no", image: "Starters-bread-tomato-aioli.jpeg" },
-                    { name: "Berenjenas Fritas con Miel", price: "€9.80", description: "Berenjenas fritas con miel", vegan: "no", glutenfree: "no", image: "Starters-fried-eggplant-with-honey.jpeg" },
+                    { name: "Pan con Tomate y Ajoaceite", price: "€5.50", description: "Pan tostado con tomate y ajoaceite", vegan: "no", glutenfree: "no", image: "Starters-bread-tomato-aioli.jpeg" },
+                    { name: "Berenjenas Fritas con Miel", price: "€9.90", description: "Berenjenas fritas con miel", vegan: "no", glutenfree: "no", image: "Starters-fried-eggplant-with-honey.jpeg" },
                     { name: "Calamares a la andaluza", price: "€9.90", description: "Calamares fritos al estilo andaluz", vegan: "no", glutenfree: "no", image: "Starters-calamari.jpeg" },
                     { name: "Huevos Rotos con Jamón", price: "€9.60", description: "Huevos fritos con jamón sobre patatas fritas", vegan: "no", glutenfree: "no", image: "Starters-broken-eggs-with-ham.jpeg" },
                     { name: "Croquetas", price: "€9.00", description: "Croquetas de jamón ibérico, bacalao o setas", vegan: "no", glutenfree: "no", image: "Starters-mushroom-croquettes.jpeg" },
-                    { name: "Patatas con Queso Gouda y Bacon", price: "€9.90", description: "Patatas fritas cubiertas con queso gouda y bacon", vegan: "no", glutenfree: "no", image: "Starters-fries-gouda-cheese.jpeg" },
-                    { name: "Tirás Boniato con Roquefort", price: "€9.00", description: "Tiras de boniato frito con salsa roquefort", vegan: "no", glutenfree: "no", image: "Starters-sweet-fries-roquefort.jpeg" },
+                    { name: "Patatas con Queso Gouda y Bacon", price: "€9.80", description: "Patatas fritas cubiertas con queso gouda y bacon", vegan: "no", glutenfree: "no", image: "Starters-fries-gouda-cheese.jpeg" },
+                    { name: "Tirás Boniato con Roquefort", price: "€9.90", description: "Tiras de boniato frito con salsa roquefort", vegan: "no", glutenfree: "no", image: "Starters-sweet-fries-roquefort.jpeg" },
                     { name: "Tabla Jamón Serrano Bodega", price: "€13.00", description: "Jamón serrano bodega servido en tabla", vegan: "no", glutenfree: "no", image: "starter10.jpg" },
                     { name: "Sepia Enterita a la Plancha", price: "€14.00", description: "Sepia entera a la plancha con ajo y perejil", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
-                    { name: "Patatas Bravas", price: "€9.50", description: "Patatas fritas con salsa brava", vegan: "yes", glutenfree: "no", image: "Starters-bravas-wedges.jpeg" },
-                    { name: "Patatas Twister", price: "€10.00", description: "Patatas en espiral con salsas variadas", vegan: "yes", glutenfree: "no", image: "Starters-twister-fries.jpeg" }
+                    { name: "Patatas Bravas", price: "€9.80", description: "Patatas fritas con salsa brava", vegan: "yes", glutenfree: "no", image: "Starters-bravas-wedges.jpeg" }
+                    
                 ]
             },
             
@@ -366,13 +367,13 @@ const menuData = {
             "Especiales Mijares": {
                 description: "Platos especiales que muestran la excelencia culinaria de nuestro restaurante.",
                 items: [
-                    { name: "Torrezno Denominación Soria", price: "€5.50", description: "Torreznos crujientes de la región de Soria", vegan: "no", glutenfree: "yes", image: "Specialties-pork-skin.jpeg" },
+                    { name: "Torrezno Denominación Soria", price: "€6.00", description: "Torreznos crujientes de la región de Soria", vegan: "no", glutenfree: "yes", image: "Specialties-pork-skin.jpeg" },
                     { name: "Rabo de Toro al Vino Tinto", price: "€16.90", description: "Rabo de toro guisado al vino tinto", vegan: "no", glutenfree: "no", image: "Specialties-oxtail.jpeg" },
                     { name: "Carrillada Mijares", price: "€15.50", description: "Carrillada de cerdo guisada con patatas fritas", vegan: "no", glutenfree: "no", image: "Specialties-pork-cheeks.jpeg" },
                     { name: "Chuletón Ternera 600g", price: "€28.00", description: "Chuletón de ternera de 600g, a la parrilla", vegan: "no", glutenfree: "no", image: "Specialties-ribeye.jpeg" },
                     { name: "Pulpo Vidigonero", price: "€18.00", description: "Pulpo a la brasa estilo Vidigonero", vegan: "no", glutenfree: "yes", image: "Specialties-octopus.jpeg" },
-                    { name: "Gambón Galiana", price: "€22.00", description: "Gambón de gran tamaño estilo Galiana", vegan: "no", glutenfree: "yes", image: "Specialties-galiana-jumbo-prawns.jpeg" },
-                    { name: "Gulas del Norte con Almejas", price: "€12.00", description: "Gulas del norte acompañadas de almejas frescas", vegan: "no", glutenfree: "no", image: "Specialties-gulas.jpeg" }
+                    { name: "Gambón Galiana", price: "€22.00", description: "Gambón de gran tamaño estilo Galiana", vegan: "no", glutenfree: "yes", image: "Specialties-galiana-jumbo-prawns.jpeg" }
+                    
                     
                 ]
             },
@@ -387,15 +388,15 @@ const menuData = {
                 ]
             },
             "Bocadillos": {
-                "description": "Bocadillos clásicos en baguette llenos de ingredientes sabrosos.",
-                "items": [
-                    { "name": "Chivito Especial", "price": "11€", "description": "Lechuga, tomate, queso, bacon, huevo frito y jamón", "vegan": "no", "glutenfree": "no", "image": "Bocadillos-chivito.jpeg" },
-                    { "name": "Polvorilla", "price": "11€", "description": "Tomate, jamón, queso y bacon en un pan tostado", "vegan": "no", "glutenfree": "no", "image": "Bocadillos-polvorilla.jpeg" },
-                    { "name": "Alex", "price": "10€", "description": "Queso gouda, bacon, lomo y patatas fritas", "vegan": "no", "glutenfree": "no", "image": "default-image.jpeg" },
-                    { "name": "Héctor", "price": "10€", "description": "Cebollas caramelizadas, bacon y queso derretido", "vegan": "no", "glutenfree": "no", "image": "default-image.jpeg" }
+                description: "Bocadillos clásicos en baguette llenos de ingredientes sabrosos.",
+                items: [
+                    { name: "Chivito Especial", "price": "11€", description: "Lechuga, tomate, queso, bacon, huevo frito y jamón", vegan: "no", glutenfree: "no", image: "Bocadillos-chivito.jpeg" },
+                    { name: "Polvorilla", "price": "11€", description: "Tomate, jamón, queso y bacon en un pan tostado", vegan: "no", glutenfree: "no", image: "Bocadillos-polvorilla.jpeg" },
+                    { name: "Alex", "price": "10€", description: "Queso gouda, bacon, lomo y patatas fritas", vegan: "no", glutenfree: "no", image: "default-image.jpeg" },
+                    { name: "Héctor", "price": "10€", description: "Cebollas caramelizadas, bacon y queso derretido", vegan: "no", glutenfree: "no", image: "default-image.jpeg" }
                 ]
             },
-            Sandwiches: {
+            "Sandwiches": {
                 description: "Deliciosos sándwiches para una comida rápida y satisfactoria.",
                 items: [
                     { name: "Sándwich Andrea", price: "8€", description: "Sándwich con jamón, lechuga, tomate y pepinillos", vegan: "no", glutenfree: "no", image: "Sandwiches-Andrea.jpeg" },
