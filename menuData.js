@@ -23,6 +23,7 @@ const menuData = {
                     { name: "Fries with Cheese and Bacon / Patatas queso gouda y bacon", price: "€9.80", description: "Fries topped with gouda cheese and bacon", vegan: "no", glutenfree: "no", image: "Starters-fries-gouda-cheese.jpeg" },
                     { name: "Cuttlefish / Tapa de sepia", price: "€14.00", description: "Cuttlefish", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
                     { name: "Patatas Bravas (Wedges)", price: "€9.80", description: "Patatas Bravas Wedges", vegan: "yes", glutenfree: "no", image: "Starters-bravas-wedges.jpeg" },
+                    { name: "French Fries / Patatas fritas", price: "€6.70", description: "French Fries", vegan: "yes", glutenfree: "yes", image: "Starters-french-fries.jpeg" },
                     { name: "Sweet fried Potatos with Roquefort / Boniato", price: "€9.90", description: "A nice portion of sweet fried potatoes with melted Roquefort cheese", vegan: "no", glutenfree: "no", image: "Starters-sweet-fries-roquefort.jpeg" }
                     
                 ]
@@ -46,7 +47,7 @@ const menuData = {
                     { name: "Pork Cheeks / Carrillada", price: "€15.50", description: "Pork cheeks with fried potatoes", vegan: "no", glutenfree: "no", image: "Specialties-pork-cheeks.jpeg" },
                     { name: "Octopus / Pulpo", price: "€18.00", description: "Octopus, special recipe of the village", vegan: "no", glutenfree: "yes", image: "Specialties-octopus.jpeg" },
                     { name: "Galiana Jumbo Prawns / Gambón Galiana", price: "€22", description: "Galiana Jumbo Prawns", vegan: "no", glutenfree: "yes", image: "Specialties-galiana-jumbo-prawns.jpeg" },
-                    { name: "Slow-Braised Oxtail / Rabo de toro", price: "€18", description: "Slow-Braised Oxtail in a Rich Red Wine Reduction, Served with Elegant Seasonal Accompaniments", vegan: "no", glutenfree: "no", image: "Specialties-oxtail.jpeg" },
+                    { name: "Slow-Braised Oxtail / Rabo de toro", price: "€16.90", description: "Slow-Braised Oxtail in a Rich Red Wine Reduction, Served with Elegant Seasonal Accompaniments", vegan: "no", glutenfree: "no", image: "Specialties-oxtail.jpeg" },
                     { name: "600g Ribeye Steak / Chuletón", price: "€28", description: "Grilled ribeye steak, perfectly cooked", vegan: "no", glutenfree: "no", image: "Specialties-ribeye.jpeg" }
                     
                 ]
@@ -182,6 +183,7 @@ const menuData = {
                     { name: "Frites de Patate Douce au Roquefort / Boniato", price: "€9.90", description: "Frites de patate douce avec sauce roquefort", vegan: "no", glutenfree: "no", image: "Starters-sweet-fries-roquefort.jpeg" },
                     { name: "Plateau de Jambon Serrano Bodega / Tabla de jamón", price: "€13.00", description: "Jambon serrano bodega servi sur une planche", vegan: "no", glutenfree: "no", image: "starter10.jpg" },
                     { name: "Seiche Entière à la Plancha / Tapa de sepia", price: "€14.00", description: "Seiche entière grillée avec ail et persil", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
+                    { name: "Assiète de frites / Patatas fritas", price: "€6.70", description: "Assiète de frites", vegan: "yes", glutenfree: "yes", image: "Starters-french-fries.jpeg" },
                     { name: "Patatas Bravas", price: "€9.80", description: "Pommes de terre frites avec sauce brava", vegan: "yes", glutenfree: "no", image: "Starters-bravas-wedges.jpeg" }
                     
                 ]
@@ -345,6 +347,7 @@ const menuData = {
                     { name: "Tirás Boniato con Roquefort", price: "€9.90", description: "Tiras de boniato frito con salsa roquefort", vegan: "no", glutenfree: "no", image: "Starters-sweet-fries-roquefort.jpeg" },
                     { name: "Tabla Jamón Serrano Bodega", price: "€13.00", description: "Jamón serrano bodega servido en tabla", vegan: "no", glutenfree: "no", image: "starter10.jpg" },
                     { name: "Sepia Enterita a la Plancha", price: "€14.00", description: "Sepia entera a la plancha con ajo y perejil", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
+                    { name: "Patatas fritas", price: "€6.70", description: "Ración de patatas fritas ", vegan: "yes", glutenfree: "yes", image: "Starters-french-fries.jpeg" },
                     { name: "Patatas Bravas", price: "€9.80", description: "Patatas fritas con salsa brava", vegan: "yes", glutenfree: "no", image: "Starters-bravas-wedges.jpeg" }
                     
                 ]
