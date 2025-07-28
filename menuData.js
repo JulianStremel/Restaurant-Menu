@@ -485,6 +485,162 @@ const menuData = {
                 ]
             }
             
+        },
+    de: {
+        categories: {
+            "Salate": {
+                description: "Frische, knackige Salate aus saisonalen Zutaten mit kräftigen Aromen.",
+                items: [
+                    { name: "Knackiger Salat (Ziegenkäse) / Ensalada crujiente queso de cabra", price: "€14", description: "Knuspriger Salat mit Ziegenkäse", vegan: "no", glutenfree: "no", image: "Salads-goat-cheese.jpeg" },
+                    { name: "Knackiger Vegan-Salat (Quinoa-Patty) / Ensalada crujiente hamburguesa quinoa", price: "€14", description: "Knuspriger Salat mit Quinoa-Patty", vegan: "yes", glutenfree: "no", image: "Salads-crunchy-vegan.jpeg" },
+                    { name: "Caesar-Salat (Huhn) / Ensalada Cesar", price: "€14", description: "Klassischer Caesar-Salat mit Huhn", vegan: "no", glutenfree: "no", image: "Salads-Caesar-salad.jpeg" },
+                    { name: "Valencianischer Salat (Thunfisch) / Ensalada valenciana con atún", price: "€14", description: "Traditioneller valencianischer Salat mit Thunfisch", vegan: "no", glutenfree: "no", image: "Salads-valenciana.jpeg" },
+                    { name: "Vegetarischer Salat ohne Thunfisch / Ensalada vegetariana sin atún", price: "€12", description: "Frischer gemischter Salat ohne Thunfisch", vegan: "yes", glutenfree: "no", image: "Salads-valenciana.jpeg" },
+                    { name: "Zucchini-Carpaccio / Carpaccio de calabacín", price: "€12", description: "Zucchinischeiben mit Olivenöl und Gewürzen. Für die vegane Variante einfach ohne Käse bestellen.", vegan: "yes", glutenfree: "yes", image: "Salads-zucchini-carpaccio.jpeg" }
+                ]
+            },
+            "Vorspeisen und Tapas": {
+                description: "Eine Auswahl großzügiger kleiner Gerichte, ideal zum Teilen oder als Vorspeise. Einige Portionen sind sättigend genug für eine kleine Mahlzeit.",
+                items: [
+                    { name: "Tomaten-Knoblauch-Brot / Pan con tomate y ajoaceite", price: "€5.50", description: "Geröstetes Brot mit Tomate und Knoblauchbutter", vegan: "no", glutenfree: "no", image: "Starters-bread-tomato-aioli.jpeg" },
+                    { name: "Frittierte Aubergine mit Honig / Berenjena rebozada con miel", price: "€9.90", description: "Auberginensticks mit Honig", vegan: "no", glutenfree: "no", image: "Starters-fried-eggplant-with-honey.jpeg" },
+                    { name: "Frittierte Calamari / Tapa de calamares", price: "€9.90", description: "Knusprige Calamari mit Zitrone", vegan: "no", glutenfree: "no", image: "Starters-calamari.jpeg" },
+                    { name: "Gebrochene Eier mit Schinken / Huevos rotos con jamón", price: "€9.60", description: "Eier, Schinken und Pommes", vegan: "no", glutenfree: "no", image: "Starters-broken-eggs-with-ham.jpeg" },
+                    { name: "Kroketten / Croquetas", price: "€9.00", description: "Iberische Schinken-, Pilz- oder Kabeljaukroketten, knusprig und lecker", vegan: "no", glutenfree: "no", image: "Starters-mushroom-croquettes.jpeg" },
+                    { name: "Pommes mit Käse und Bacon / Patatas queso gouda y bacon", price: "€9.80", description: "Pommes mit Gouda und Bacon", vegan: "no", glutenfree: "no", image: "Starters-fries-gouda-cheese.jpeg" },
+                    { name: "Tintenfisch / Tapa de sepia", price: "€14.00", description: "Tintenfisch", vegan: "no", glutenfree: "yes", image: "Starters-cuttlefish.jpeg" },
+                    { name: "Patatas Bravas (Wedges)", price: "€9.80", description: "Patatas-Bravas-Wedges", vegan: "yes", glutenfree: "no", image: "Starters-bravas-wedges.jpeg" },
+                    { name: "Pommes frites / Patatas fritas", price: "€6.70", description: "Pommes frites", vegan: "yes", glutenfree: "yes", image: "Starters-french-fries.jpeg" },
+                    { name: "Süßkartoffeln mit Roquefort / Boniato", price: "€9.90", description: "Eine Portion Süßkartoffel-Pommes mit geschmolzenem Roquefort-Käse", vegan: "no", glutenfree: "no", image: "Starters-sweet-fries-roquefort.jpeg" }
+                ]
+            },
+            "Kombi-Gerichte": {
+                description: "Köstliche Kombis aus unseren besten Zutaten. Die meisten werden mit Spiegelei und Pommes serviert.",
+                items: [
+                    { name: "Montanejos Aufschnitt / Combinado Embutidos Montanejos", price: "€11", description: "Auswahl an Aufschnitt aus Montanejos: Chorizo, Blutwurst und Longaniza", vegan: "no", glutenfree: "no", image: "Combo-sausages.jpeg" },
+                    { name: "Gegrilltes Lendenstück / Combinado Lomo", price: "€11", description: "Gegrilltes Schweinelendchen mit Ei und Pommes", vegan: "no", glutenfree: "no", image: "Combo-pork-loin.jpeg" },
+                    { name: "Paniertes Hähnchen / Combinado pollo", price: "€11", description: "Paniertes Hähnchenfilet mit Pommes und Spiegelei", vegan: "no", glutenfree: "no", image: "Combo-chicken.jpeg" },
+                    { name: "Gegrillter Tintenfisch / Combinado sepia", price: "€16", description: "Gegrillter Tintenfisch mit Knoblauchsauce", vegan: "no", glutenfree: "yes", image: "Combo-cuttlefish.jpeg" },
+                    { name: "Frittierte Calamari / Combinado calamares", price: "€13", description: "Frittierte Calamari mit Pommes und Salat", vegan: "no", glutenfree: "no", image: "Combo-calamary.jpeg" },
+                    { name: "Veganes Spezial Ana / Combinado Ana (hamburguesa quinoa, patatas y ensalada)", price: "€13", description: "Quinoa-Patty mit Salat und Patatas Bravas", vegan: "yes", glutenfree: "no", image: "Combo-vegan-Ana.jpeg" },
+                    { name: "Schwertfisch mit Pommes", price: "€15.00", description: "Schwertfischfilet mit grüner Sauce", vegan: "no", glutenfree: "no", image: "Combo-swordfish.jpeg" }
+                ]
+            },
+            "Hausspezialitäten": {
+                description: "Spezialitäten des Hauses, die die kulinarische Klasse unseres Restaurants zeigen.",
+                items: [
+                    { name: "Schweinebauch / Torrezno", price: "€6.00", description: "Knuspriger Schweinebauch aus Soria", vegan: "no", glutenfree: "yes", image: "Specialties-pork-skin.jpeg" },
+                    { name: "Schweinebäckchen / Carrillada", price: "€15.50", description: "Schweinebäckchen mit Bratkartoffeln", vegan: "no", glutenfree: "no", image: "Specialties-pork-cheeks.jpeg" },
+                    { name: "Oktopus / Pulpo", price: "€18.00", description: "Oktopus, Spezialrezept des Dorfes", vegan: "no", glutenfree: "yes", image: "Specialties-octopus.jpeg" },
+                    { name: "Galiana-Riesengarnelen / Gambón Galiana", price: "€22", description: "Galiana-Riesengarnelen", vegan: "no", glutenfree: "yes", image: "Specialties-galiana-jumbo-prawns.jpeg" },
+                    { name: "Geschmorte Ochsenschwanz / Rabo de toro", price: "€16.90", description: "Zart geschmorter Ochsenschwanz in Rotweinsauce", vegan: "no", glutenfree: "no", image: "Specialties-oxtail.jpeg" },
+                    { name: "600g Ribeye-Steak / Chuletón", price: "€28", description: "Gegrilltes Ribeye-Steak, perfekt gegart", vegan: "no", glutenfree: "no", image: "Specialties-ribeye.jpeg" }
+                ]
+            },
+            "Burger": {
+                description: "Für 3€ extra gibt es Pommes dazu – für das perfekte Burger-Menü.",
+                items: [
+                    { name: "Hausburger Spezial / Hamburguesa de la casa", price: "€12", description: "Rindfleisch-Burger mit Spiegelei, Bacon und karamellisierten Zwiebeln", vegan: "no", glutenfree: "no", image: "Burgers-house-burger.jpeg" },
+                    { name: "Ziegenkäse-Burger / Hamburguesa con queso de cabra", price: "€12", description: "Rindfleisch-Burger mit Salat, Tomate, karamellisierter Zwiebel, Senfsauce und Ziegenkäse", vegan: "no", glutenfree: "no", image: "Burgers-goat-cheese-burger.jpeg" },
+                    { name: "Montanejos Adventure Chicken-Burger / Hamburguesa adventure de pollo", price: "€12", description: "Hähnchen-Burger mit Bacon, Ei und Spezialsoße", vegan: "no", glutenfree: "no", image: "Burgers-chicken-burger.jpeg" },
+                    { name: "Vegetarischer Burger / Hamburguesa vegetariana", price: "€12", description: "Falafel-Burger mit Salat, Tomate, karamellisierter Zwiebel, Paprika, Honig-Senf und Käse. **Pommes bitte extra bestellen**", vegan: "no", glutenfree: "no", image: "Burgers-falafel-burger.jpeg" },
+                    { name: "Veganer Burger / Hamburguesa vegana", price: "€12", description: "Veganer Quinoa-Burger mit Salat, Tomate, karamellisierter Zwiebel und Paprika. **Pommes bitte extra bestellen**", vegan: "yes", glutenfree: "no", image: "Burgers-vegan-burger.jpeg" }
+                ]
+            },
+            "Baguette-Sandwiches": {
+                description: "Klassische Baguette-Sandwiches mit herzhaften Zutaten.",
+                items: [
+                    { name: "Chivito Especial / Chivito", price: "€11", description: "Salat, Tomate, Käse, Bacon, Spiegelei und Schinken", vegan: "no", glutenfree: "no", image: "Bocadillos-chivito.jpeg" },
+                    { name: "Polvorilla", price: "€11", description: "Tomate, Schinken, Käse und Bacon im getoasteten Brötchen", vegan: "no", glutenfree: "no", image: "Bocadillos-polvorilla.jpeg" },
+                    { name: "Alex Sub / Bocadillo Alex", price: "€10", description: "Gouda, Bacon, Lomo und Pommes", vegan: "no", glutenfree: "no", image: "default-image.jpeg" },
+                    { name: "Héctor Sub / Bocadillo Hector", price: "€10", description: "Karamellisierte Zwiebeln, Bacon und geschmolzener Käse", vegan: "no", glutenfree: "no", image: "default-image.jpeg" }
+                ]
+            },
+            "Sandwiches": {
+                description: "Leckere Sandwiches für eine schnelle, sättigende Mahlzeit.",
+                items: [
+                    { name: "Andrea / Sandwich Andrea", price: "€8", description: "Schinken, Salat, Tomate und Gewürzgurken", vegan: "no", glutenfree: "no", image: "Sandwiches-Andrea.jpeg" },
+                    { name: "Thunfisch-Sandwich / Sandwich de atún", price: "€7", description: "Thunfisch, Mayonnaise, Tomate, Salat und Oliven im getoasteten Sandwich", vegan: "no", glutenfree: "no", image: "Sandwiches-tuna.jpeg" },
+                    { name: "Gemischtes Sandwich / Sandwich mixto", price: "€4", description: "Einfaches Schinken-Käse-Sandwich", vegan: "no", glutenfree: "no", image: "Sandwiches-mixto.jpeg" }
+                ]
+            },
+            "Burritos": {
+                description: "Herzhafte und würzige Burritos für eine sättigende Mahlzeit.",
+                items: [
+                    { name: "D-Lux Burrito / Burrito D-lux", price: "€8.50", description: "Hähnchen, Salat, Tomate und Bacon im Burrito", vegan: "no", glutenfree: "no", image: "Burritos-d-lux.jpeg" },
+                    { name: "Texan Burrito / Burrito tejano", price: "€8.50", description: "Aubergine, Zucchini, Tomate und Hähnchenstreifen", vegan: "no", glutenfree: "no", image: "Burritos-tejano.jpeg" }
+                ]
+            },
+            "Getränke": {
+                description: "Erfrischende Getränkeauswahl, um Ihr Essen zu begleiten.",
+                items: [
+                    { name: "Tinto de Verano", price: "€2.50", description: "Erfrischender Rotwein mit Limo", vegan: "no", glutenfree: "no", image: "Bebidas-tinto-de-verano.jpeg" },
+                    { name: "Draft Beer (Caña) / Caña", price: "€1.70", description: "Kleines Fassbier", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-cana.jpeg" },
+                    { name: "Draft Beer (Doble) / Doble", price: "€2.50", description: "Mittleres Fassbier", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-doble.jpeg" },
+                    { name: "Draft Beer (Pint) / Tanque", price: "€4", description: "Großes Fassbier", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-tanque.jpeg" },
+                    { name: "Bottled Beer / Tercio de cerveza", price: "€2.50", description: "Flaschenbier - alkoholfrei, tostada, lager oder Radler", vegan: "no", glutenfree: "no", image: "Bebidas-cerveza-tercio-estrella-galicia.jpeg" },
+                    { name: "Coca Cola", price: "€2.50", description: "Coca Cola Classic oder Zero", vegan: "no", glutenfree: "no", image: "Bebidas-coca-cola.jpeg" },
+                    { name: "Fanta Lemon-Orange", price: "€2.50", description: "Fanta Zitrone oder Orange", vegan: "no", glutenfree: "no", image: "Bebidas-fanta.jpeg" },
+                    { name: "Nestea, Aquarius", price: "€2.50", description: "Kalter Zitronentee", vegan: "no", glutenfree: "no", image: "Bebidas-nestea.jpeg" },
+                    { name: "Bottled Juices / zumo", price: "€2", description: "Flaschenkosäfte: Ananas, Pfirsich, Orange oder Mix (Orange-Karotte)", vegan: "no", glutenfree: "no", image: "Bebidas-zumos.jpeg" },
+                    { name: "Small Water / agua pequeña", price: "€2", description: "Flaschenwasser 50cl", vegan: "no", glutenfree: "no", image: "Bebidas-agua-pequena.jpeg" },
+                    { name: "Large Water 1.5l / Agua grande", price: "€2.50", description: "Flaschenwasser 1,5L", vegan: "no", glutenfree: "no", image: "Bebidas-agua-grande.jpeg" },
+                    { name: "Sparkling Water / Agua con gas", price: "€2", description: "Sprudelwasser", vegan: "no", glutenfree: "no", image: "Bebidas-agua-con-gas.jpeg" },
+                    { name: "Tonic / Tónica", price: "€2", description: "Tonic Water", vegan: "no", glutenfree: "no", image: "Bebidas-tonica.jpeg" },
+                    { name: "Espresso", price: "€1.20", description: "Espresso", vegan: "no", glutenfree: "no", image: "Bebidas-cafe-solo.jpeg" },
+                    { name: "Macchiato", price: "€1.40", description: "Kaffee Macchiato", vegan: "no", glutenfree: "no", image: "Bebidas-cafe-cortado.jpeg" },
+                    { name: "Café con leche", price: "€1.60", description: "Milchkaffee", vegan: "no", glutenfree: "no", image: "Bebidas-cafe-con-leche.jpeg" },
+                    { name: "Café Americano", price: "€2", description: "Americano", vegan: "no", glutenfree: "no", image: "Bebidas-cafe-americano.jpeg" },
+                    { name: "Heiße Schokolade / Colacao", price: "€1.50", description: "Heiße Schokolade", vegan: "no", glutenfree: "no", image: "Bebidas-batido.jpeg" },
+                    { name: "Tee und Aufgüsse / Té y infusiones", price: "€1.50", description: "Tee und Aufgüsse", vegan: "no", glutenfree: "no", image: "Bebidas-infusiones.jpeg" },
+                    { name: "Rotweinglas / Copa de vino tinto", price: "€2.50", description: "Glas Rotwein", vegan: "no", glutenfree: "no", image: "Bebidas-copa-tinto.jpeg" },
+                    { name: "Weißweinglas / Copa de vino blanco", price: "€2.50", description: "Glas Weißwein", vegan: "no", glutenfree: "no", image: "Bebidas-copa-blanco.jpeg" },
+                    { name: "Rum & Cola / Cubata", price: "€6", description: "Rum mit Coca-Cola", vegan: "no", glutenfree: "no", image: "Bebidas-cubata.jpeg" }
+                ]
+            },
+            "Weine": {
+                description: "Sorgfältig ausgewählte Weine, passend zu jedem Gericht.",
+                items: [
+                    { name: "Red Wine Glass / Copa de vino tinto", price: "€2.50", description: "Glas Rotwein", vegan: "no", glutenfree: "no", image: "Bebidas-copa-tinto.jpeg" },
+                    { name: "White Wine Glass / Copa de vino blanco", price: "€2.50", description: "Glas Weißwein", vegan: "no", glutenfree: "no", image: "Bebidas-copa-blanco.jpeg" },
+                    { name: "Rosado, Finca del Mar", price: "11€", description: "Finca del Mar Rosado captivates with its delicate pink hue and delivers a bouquet of fresh strawberries and floral notes. This rosé is well-balanced with a refreshing acidity, ideal for sunny afternoons or paired with Mediterranean cuisine.", vegan: "no", image: "Vinos-botella-rosado-finca-del-mar.jpeg" },
+                    { name: "Chardonnay White Wine, Finca del Mar", price: "11€", description: "Finca del Mar Blanco is a crisp, refreshing white wine, offering flavors of green apple, citrus, and a hint of minerality. Its light body and vibrant acidity make it a perfect match for seafood and light pasta dishes.", vegan: "no", image: "Vinos-botella-blanco-finca-del-mar.jpeg" },
+                    { name: "Tinto, Finca del Mar", price: "11€", description: "Finca del Mar Tinto is a robust red wine with deep flavors of dark berries, hints of spice, and a smooth finish. Its full body and structured tannins make it excellent for pairing with grilled meats and rich stews.", vegan: "no", image: "Vinos-botella-tinto-finca-del-mar.jpeg" },
+                    { name: "Red Wine Rioja, Altos Ibéricos", price: "14€", description: "Altos Ibéricos Crianza presents a contemporary take on Rioja with its vibrant Tempranillo character. Expect a wine with aromas of blackberries and dried herbs, complemented by flavors of black currant, cherry, and a hint of black truffle. Its aging in oak imparts a smooth complexity with well-integrated tannins, making it a versatile choice for pairing with a variety of hearty dishes or enjoying on its own.", vegan: "no", image: "Vinos-botella-tinto-altos-ibericos.jpeg" },
+                    { name: "Garnacha Tintorera, Uva Pirata", price: "12€", description: "Uva Pirata Garnacha Tintorera by Vicente Gandía is an intense red wine known for its deep, dark color and rich flavors. Expect a bouquet filled with aromas of black fruits, complemented by hints of toast and English toffee from its barrel aging. On the palate, it's full-bodied with a smooth and elegant finish, making it a perfect match for red meats and robust pasta dishes.", vegan: "no", image: "Vinos-botella-garnacha-tintorera-uva-pirata.jpeg" },
+                    { name: "Garnacha Blanca, Uva Pirata", price: "12€", description: "Uva Pirata Garnacha Blanca by Vicente Gandia is a white wine that captures the essence of the Mediterranean with its fresh and lively character. Expect a bouquet filled with aromas of green apple, pear, and hints of tropical flowers, leading to a palate that's both refreshing and crisp, with a delightful acidity that ends in a memorable aftertaste reminiscent of apple and jasmine.", vegan: "no", image: "Vinos-botella-garnacha-blanca-uva-pirata.jpeg" },
+                    { name: "El Miracle Art", price: "16€", description: "El Miracle Art is a signature red wine from the Alicante D.O., showcasing the artistic spirit of Vicente Gandia's winemakers. This wine blends various red grape varieties to offer a smooth experience with elegant tannins, dominated by flavors of dark fruits, hints of spice, and vanilla from oak aging. Its label features artwork, making each bottle a unique piece of art that reflects the creativity of Valencia's artists.", vegan: "no", image: "Vinos-botella-el-miracle-art.jpeg" },
+                    { name: "Bobal Noir", price: "18€", description: "Bobal Negro by Vicente Gandía reflects the rich tradition of the Bobal grape, known for its deep color and robust structure. This wine offers a complex bouquet of dark fruits, with subtle oak influences, providing a full-bodied experience with a balanced acidity, ideal for pairing with red meats and hearty dishes.", vegan: "no", image: "Vinos-botella-bobal-negro.jpeg" },
+                    { name: "Bobal Rosé", price: "18€", description: "Bobal Rosa from Vicente Gandía is a refreshing rosé wine, showcasing the unique Bobal grape from the Utiel-Requena region. Expect a delightful blend of rose petals, red fruits, and a hint of grapefruit on the nose, with a smooth, fresh, and very approachable taste that makes it perfect for light meals or as an aperitif.", vegan: "no", image: "Vinos-botella-bobal-rosa.jpeg" },
+                    { name: "Bobal Blanc", price: "18€", description: "The Bobal Blanco from Vicente Gandia is an intriguing white wine crafted from red Bobal grapes, showcasing the versatility of this traditional Spanish variety. This wine is noted for its pale yellow color with a slight reddish hue, reflecting its unique production process. On the palate, expect a harmonious acidity with a refreshing finish that hints at forest fruits, offering an elegant and characterful experience. It's a perfect match for those looking to explore beyond conventional white wines, with its serving temperature best at 5-7ºC to enhance its nuanced flavors.", vegan: "no", image: "Vinos-botella-bobal-blanco.jpeg" },
+                    { name: "Coto Crianza, Rioja", price: "12€", description: "El Coto Crianza is a red wine from Rioja, Spain, made entirely from Tempranillo grapes. It's aged for 12 months in American oak barrels, offering a balanced blend of fruit flavors like raspberry and cherry, with hints of spice and vanilla for a smooth finish. This wine is known for its approachable taste profile, making it a versatile choice for pairing with a variety of dishes.", vegan: "no", image: "Vinos-botella-coto-crianza.jpeg" },
+                    { name: "Beronia Crianza, Rioja", price: "18€", description: "Beronia Crianza is a delightful example of Rioja's winemaking tradition, offering a harmonious blend where Tempranillo grapes play the lead role. This wine is aged for 12 months in mixed barrels of American and French oak, which imparts a complex bouquet of dark fruits, like black cherry, alongside hints of spice, vanilla, and a subtle earthiness. On the palate, it presents a smooth, well-balanced experience with ripe fruit flavors, gentle tannins, and a finish that carries notes of oak, making it versatile for pairing with a wide range of dishes, from roasted meats to hearty stews.", vegan: "no", image: "Vinos-botella-beronia-crianza.jpeg" },
+                    { name: "Melior Matarromera, Ribera del Duero", price: "20€", description: "Melior Matarromera from Ribera del Duero is an elegant red wine that embodies the essence of the Tempranillo grape from some of Spain's finest wine regions. This wine blends the freshness and vibrant tannins from Ribera del Duero with the rich, fruity nuances from other top areas, offering a complex profile with hints of dark fruit, spice, and a subtle oak influence due to its aging process. It's versatile enough for social drinking or pairing with a variety of meats, providing a smooth, lingering finish.", vegan: "no", image: "Vinos-botella-melior-matarromera.jpeg" },
+                    { name: "Punto Geodésico, Ribera del Duero", price: "37€", description: "Punto Geodésico from the Ribera del Duero region is a premium Spanish red wine made from 100% Tempranillo grapes, cultivated at high altitudes. This wine is known for its deep violet-red color, with complex aromas of blackberry, chocolate-covered espresso beans, and a hint of spices. On the palate, it offers an opulent texture with flavors of cherry, raspberry, mocha, and caramel, leading to a long finish with notes of fresh-ground coffee. Its well-structured tannins and vibrant acidity make it a wine with great aging potential, ideal for pairing with robust dishes like red meats or rich pastas.", vegan: "no", image: "Vinos-botella-punto-geodesico.jpeg" },
+                    { name: "Trus Roble, Ribera del Duero", price: "17€", description: "Trus Roble is a wine that encapsulates the essence of the Ribera del Duero region, known for its robust and expressive Tempranillo. This wine offers a bouquet of ripe red and black fruits, complemented by spicy and balsamic notes with a hint of roasted flavors. On the palate, it's smooth and well-balanced, showcasing a harmonious acidity that makes it an excellent companion for a variety of hearty dishes.", vegan: "no", image: "Vinos-botella-trus-roble.jpeg" },
+                    { name: "Santa Rosa, Enrique Mendoza", price: "28€", description: "Santa Rosa by Enrique Mendoza is a robust red wine that offers a symphony of dark fruit flavors with hints of spice and vanilla, derived from its aging in oak. Expect a full-bodied experience with a smooth finish, perfect for pairing with red meats or hearty pasta dishes.", vegan: "no", image: "Vinos-botella-santa-rosa.jpeg" }
+                ]
+            },
+            "Desserts": {
+                description: "Beenden Sie Ihr Essen mit einer süßen Note.",
+                items: [
+                        { name: "Käsekuchen / Tarta de queso", price: "€5.50", description: "Klassischer cremiger Käsekuchen.", vegan: "no", glutenfree: "no", image: "Desserts-cheesecake.jpeg" },
+                        { name: "Lotus-Keks-Kuchen / Tarta Galleta Lotus", price: "€5.90", description: "Leckerer Kuchen aus Lotus-Keksen.", vegan: "no", glutenfree: "no", image: "Desserts-lotus-biscuit-cake.jpeg" },
+                        { name: "Tod durch Schokolade / Muerte por Chocolate", price: "€6.40", description: "Reiches, sündhaftes Schokoladendessert.", vegan: "no", glutenfree: "no", image: "Desserts-death-by-chocolate.jpeg" },
+                        { name: "Omas Kuchen / Tarta de la abuela", price: "€5.50", description: "Traditioneller Kuchen nach Familienrezept.", vegan: "no", glutenfree: "no", image: "Desserts-grandmas-cake.jpeg" },
+                        { name: "Samtkuchen / Tarta Velvet", price: "€5.50", description: "Weicher, saftiger Samtkuchen.", vegan: "no", glutenfree: "no", image: "Desserts-velvet-cake.jpeg" },
+                        { name: "Schokoladenfondant / Coulant de chocolate", price: "€5.20", description: "Warmer Schokoladenfondant mit flüssigem Kern.", vegan: "no", glutenfree: "no", image: "Desserts-chocolate-fondant.jpeg" },
+                        { name: "Bailey's-Fondant / Coulant de Baileys", price: "€5.20", description: "Fondant mit Bailey's-Likör.", vegan: "no", glutenfree: "no", image: "Desserts-baileys-fondant.jpeg" },
+                        { name: "Weiße-Schokolade-Fondant (glutenfrei) / Coulant choco blanco", price: "€5.20", description: "Glutenfreier Weißschokoladenfondant.", vegan: "no", glutenfree: "yes", image: "Desserts-white-chocolate-fondant.jpeg" },
+                        { name: "Brownie mit Keksstreuseln / Brownie", price: "€6.00", description: "Brownie mit Keksstreuseln.", vegan: "no", glutenfree: "no", image: "Desserts-brownie-cookie-crumble.jpeg" },
+                        { name: "Eistorte (glutenfrei) / Contesa de Nata", price: "€4.90", description: "Glutenfreie Eistorte mit Sahne", vegan: "no", glutenfree: "yes", image: "Desserts-contesa.jpeg" },
+                        { name: "Whisky-Kuchen / Tarta al Whisky", price: "€5.20", description: "Saftiger Kuchen mit Whisky.", vegan: "no", glutenfree: "no", image: "Desserts-whisky-cake.jpeg" },
+                        { name: "Schokoladentrüffel / Trufas de chocolate", price: "€5.20", description: "Dekadente Schokoladentrüffel.", vegan: "no", glutenfree: "no", image: "Desserts-chocolate-truffles.jpeg" },
+                        { name: "Nougat-Eisbecher (glutenfrei) / Tarrina helado Turrón", price: "€3.00", description: "Glutenfreier Nougat-Eisbecher.", vegan: "no", glutenfree: "yes", image: "Desserts-nougat-ice-cream.jpeg" },
+                        { name: "Orange mit Zimt (glutenfrei) / Naranjas con canela", price: "€3.80", description: "Frische Orangenscheiben mit Zimt.", vegan: "yes", glutenfree: "yes", image: "Desserts-orange-cinnamon.jpeg" }
+                ]
+            }
+
         }
     }
 };
