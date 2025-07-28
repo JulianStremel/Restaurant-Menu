@@ -79,6 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
             case 'fr':
                 jumpToCategoryLabel.innerText = 'Aller à une catégorie';
                 break;
+            case 'de':
+                jumpToCategoryLabel.innerText = 'Zu einer Kategorie springen';
+                break;
             case 'es':
                 jumpToCategoryLabel.innerText = 'Saltar a una categoría';
                 break;
@@ -93,6 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
         switch (language) {
             case 'fr':
                 return 'Végan';
+            case 'de':
+                return 'Vegan';
             case 'es':
                 return 'Vegano';
             default:
@@ -105,6 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
         switch (language) {
             case 'fr':
                 return 'Sans Gluten';
+            case 'de':
+                return 'Glutenfrei';
             case 'es':
                 return 'Sin Gluten';
             default:
@@ -254,6 +261,8 @@ document.addEventListener('DOMContentLoaded', () => {
         switch (language) {
             case 'fr':
                 return 'Options véganes de toutes les catégories';
+            case 'de':
+                return 'Leckere vegane Optionen aus allen Kategorien';
             case 'es':
                 return 'Opciones veganas deliciosas de todas las categorías';
             default:
@@ -266,6 +275,8 @@ document.addEventListener('DOMContentLoaded', () => {
         switch (language) {
             case 'fr':
                 return 'Options sans gluten de toutes les catégories. Veuillez vérifier avec le serveur lors de la commande.';
+            case 'de':
+                return 'Glutenfreie Optionen aus allen Kategorien. Bitte beim Bestellen beim Service nachfragen.';
             case 'es':
                 return 'Opciones sin gluten de todas las categorías. Por favor, verifique con el camarero al realizar su pedido.';
             default:
