@@ -644,3 +644,8 @@ const menuData = {
         }
     }
 };
+
+// Export for Node.js environments
+if (typeof module !== 'undefined') {
+    module.exports = menuData;
+}
